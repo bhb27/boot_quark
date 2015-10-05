@@ -322,6 +322,8 @@ on post-fs-data
     # the following directory.
     mkdir /data/mediadrm 0770 mediadrm mediadrm
 
+    mkdir /data/adb 0700 root root
+
     # symlink to bugreport storage location
     symlink /data/data/com.android.shell/files/bugreports /data/bugreports
 
@@ -434,9 +436,6 @@ on boot
 
     # Define default initial receive window size in segments.
     setprop net.tcp.default_init_rwnd 60
-
-# VMware MVP feature list (generated)
-    setprop ro.mvp.features srvc,grbks,vpncrt,vpn,mvpdsec,ftx
 
     class_start core
 

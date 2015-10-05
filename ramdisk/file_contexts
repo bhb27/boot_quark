@@ -219,6 +219,9 @@
 /data/misc/wifi/hostapd(/.*)?   u:object_r:wpa_socket:s0
 /data/misc/zoneinfo(/.*)?       u:object_r:zoneinfo_data_file:s0
 
+# coredump directory for userdebug/eng devices
+/cores(/.*)?                    u:object_r:coredump_file:s0
+
 # Wallpaper file for other users
 /data/system/users/[0-9]+/wallpaper		u:object_r:wallpaper_file:s0
 #############################
@@ -270,6 +273,7 @@
 /data/dontpanic(/.*)?              u:object_r:panic_data_file:s0
 /data/hostapd(/.*)?                u:object_r:hostapd_data_file:s0
 /data/local/dbvc(/.*)?             u:object_r:dbvc_data_file:s0
+/data/local/moodle(/.*)?           u:object_r:moodle_data_file:s0
 /data/power_supply_logger(/.*)?    u:object_r:aplog_data_file:s0
 /data/system/dropbox-add(/.*)?     u:object_r:dropbox_data_file:s0
 /data/misc/akmd_set.txt            u:object_r:akmd_data_file:s0
@@ -286,6 +290,7 @@
 /persist(/.*)?                     u:object_r:persist_file:s0
 /persist/sensors(/.*)?             u:object_r:sensors_persist_file:s0
 /persist/data(/.*)?                u:object_r:persist_drm_file:s0
+/persist/drm(/.*)?                 u:object_r:persist_drm_file:s0
 /persist/prov(/.*)?                u:object_r:persist_drm_file:s0
 /persist/mdm(/.*)?                 u:object_r:persist_modem_file:s0
 
@@ -370,6 +375,9 @@
 #tcmd socket
 /dev/socket/local_tcmd            u:object_r:localtcmd_socket:s0
 
+#sysmond socket
+/dev/socket/sysmond             u:object_r:sysmond_socket:s0
+
 # system binaries
 /system/bin/adspd               u:object_r:adspd_exec:s0
 /system/bin/akmd8963            u:object_r:akmd_exec:s0
@@ -388,6 +396,11 @@
 /system/bin/tcmd                u:object_r:tcmd_exec:s0
 /system/bin/tcmdhelp            u:object_r:tcmdhelp_exec:s0
 /system/xbin/sudo               u:object_r:sudo_exec:s0
+/system/bin/sysmon              u:object_r:sysmon_exec:s0
+/system/bin/sysmon64            u:object_r:sysmon_exec:s0
+/system/bin/sysmond             u:object_r:sysmond_exec:s0
+/system/bin/sysmond64           u:object_r:sysmond_exec:s0
+/system/bin/memtest_mode        u:object_r:memtest_exec:s0
 
 # QCOM services modified by Moto
 /system/bin/diag_mdlog          u:object_r:mdlog_exec:s0
@@ -400,6 +413,8 @@
 /sys/module/qpnp_charger(/.*)?          u:object_r:sysfs_batt:s0
 /sys/devices/platform/msm_ssbi.0/pm8921-core/pm8921-charger(/.*)? u:object_r:sysfs_batt:s0
 /sys/devices/mmi_sar_ctrl.[0-9]*/sar_wifi                u:object_r:sysfs_sar_wifi:s0
+/sys/devices/virtual/stm401/stm401_as(/.*)?    u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/stm401/stm401_ms(/.*)?    u:object_r:sysfs_sensors:s0
 #line 1 "device/moto/mot8084/sepolicy/qcom/common/file_contexts"
 ###################################
 # Dev nodes
@@ -458,6 +473,11 @@
 /dev/hbtp_input                                 u:object_r:hbtp_device:s0
 /dev/jdi-bu21150                                u:object_r:bu21150_device:s0
 /dev/voice_svc                                  u:object_r:voice_device:s0
+/dev/coresight-stm                              u:object_r:qdss_device:s0
+/dev/coresight-tmc-etf                          u:object_r:qdss_device:s0
+/dev/coresight-tmc-etr                          u:object_r:qdss_device:s0
+/dev/coresight-tmc-etr-stream                   u:object_r:qdss_device:s0
+/dev/system_health_monitor                      u:object_r:system_health_monitor_device:s0
 
 ###################################
 # Dev socket nodes
@@ -525,6 +545,7 @@
 /system/bin/time_daemon                         u:object_r:time_daemon_exec:s0
 /system/bin/rmt_storage                         u:object_r:rmt_storage_exec:s0
 /system/bin/rfs_access                          u:object_r:rfs_access_exec:s0
+#moto#/system/bin/tftp_server                         u:object_r:rfs_access_exec:s0
 /system/bin/hvdcp                               u:object_r:hvdcp_exec:s0
 /system/bin/qseecomd                            u:object_r:tee_exec:s0
 #moto#/system/bin/hostapd_cli                         u:object_r:hostapd_exec:s0
@@ -562,6 +583,7 @@
 /system/bin/sapd                                u:object_r:sapd_exec:s0
 /system/bin/btsnoop                             u:object_r:btsnoop_exec:s0
 /system/bin/dun-server                          u:object_r:dun-server_exec:s0
+#moto#/system/bin/wfdservice                          u:object_r:wfdservice_exec:s0
 /system/bin/wcnss_filter                        u:object_r:wcnss_filter_exec:s0
 
 ###################################
@@ -611,6 +633,7 @@
 /data/diag_log(/.*)?                                                u:object_r:diag_data_file:s0
 /data/misc/sensors(/.*)?                                            u:object_r:sensors_data_file:s0
 /data/rfs.*                                                         u:object_r:rfs_data_file:s0
+/data/hlos_rfs(/.*)?                                                u:object_r:rfs_shared_hlos_file:s0
 /data/camera(/.*)?                                                  u:object_r:camera_socket:s0
 /data/system/sensors(/.*)?                                          u:object_r:sensors_data_file:s0
 #moto#/data/time/*                                                        u:object_r:time_data_file:s0
@@ -624,12 +647,14 @@
 /data/misc/location(/.*)?                                           u:object_r:location_data_file:s0
 /data/FTM_AP(/.*)?                                                  u:object_r:mmi_data_file:s0
 /data/misc/hbtp(/.*)?                                               u:object_r:hbtp_log_file:s0
+/data/misc/qlogd(/.*)?                                              u:object_r:qlogd_data_file:s0
 
 ###################################
 # persist files
 #
 #moto# Due to an ordering issue when unioning file_contexts, these will be kept in moto policy files
 #moto#/persist(/.*)?                                                      u:object_r:persist_file:s0
+#moto#/persist/drm(/.*)?                                                  u:object_r:persist_drm_file:s0
 #moto#/persist/sensors(/.*)?                                              u:object_r:sensors_persist_file:s0
 #moto#/persist/data(/.*)?                                                 u:object_r:persist_drm_file:s0
 #moto#/persist/data/tz(/.*)?                                              u:object_r:persist_drm_file:s0
@@ -689,6 +714,4 @@
 # Context for mpdecision
 /sys/devices/system/cpu/cpu0/rq-stats(/.*)?                     u:object_r:sysfs_rqstats:s0
 /sys/module/cpu_boost/parameters(/.*)?                          u:object_r:sysfs_cpuboost:s0
-# Replace *bcl.* with qcom,bcl.* to improve performance
-/sys/devices/qcom,bcl.*(/.*)?                                   u:object_r:sysfs_thermal:s0
 # End Moto

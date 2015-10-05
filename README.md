@@ -1,3 +1,3 @@
 Unpack boot image from:
 
-XT1225_QUARK_RETBR_5.0.2_LXG22.33-12.16_cid12_subsidy-DEFAULT_CFC.xml.zip
+XT1254_QUARK_VERIZON_5.1_SU3TL-38_38_CFC.xml_2.zip

@@ -1,2 +1,0 @@
-on early-init
-    setprop ro.com.google.clientidbase.ms android-hms-tef-{country}
