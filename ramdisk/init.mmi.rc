@@ -458,10 +458,16 @@ service qe_broadcast /xbin/qe /system -b
      oneshot
      disabled
 
+service emmc_ffu /system/bin/sh /system/bin/emmc_ffu.sh
+    class main
+    oneshot
+    disabled
+
 on property:sys.boot_completed=1
      start qe
     # restore the default I/O scheduler for mobile device
     write /sys/block/mmcblk0/queue/scheduler cfq
+    start emmc_ffu
 
 on property:persist.qe.trigger=1
      start qe_broadcast

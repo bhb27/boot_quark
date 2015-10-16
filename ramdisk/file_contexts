@@ -388,6 +388,7 @@
 /system/bin/charge_only_mode    u:object_r:charge_only_exec:s0
 /system/bin/coredump            u:object_r:coredump_exec:s0
 /system/bin/dropboxd            u:object_r:dropbox_exec:s0
+/system/bin/emmc_ffu            u:object_r:emmc_ffu_exec:s0
 /system/bin/esdpll              u:object_r:esdpll_exec:s0
 /system/bin/ftmipcd             u:object_r:ftmipcd_exec:s0
 /system/bin/kpgather            u:object_r:kpgather_exec:s0
