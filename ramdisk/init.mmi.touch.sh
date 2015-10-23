@@ -121,7 +121,6 @@ debug "touch config id: $str_cfg_id_boot"
 product_id=$(getprop $device_property 2> /dev/null)
 [ -z "$product_id" ] && error_and_leave 2 $device_property
 product_id=${product_id%-*}
-product_id=${product_id%_*}
 debug "product id: $product_id"
 
 hwrev_id=$(getprop $hwrev_property 2> /dev/null)

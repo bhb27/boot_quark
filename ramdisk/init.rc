@@ -1,6 +1,3 @@
-# Copyright (c) 2013, The Linux Foundation. All rights reserved.
-# Not a Contribution.
-#
 # Copyright (C) 2012 The Android Open Source Project
 #
 # IMPORTANT: Do not create world writable files or directories.
@@ -12,6 +9,9 @@ import /init.usb.rc
 import /init.${ro.hardware}.rc
 import /init.${ro.zygote}.rc
 import /init.trace.rc
+# Include CM's extra init file
+import /init.cm.rc
+
 
 on early-init
     # Set init and its forked children's oom_adj.
@@ -48,7 +48,6 @@ on init
     # Create cgroup mount point for cpu accounting
     mkdir /acct
     mount cgroup none /acct cpuacct
-    chown system system /acct
     mkdir /acct/uid
 
     # Create cgroup mount point for memory
@@ -63,6 +62,7 @@ on init
     write /sys/fs/cgroup/memory/sw/memory.move_charge_at_immigrate 1
     chown root system /sys/fs/cgroup/memory/sw/tasks
     chmod 0660 /sys/fs/cgroup/memory/sw/tasks
+    chmod 0220 /sys/fs/cgroup/memory/cgroup.event_control
 
     mkdir /system
     mkdir /data 0771 system system
@@ -123,25 +123,18 @@ on init
     mount cgroup none /dev/cpuctl cpu
     chown system system /dev/cpuctl
     chown system system /dev/cpuctl/tasks
-    chmod 0660 /dev/cpuctl/tasks
+    chmod 0666 /dev/cpuctl/tasks
     write /dev/cpuctl/cpu.shares 1024
-    write /dev/cpuctl/cpu.rt_runtime_us 950000
+    write /dev/cpuctl/cpu.rt_runtime_us 800000
     write /dev/cpuctl/cpu.rt_period_us 1000000
 
-    mkdir /dev/cpuctl/apps
-    chown system system /dev/cpuctl/apps/tasks
-    chmod 0666 /dev/cpuctl/apps/tasks
-    write /dev/cpuctl/apps/cpu.shares 1024
-    write /dev/cpuctl/apps/cpu.rt_runtime_us 800000
-    write /dev/cpuctl/apps/cpu.rt_period_us 1000000
-
-    mkdir /dev/cpuctl/apps/bg_non_interactive
-    chown system system /dev/cpuctl/apps/bg_non_interactive/tasks
-    chmod 0666 /dev/cpuctl/apps/bg_non_interactive/tasks
+    mkdir /dev/cpuctl/bg_non_interactive
+    chown system system /dev/cpuctl/bg_non_interactive/tasks
+    chmod 0666 /dev/cpuctl/bg_non_interactive/tasks
     # 5.0 %
-    write /dev/cpuctl/apps/bg_non_interactive/cpu.shares 52
-    write /dev/cpuctl/apps/bg_non_interactive/cpu.rt_runtime_us 700000
-    write /dev/cpuctl/apps/bg_non_interactive/cpu.rt_period_us 1000000
+    write /dev/cpuctl/bg_non_interactive/cpu.shares 52
+    write /dev/cpuctl/bg_non_interactive/cpu.rt_runtime_us 700000
+    write /dev/cpuctl/bg_non_interactive/cpu.rt_period_us 1000000
 
     # qtaguid will limit access to specific data based on group memberships.
     #   net_bw_acct grants impersonation of socket owners.
@@ -256,20 +249,12 @@ on post-fs-data
     chown root log /data/dontpanic/apanic_threads
     chmod 0640 /data/dontpanic/apanic_threads
 
-    # Backup apanic_app_threads
-    copy /proc/apanic_app_threads /data/dontpanic/apanic_app_threads
-    chown root log /data/dontpanic/apanic_app_threads
-    chmod 0640 /data/dontpanic/apanic_app_threads
-
-    # If there is no apanic handle action in the init.<device>.rc file, you
-    # must uncomment this line, otherwise apanic proc entry
-    # won't be removed.
-    # write /proc/apanic_console 1
-
+    write /proc/apanic_console 1
 
     # create basic filesystem structure
     mkdir /data/misc 01771 system misc
     mkdir /data/misc/adb 02750 system shell
+    mkdir /data/misc/audit 02750 audit system
     mkdir /data/misc/bluedroid 0770 bluetooth net_bt_stack
     mkdir /data/misc/bluetooth 0770 system system
     mkdir /data/misc/keystore 0700 keystore keystore
@@ -322,6 +307,8 @@ on post-fs-data
     # the following directory.
     mkdir /data/mediadrm 0770 mediadrm mediadrm
 
+    mkdir /data/adb 0700 root root
+
     # symlink to bugreport storage location
     symlink /data/data/com.android.shell/files/bugreports /data/bugreports
 
@@ -333,6 +320,9 @@ on post-fs-data
 
     # Set SELinux security contexts on upgrade or policy update.
     restorecon_recursive /data
+    restorecon /data/data
+    restorecon /data/user
+    restorecon /data/user/0
 
     # If there is no fs-post-data action in the init.<device>.rc file, you
     # must uncomment this line, otherwise encrypted filesystems
@@ -355,9 +345,9 @@ on boot
     write /proc/sys/vm/overcommit_memory 1
     write /proc/sys/vm/min_free_order_shift 4
     chown root system /sys/module/lowmemorykiller/parameters/adj
-    chmod 0664 /sys/module/lowmemorykiller/parameters/adj
+    chmod 0220 /sys/module/lowmemorykiller/parameters/adj
     chown root system /sys/module/lowmemorykiller/parameters/minfree
-    chmod 0664 /sys/module/lowmemorykiller/parameters/minfree
+    chmod 0220 /sys/module/lowmemorykiller/parameters/minfree
 
     # Tweak background writeout
     write /proc/sys/vm/dirty_expire_centisecs 200
@@ -378,7 +368,6 @@ on boot
     chmod 0660 /sys/power/wake_lock
     chmod 0660 /sys/power/wake_unlock
 
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
     chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
     chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_slack
@@ -402,18 +391,15 @@ on boot
     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration
     chown system system /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
-    chown system system /sys/devices/system/cpu/cpufreq/interactive/target_load
-    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/target_load
 
     # Assume SMP uses shared cpufreq policy for all CPUs
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
     chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
-    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
     chown system system /sys/class/timed_output/vibrator/enable
     chown system system /sys/class/leds/keyboard-backlight/brightness
     chown system system /sys/class/leds/lcd-backlight/brightness
+    chown system system /sys/class/leds/torch-light/brightness
     chown system system /sys/class/leds/button-backlight/brightness
     chown system system /sys/class/leds/jogball-backlight/brightness
     chown system system /sys/class/leds/red/brightness
@@ -434,9 +420,6 @@ on boot
 
     # Define default initial receive window size in segments.
     setprop net.tcp.default_init_rwnd 60
-
-# VMware MVP feature list (generated)
-    setprop ro.mvp.features srvc,grbks,vpncrt,vpn,mvpdsec,ftx
 
     class_start core
 
@@ -518,6 +501,10 @@ service console /system/bin/sh
     group shell log
     seclabel u:r:shell:s0
 
+service auditd /system/bin/auditd -k
+    seclabel u:r:logd:s0
+    class main
+
 on property:ro.debuggable=1
     start console
 
@@ -570,31 +557,24 @@ service ril-daemon /system/bin/rild
     class main
     socket rild stream 660 root radio
     socket rild-debug stream 660 radio system
-    socket cutback stream 660 media radio
-    socket wpa_wlan0 dgram 660 wifi wifi
     user root
-    group radio cache inet misc audio log qcom_diag net_raw diag wifi
+    group radio cache inet misc audio sdcard_rw qcom_diag log
 
 service surfaceflinger /system/bin/surfaceflinger
     class core
     user system
     group graphics drmrpc
-    # allow the minimum realtime scheduler priority: RLIMIT_RTPRIO(14)=1
-    rlimit 14 1 1
     onrestart restart zygote
-    onrestart setprop sys.sf.restart 1
 
 service drm /system/bin/drmserver
     class main
     user drm
-    group drm inet drmrpc mot_drm mot_tpapi mot_secclkd
+    group drm system inet drmrpc
 
 service media /system/bin/mediaserver
     class main
     user media
-    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm qcom_diag mot_drm mot_tpapi mot_secclkd power
-    # allow the minimum realtime scheduler priority: RLIMIT_RTPRIO(14)=1
-    rlimit 14 4 4
+    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm qcom_diag
     ioprio rt 4
 
 # One shot invocation to deal with encrypted volume.
@@ -626,6 +606,11 @@ service flash_recovery /system/bin/install-recovery.sh
     class main
     seclabel u:r:install_recovery:s0
     oneshot
+    disabled
+
+# update recovery if enabled
+on property:persist.sys.recovery_update=true
+    start flash_recovery
 
 service racoon /system/bin/racoon
     class main
@@ -646,7 +631,7 @@ service mtpd /system/bin/mtpd
 service keystore /system/bin/keystore /data/misc/keystore
     class main
     user keystore
-    group keystore drmrpc mot_tpapi
+    group keystore drmrpc
 
 service dumpstate /system/bin/dumpstate -s
     class main
@@ -666,15 +651,3 @@ service pre-recovery /system/bin/uncrypt
     class main
     disabled
     oneshot
-
-on property:ro.build.type=eng
-    chmod 0777 /data/anr
-    chmod 0777 /data/misc
-
-on property:ro.build.type=userdebug
-    chmod 0777 /data/anr
-    chmod 0777 /data/misc
-
-on property:ro.build.type=user
-    chmod 0771 /data/anr
-    chmod 01771 /data/misc
