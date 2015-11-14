@@ -63,19 +63,19 @@ void vendor_load_properties()
             property_set("ro.build.description", "quark_retbr-user 5.0.2 LXG22.33-12.16 16 release-keys");
             property_set("ro.build.fingerprint", "motorola/quark_retbr/quark_umts:5.0.2/LXG22.33-12.16/16:user/release-keys");
         } else if (strstr(carrier, "reteu")) {
-	    /* india */
+	    /* India */
             property_set("ro.fsg-id", "emea");
             property_set("ro.product.display", "Moto turbo");
             property_set("ro.build.description", "quark_reteu-user 5.0.2 LXG22.33-12.16 16 release-keys");
             property_set("ro.build.fingerprint", "motorola/quark_reteu/quark_umts:5.0.2/LXG22.33-12.16/16:user/release-keys");
         } else if (strstr(carrier, "retla")) {
-	    /* latino america */
+	    /* Latin America */
             property_set("ro.fsg-id", "singlela");
             property_set("ro.product.display", "Moto Maxx");
             property_set("ro.build.description", "quark_retla-user 5.0.2 LXG22.33-12.16 16 release-keys");
             property_set("ro.build.fingerprint", "motorola/quark_retla/quark_umts:5.0.2/LXG22.33-12.16/16:user/release-keys");
         } else {
-            /* others carrier set as retla */
+            /* Others carrier set as retla */
             property_set("ro.fsg-id", "singlela");
             property_set("ro.product.display", "Moto Maxx");
             property_set("ro.build.description", "quark_retla-user 5.0.2 LXG22.33-12.16 16 release-keys");
@@ -84,7 +84,7 @@ void vendor_load_properties()
     } else if (strstr(cid, "0x2")) {
         /* XT1254 */
         if (strstr(carrier, "vzw")) {
-            /* verizon */
+            /* Verizon */
             property_set ("ro.fsg-id", "verizon");
             property_set("ro.product.model", "XT1254");
             property_set("ro.product.device", "quark");
@@ -99,7 +99,7 @@ void vendor_load_properties()
             property_set("ro.com.google.clientidbase.ms", "android-verizon");
             property_set("ro.com.google.clientidbase.yt", "android-verizon");
         } else {
-            /* especial case set as retla */
+            /* Special case set as retla */
             property_set ("ro.fsg-id", "singlela");
             property_set("ro.product.model", "XT1254");
             property_set("ro.product.device", "quark_umts");
