@@ -88,6 +88,7 @@ void vendor_load_properties()
             property_set ("ro.fsg-id", "verizon");
             property_set("ro.product.model", "XT1254");
             property_set("ro.product.device", "quark");
+	    property_set("ro.product.display", "DROID TURBO");
             property_set("ro.build.description", "quark_verizon-user 5.1 SU4TL-44 44 release-keys");
             property_set("ro.build.fingerprint", "motorola/quark_verizon/quark:5.1/SU4TL-44/44:user/release-keys");
             property_set("ro.telephony.default_network", "10");
