@@ -116,8 +116,10 @@ void vendor_load_properties()
         property_set("ro.product.model", "XT1250");
         property_set("ro.product.device", "quark_lra");
         property_set("ro.product.display", "Moto Maxx");
-        property_set("ro.telephony.default_network", "9");
-        property_set("telephony.lteOnGsmDevice", "1");
+        property_set("ro.telephony.default_network", "8");
+        property_set("telephony.lteOnCdmaDevice", "1");
+        property_set("ro.telephony.default_cdma_sub", "0");
+        property_set("ro.ril.force_eri_from_xml", "true");
         property_set("ro.build.description", "quark_lra-user 4.4.4 KXG21.50-11 8 release-keys");
         property_set("ro.build.fingerprint", "motorola/quark_lra/quark:4.4.4/KXG21.50-11/8:user/release-keys");
     } else {
