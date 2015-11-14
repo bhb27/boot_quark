@@ -57,16 +57,19 @@ void vendor_load_properties()
         property_set("ro.telephony.default_network", "9");
         property_set("telephony.lteOnGsmDevice", "1");
         if (strstr(carrier, "retbr")) {
+	    /* Brazil */
             property_set("ro.fsg-id", "singlela");
             property_set("ro.product.display", "Moto Maxx");
             property_set("ro.build.description", "quark_retbr-user 5.0.2 LXG22.33-12.16 16 release-keys");
             property_set("ro.build.fingerprint", "motorola/quark_retbr/quark_umts:5.0.2/LXG22.33-12.16/16:user/release-keys");
         } else if (strstr(carrier, "reteu")) {
+	    /* india */
             property_set("ro.fsg-id", "emea");
             property_set("ro.product.display", "Moto turbo");
             property_set("ro.build.description", "quark_reteu-user 5.0.2 LXG22.33-12.16 16 release-keys");
             property_set("ro.build.fingerprint", "motorola/quark_reteu/quark_umts:5.0.2/LXG22.33-12.16/16:user/release-keys");
         } else if (strstr(carrier, "retla")) {
+	    /* latino america */
             property_set("ro.fsg-id", "singlela");
             property_set("ro.product.display", "Moto Maxx");
             property_set("ro.build.description", "quark_retla-user 5.0.2 LXG22.33-12.16 16 release-keys");
@@ -78,7 +81,6 @@ void vendor_load_properties()
             property_set("ro.build.description", "quark_retla-user 5.0.2 LXG22.33-12.16 16 release-keys");
             property_set("ro.build.fingerprint", "motorola/quark_retla/quark_umts:5.0.2/LXG22.33-12.16/16:user/release-keys");
         }
-
     } else if (strstr(cid, "0x2")) {
         /* XT1254 */
         if (strstr(carrier, "vzw")) {
@@ -115,9 +117,8 @@ void vendor_load_properties()
         property_set("ro.product.display", "Moto Maxx");
         property_set("ro.telephony.default_network", "9");
         property_set("telephony.lteOnGsmDevice", "1");
-        property_set("ro.build.description", "quark_retla-user 5.0.2 LXG22.33-12.16 16 release-keys");
-        property_set("ro.build.fingerprint", "motorola/quark_retla/quark_umts:5.0.2/LXG22.33-12.16/16:user/release-keys");
-
+        property_set("ro.build.description", "quark_lra-user 4.4.4 KXG21.50-11 8 release-keys");
+        property_set("ro.build.fingerprint", "motorola/quark_lra/quark:4.4.4/KXG21.50-11/8:user/release-keys");
     } else {
         /* Unknown models set as retla */
         property_set("ro.fsg-id", "singlela");
