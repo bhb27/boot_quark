@@ -43,12 +43,6 @@ on fs
 
     mkdir /overlay 0755 root root
 
-    # arrange access to the overlay
-    exec /system/bin/checknmount -d -s -m -t ext4 -r /overlay/sysupdate /cache/overlay/sysupdate.simg /cache/overlay/sysupdate.jar
-
-    # use the overlay, if it is compatible
-    exec /system/bin/stacker -d -c -r -t overlayfs /system /overlay/sysupdate
-
     wait /dev/block/bootdevice/by-name/persist
     mount ext4 /dev/block/bootdevice/by-name/persist /persist nosuid nodev barrier=1 defcontext=u:object_r:persist_file:s0
     restorecon_recursive /persist

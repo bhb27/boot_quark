@@ -1,3 +1,4 @@
+#!/system/bin/sh
 #
 # Check ESOC for external MDM
 #
