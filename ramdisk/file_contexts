@@ -381,6 +381,7 @@
 /dev/qbt1000                                    u:object_r:qbt1000_device:s0
 /dev/at_.*                                      u:object_r:at_device:s0
 /dev/sg.*                                       u:object_r:sg_device:s0
+/dev/mdm                                        u:object_r:radio_device:s0
 
 ###################################
 # Dev block nodes
@@ -627,7 +628,7 @@
 /data/misc/port_bridge(/.*)?                                        u:object_r:port_bridge_data_file:s0
 /data/misc/fm(/.*)?                                                 u:object_r:fm_data_file:s0
 /data/misc/audio_pp(/.*)?                                           u:object_r:audio_pp_data_file:s0
-/data/ramdump(/.*)?                                                 u:object_r:ramdump_data_file:s0
+/data/ss-ram-dumps(/.*)?                                            u:object_r:ramdump_data_file:s0
 /data/misc/SelfHost/socket(/.*)?                                    u:object_r:RIDL_socket:s0
 /data/system/default_values                                         u:object_r:mpdecision_data_file:s0
 
@@ -645,6 +646,7 @@
 /persist/display(/.*)?                                              u:object_r:persist_display_file:s0
 /persist/rfs.*                                                      u:object_r:rfs_file:s0
 /persist/camera(/.*)?                                               u:object_r:persist_camera_file:s0
+/persist/mdm(/.*)?                                                  u:object_r:persist_modem_file:s0
 
 ###################################
 # etc files
