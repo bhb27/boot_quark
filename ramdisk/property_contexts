@@ -124,8 +124,8 @@ radio.noril                u:object_r:radio_noril_prop:s0
 persist.atvc                u:object_r:atvc_prop:s0
 persist.camera              u:object_r:camera_prop:s0
 manufacturedate             u:object_r:mmi_prop:s0
-#line 1 "vendor/cm/sepolicy/property_contexts"
+#line 1 "vendor/mk/sepolicy/property_contexts"
 adb.network.port              u:object_r:adbtcp_prop:s0
 recovery.perf.mode            u:object_r:recovery_prop:s0
 adb.secure                    u:object_r:recovery_prop:s0
-cm.userinit.active            u:object_r:userinit_prop:s0
+mk.userinit.active            u:object_r:userinit_prop:s0
