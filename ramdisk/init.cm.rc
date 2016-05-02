@@ -1,4 +1,4 @@
-# MoKee OpenSource Extras
+# CyanogenMod Extras
 import /init.superuser.rc
 
 on init
@@ -27,9 +27,6 @@ on post-fs-data
 
     # Run sysinit
     start sysinit
-
-    # Run mkta
-    start mkta
 
 on boot
     # interactive governor
@@ -140,12 +137,6 @@ service bugreport /system/bin/dumpstate -d -p -B \
     oneshot
     disabled
     keycodes 114 115 116
-
-# mkta
-service mkta /system/bin/mkta
-    user root
-    oneshot
-    disabled
 
 # adb over network
 on property:service.adb.tcp.port=5555
