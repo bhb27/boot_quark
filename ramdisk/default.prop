@@ -14,7 +14,7 @@ debug.atrace.tags.enableflags=0
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=Thu Apr 7 05:27:17 CDT 2016
-ro.bootimage.build.date.utc=1460024837
-ro.bootimage.build.fingerprint=motorola/quark_retbr/quark_umts:6.0.1/MPG24.107-68/43:user/release-keys
+ro.bootimage.build.date=Tue May 24 06:12:02 CDT 2016
+ro.bootimage.build.date.utc=1464088322
+ro.bootimage.build.fingerprint=motorola/quark_retbr/quark_umts:6.0.1/MPG24.107-70.2/2:user/release-keys
 
