@@ -4,7 +4,6 @@
 # This is a common source of Android security bugs.
 #
 
-import /init.magisk.rc
 import /init.environ.rc
 import /init.usb.rc
 import /init.${ro.hardware}.rc
@@ -399,6 +398,7 @@ on post-fs-data
     setusercryptopolicies /data/user
 
     # Reload policy from /data/security if present.
+    setprop selinux.reload_policy 1
 
     # Set SELinux security contexts on upgrade or policy update.
     restorecon_recursive /data
