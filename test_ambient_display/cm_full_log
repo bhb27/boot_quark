@@ -1,0 +1,1424 @@
+10-23 03:16:15.168  3513  4452 W Icing   : Content incarnation mismatch: Expected [ff974dfe3bf643eb] found [d000aeed7c293739]
+10-23 03:16:15.168  3513  4452 I Icing   : Indexing done 77C147F40E50121E6814F73D1642D2ABE7C8242F
+10-23 03:16:15.169  3513  4452 E Icing   : Aborting indexing of corpus sms
+10-23 03:16:15.171  3513  4452 I Icing   : Removing corpus key 77C147F40E50121E6814F73D1642D2ABE7C8242F for package com.google.android.gms
+10-23 03:16:15.227  3513  4452 I Icing   : Indexing 77C147F40E50121E6814F73D1642D2ABE7C8242F from com.google.android.gms
+10-23 03:16:15.268  3513  4452 I Icing   : Indexing done 77C147F40E50121E6814F73D1642D2ABE7C8242F
+10-23 03:16:15.340   468  4674 D NuPlayerDriver: notifyListener_l(0xb2258b40), (2, 0, 0)
+10-23 03:16:15.340  1466  2305 I MediaFocusControl:  AudioFocus  abandonAudioFocus() from android.media.AudioManager@61cc345
+10-23 03:16:17.995  3846  4309 D InitAlarmsService: Clearing and rescheduling alarms.
+10-23 03:16:18.258   468  2150 D audio_hw_primary: out_standby: enter: stream (0xb5ff79c0) usecase(1: low-latency-playback)
+10-23 03:16:18.273   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:18.280   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:18.281   482   621 I ThermalEngine: Sensor:apq_therm:37000 mC
+10-23 03:16:18.288   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:18.384   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:16:18.426   482   635 I ThermalEngine: Sensor:tmp108:37000 mC
+10-23 03:16:18.427   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:18.432   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:18.437   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:16:18.442   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:18.443   482   635 I ThermalEngine: Sensor:VS-BATT:36630 mC
+10-23 03:16:18.499  1466  2203 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-23 03:16:18.546  4067  4067 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1231 android.content.ContextWrapper.startService:587 android.content.ContextWrapper.startService:587 org.cyanogenmod.providers.datausage.DataUsageAppInstallReceiver.onReceive:47 android.app.ActivityThread.handleReceiver:2759 
+10-23 03:16:18.550  4214  4214 W Finsky  : [1] com.google.android.finsky.FinskyAppImpl.H(1520): No account configured on this device.
+10-23 03:16:18.639  1466  1520 W Searchables: No global search activity found
+10-23 03:16:18.641  3513  4353 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:16:18.651  3513  4353 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:16:18.928  3513  4422 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:16:19.664  3513  4422 I Icing   : Indexing EA74E2FA14EB405ACB727EEF78BD1E6360CC8255 from com.google.android.gms
+10-23 03:16:19.670  3513  4422 I Icing   : Indexing done EA74E2FA14EB405ACB727EEF78BD1E6360CC8255
+10-23 03:16:23.283   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:23.294   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:23.447   482   635 I ThermalEngine: Sensor:tmp108:37000 mC
+10-23 03:16:23.448   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:23.454   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:23.460   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:16:23.465   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:23.466   482   635 I ThermalEngine: Sensor:VS-BATT:36630 mC
+10-23 03:16:25.778  1466  2353 I ActivityManager: Killing 3981:com.android.dialer/u0a36 (adj 15): empty #17
+10-23 03:16:25.864  1466  2297 D ActivityManager: cleanUpApplicationRecord -- 3981
+10-23 03:16:26.624  1466  2203 I PowerManagerService: Waking up from sleep (uid 1000)...
+10-23 03:16:26.628  1466  1466 V KeyguardServiceDelegate: onStartedWakingUp()
+10-23 03:16:26.647  1466  1566 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+10-23 03:16:26.651  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn(showListener = com.android.server.policy.PhoneWindowManager$2@8f77046)
+10-23 03:16:26.655  1466  1561 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+10-23 03:16:26.669   409   409 D SurfaceFlinger: Set power mode=2, type=0 flinger=0xb69e4000
+10-23 03:16:26.669   409   409 D qdhwcomposer: hwc_setPowerMode: Setting mode 2 on display: 0
+10-23 03:16:26.670   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:16:26.673   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:16:26.673   409   409 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:16:26.713  1466  2353 V KeyguardServiceDelegate: **** SHOWN CALLED ****
+10-23 03:16:26.716   468   468 D NuPlayerDriver: stop(0xb2258b40)
+10-23 03:16:26.716   468   468 D NuPlayerDriver: notifyListener_l(0xb2258b40), (8, 0, 0)
+10-23 03:16:26.716  2260  2826 W MessageQueue: Handler (android.media.MediaPlayer$EventHandler) {2237fc0} sending message to a Handler on a dead thread
+10-23 03:16:26.716  2260  2826 W MessageQueue: java.lang.IllegalStateException: Handler (android.media.MediaPlayer$EventHandler) {2237fc0} sending message to a Handler on a dead thread
+10-23 03:16:26.716  2260  2826 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+10-23 03:16:26.716  2260  2826 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:631)
+10-23 03:16:26.716  2260  2826 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:600)
+10-23 03:16:26.716  2260  2826 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:570)
+10-23 03:16:26.716  2260  2826 W MessageQueue: 	at android.os.Handler.sendMessage(Handler.java:507)
+10-23 03:16:26.716  2260  2826 W MessageQueue: 	at android.media.MediaPlayer.postEventFromNative(MediaPlayer.java:2988)
+10-23 03:16:26.717   468  3086 D NuPlayerDriver: reset(0xb2258b40)
+10-23 03:16:26.725  1466  2223 D WifiConfigStore: Retrieve network priorities after PNO.
+10-23 03:16:26.726  1466  2223 E WifiNative-wlan0: Update priority failed for :0
+10-23 03:16:26.726  1466  2223 E WifiStateMachine:  Fail to set up pno, want false now false
+10-23 03:16:26.727   468  4674 D NuPlayerDriver: notifyResetComplete(0xb2258b40)
+10-23 03:16:26.727   468  2232 D audio_hw_primary: adev_set_parameters: enter: screen_state=on
+10-23 03:16:26.728   468  2232 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:16:26.728   468  2232 E bt_a2dp_hw: adev_set_parameters: ERROR: set param called even when stream out is null
+10-23 03:16:26.728   468  2232 D mot_vr_audio_hw: adev_set_parameters: screen_state=on
+10-23 03:16:26.801  1466  1566 I DisplayPowerController: Unblocked screen on after 155 ms
+10-23 03:16:26.802  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn()
+10-23 03:16:26.847   409   409 D qdhwcomposer: hwc_setPowerMode: Done setting mode 2 on display 0
+10-23 03:16:26.848   409   804 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 1
+10-23 03:16:26.848   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:16:26.848   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:16:26.848   409   804 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:16:26.848  1466  2252 D SurfaceControl: Excessive delay in setPowerMode(): 194ms
+10-23 03:16:27.672  2260  2260 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME RECENT clock SEARCH quick_settings >
+10-23 03:16:27.709  1466  1561 E WindowAnimator: Timeout waiting for animation to startup
+10-23 03:16:27.715  2260  2260 D PhoneStatusBar: disable: < expand icons* alerts system_info* back HOME RECENT clock SEARCH quick_settings >
+10-23 03:16:27.728  3926  3926 D MessagingApp: DraftMessageData: loading for conversationId=1
+10-23 03:16:27.728  2260  2260 W SurfaceComposerClient: At least one call to closeGlobalTransaction() was not matched by a prior call to openGlobalTransaction().
+10-23 03:16:27.808  1466  2305 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@52a4ad2 attribute=android.view.inputmethod.EditorInfo@63a07a3, token = android.os.BinderProxy@147ecb3
+10-23 03:16:27.817  2260  2260 D PhoneStatusBar: disable: < expand icons alerts system_info back home* recent* clock search* quick_settings >
+10-23 03:16:27.833  2840  2840 I LatinIME: Starting input. Cursor position = 0,0
+10-23 03:16:27.919  3926  4711 I MessagingAppDataModel: SyncMessagesAction: Starting batch for messages from 1477199758447 to 1477199787724 (message update limit = 80, message scan limit = 4000)
+10-23 03:16:28.051  3926  4705 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:16:28.201  3926  4705 I MessagingAppDataModel: SyncMessagesAction: All messages now in sync
+10-23 03:16:28.274   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:28.285   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:28.286   482   621 I ThermalEngine: Sensor:apq_therm:36000 mC
+10-23 03:16:28.299   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:28.364  2260  2260 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+10-23 03:16:28.466   482   635 I ThermalEngine: Sensor:tmp108:37000 mC
+10-23 03:16:28.467   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:28.472   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:28.476   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:16:28.480   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:28.481   482   635 I ThermalEngine: Sensor:VS-BATT:36630 mC
+10-23 03:16:28.658  1466  2297 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@63e421e attribute=null, token = android.os.BinderProxy@147ecb3
+10-23 03:16:28.674  2260  2260 D PhoneStatusBar: disable: < expand icons* alerts system_info* back home recent clock search quick_settings >
+10-23 03:16:28.771  3926  4714 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:16:28.858  3926  3936 I art     : Background partial concurrent mark sweep GC freed 90495(6MB) AllocSpace objects, 33(1736KB) LOS objects, 30% free, 36MB/52MB, paused 1.018ms total 115.984ms
+10-23 03:16:28.977  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:16:29.006  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:16:29.018  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:16:29.034  2260  2260 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+10-23 03:16:29.034  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:16:29.667  1466  2994 I ActivityManager: START u0 {act=android.settings.SETTINGS flg=0x14000000 cmp=com.android.settings/.Settings} from uid 10025 on display 0
+10-23 03:16:29.796  1466  2305 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@c3489a6 attribute=null, token = android.os.BinderProxy@147ecb3
+10-23 03:16:29.885  1466  1479 I art     : Background partial concurrent mark sweep GC freed 35892(3MB) AllocSpace objects, 3(60KB) LOS objects, 31% free, 34MB/50MB, paused 13.254ms total 136.205ms
+10-23 03:16:29.999  1466  2345 I ActivityManager: Start proc 4724:com.android.cellbroadcastreceiver/u0a7 for content provider com.android.cellbroadcastreceiver/.CellBroadcastSearchIndexableProvider
+10-23 03:16:30.016  3926  4722 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:16:30.077  4724  4724 W System  : ClassLoader referenced unknown path: /system/priv-app/CellBroadcastReceiver/lib/arm
+10-23 03:16:30.179  2773  2773 D Index   : Cannot find field 'SEARCH_INDEX_DATA_PROVIDER'
+10-23 03:16:30.208  2773  4739 I IndexDatabaseHelper: Using schema version: 121
+10-23 03:16:30.212  2773  4739 I IndexDatabaseHelper: Index is fine
+10-23 03:16:30.217  2773  4739 D Index   : Locale 'en_US' is already indexed
+10-23 03:16:30.230  2773  4740 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+10-23 03:16:30.402  2260  2260 D PhoneStatusBar: disable: < expand icons* alerts system_info* back home recent clock search quick_settings >
+10-23 03:16:30.553  2942  3462 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 phoneId=0
+10-23 03:16:30.554  2942  3462 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 retVal=false
+10-23 03:16:30.555  2773  2773 D TelephonyManager: getDataEnabled: retVal=false
+10-23 03:16:30.783  2773  2773 D DashboardSummary: rebuildUI took: 399 ms
+10-23 03:16:30.785  2773  2773 I Choreographer: Skipped 32 frames!  The application may be doing too much work on its main thread.
+10-23 03:16:30.871  2773  4740 I Adreno  : QUALCOMM build                   : f7d9a4f, Ifd751822f5
+10-23 03:16:30.871  2773  4740 I Adreno  : Build Date                       : 02/12/16
+10-23 03:16:30.871  2773  4740 I Adreno  : OpenGL ES Shader Compiler Version: XE031.06.00.05
+10-23 03:16:30.871  2773  4740 I Adreno  : Local Branch                     : workspace
+10-23 03:16:30.871  2773  4740 I Adreno  : Remote Branch                    : 
+10-23 03:16:30.871  2773  4740 I Adreno  : Remote Branch                    : 
+10-23 03:16:30.871  2773  4740 I Adreno  : Reconstruct Branch               : 
+10-23 03:16:30.875  2773  4740 I OpenGLRenderer: Initialized EGL, version 1.4
+10-23 03:16:30.899  2773  4744 D Index   : Deleting data for locale 'en_US' took 14 millis
+10-23 03:16:30.910  2773  4744 D Index   : Indexing locale 'en_US' took 10 millis
+10-23 03:16:30.920  2773  4745 D Index   : Deleting data for locale 'en_US' took 3 millis
+10-23 03:16:30.922  2773  4745 D Index   : Indexing locale 'en_US' took 2 millis
+10-23 03:16:31.087  1466  1561 I ActivityManager: Displayed com.android.settings/.Settings: +1s282ms
+10-23 03:16:31.093  1466  2856 I WindowManager: Switching to real app window: Window{ea8e373 u0 com.android.settings/com.android.settings.Settings}
+10-23 03:16:31.108  2773  4749 D Index   : Deleting data for locale 'en_US' took 4 millis
+10-23 03:16:31.114  2773  4749 D Index   : Indexing locale 'en_US' took 6 millis
+10-23 03:16:31.675  2840  2840 D EmojiAltPhysicalKeyDetector: onKeyUp() : KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=59, metaState=0, flags=0x48, repeatCount=0, eventTime=134699, downTime=134624, deviceId=7, source=0x101 }
+10-23 03:16:31.676  2840  2840 D EmojiAltPhysicalKeyDetector: onKeyUp() : Not Mapped: 4
+10-23 03:16:31.772  3926  3926 D MessagingApp: DraftMessageData: loading for conversationId=1
+10-23 03:16:31.852  1466  1479 I art     : Background partial concurrent mark sweep GC freed 6709(468KB) AllocSpace objects, 1(28KB) LOS objects, 31% free, 34MB/50MB, paused 3.435ms total 127.535ms
+10-23 03:16:31.877  3926  4751 I MessagingAppDataModel: SyncMessagesAction: Starting batch for messages from 1477199787724 to 1477199791770 (message update limit = 80, message scan limit = 4000)
+10-23 03:16:32.029  3926  4750 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:16:32.108  3926  4750 I MessagingAppDataModel: SyncMessagesAction: All messages now in sync
+10-23 03:16:33.093  1466  2994 I ActivityManager: START u0 {act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10025 on display 0
+10-23 03:16:33.242  1466  1479 I art     : Background partial concurrent mark sweep GC freed 4426(338KB) AllocSpace objects, 5(264KB) LOS objects, 31% free, 34MB/50MB, paused 951us total 126.763ms
+10-23 03:16:33.286   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:33.303   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:33.313  1466  1561 I ActivityManager: Displayed com.android.systemui/.recents.RecentsActivity: +160ms
+10-23 03:16:33.481   482   635 I ThermalEngine: Sensor:tmp108:38000 mC
+10-23 03:16:33.482   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:33.487   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:33.492   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:16:33.497   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:33.497   482   635 I ThermalEngine: Sensor:VS-BATT:37620 mC
+10-23 03:16:34.522  1466  2914 D ConnectivityService: listenForNetwork for Listen from uid/pid:10034/3513 for NetworkRequest [ id=5, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+10-23 03:16:34.566  3513  4757 W DriveInitializer: Background init thread started
+10-23 03:16:34.641  3513  4757 W DriveInitializer: Background init thread ended
+10-23 03:16:35.411  1466  2353 I ActivityManager: START u0 {act=android.settings.SETTINGS flg=0x14100000 cmp=com.android.settings/.Settings} from uid 10025 on display 0
+10-23 03:16:35.492  4724  4736 I art     : Waiting for a blocking GC DisableMovingGc
+10-23 03:16:35.493  4724  4734 I art     : HomogeneousSpaceCompact marksweep + semispace GC freed 8201(410KB) AllocSpace objects, 2(40KB) LOS objects, 39% free, 24MB/40MB, paused 114.306ms total 114.306ms
+10-23 03:16:35.494  4724  4736 I art     : Starting a blocking GC DisableMovingGc
+10-23 03:16:35.542  2773  2773 D Index   : Cannot find field 'SEARCH_INDEX_DATA_PROVIDER'
+10-23 03:16:35.561  2773  4764 D Index   : Locale 'en_US' is already indexed
+10-23 03:16:35.616  2942  2971 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 phoneId=0
+10-23 03:16:35.616  2942  2971 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 retVal=false
+10-23 03:16:35.617  2773  2773 D TelephonyManager: getDataEnabled: retVal=false
+10-23 03:16:35.681  2773  2773 D DashboardSummary: rebuildUI took: 110 ms
+10-23 03:16:35.758  2773  4739 D Index   : Deleting data for locale 'en_US' took 3 millis
+10-23 03:16:35.762  2773  4739 D Index   : Indexing locale 'en_US' took 3 millis
+10-23 03:16:35.774  2773  4739 D Index   : Deleting data for locale 'en_US' took 3 millis
+10-23 03:16:35.775  2773  4739 D Index   : Indexing locale 'en_US' took 1 millis
+10-23 03:16:35.802  1466  1561 I ActivityManager: Displayed com.android.settings/.Settings: +371ms
+10-23 03:16:35.825  2773  4745 D Index   : Deleting data for locale 'en_US' took 6 millis
+10-23 03:16:35.829  2773  4745 D Index   : Indexing locale 'en_US' took 4 millis
+10-23 03:16:37.494  1466  2994 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras)} from uid 1000 on display 0
+10-23 03:16:37.604  2773  2773 D SubSettings: Launching fragment com.android.settings.DevelopmentSettings
+10-23 03:16:37.783  2773  2773 W Settings: Setting bugreport_in_power_menu has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+10-23 03:16:38.135  1466  1561 I ActivityManager: Displayed com.android.settings/.SubSettings: +613ms
+10-23 03:16:38.187  2773  4740 D OpenGLRenderer: endAllStagingAnimators on 0xb07aa080 (RippleDrawable) with handle 0xb0aff040
+10-23 03:16:38.275   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:38.286   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:38.290  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:16:38.291   482   621 I ThermalEngine: Sensor:apq_therm:37000 mC
+10-23 03:16:38.305  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:16:38.308   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:38.499   482   635 I ThermalEngine: Sensor:tmp108:38000 mC
+10-23 03:16:38.499   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:38.504   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:38.510   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:16:38.514   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:38.515   482   635 I ThermalEngine: Sensor:VS-BATT:37620 mC
+10-23 03:16:42.737  1466  1526 I UsbDeviceManager: Setting USB config to mtp,adb
+10-23 03:16:42.747  2773  4740 D OpenGLRenderer: endAllStagingAnimators on 0xb04ea280 (RippleDrawable) with handle 0x7d5c21c0
+10-23 03:16:42.765  1466  2345 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@f2652f3 attribute=null, token = android.os.BinderProxy@6394281
+10-23 03:16:43.104  1466  3423 I ActivityManager: Killing 4046:com.cyanogenmod.updater/u0a6 (adj 15): empty #17
+10-23 03:16:43.235  1466  2345 D ActivityManager: cleanUpApplicationRecord -- 4046
+10-23 03:16:43.287   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:43.314   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:43.333  2300  2300 D MtpService: starting MTP server in MTP mode
+10-23 03:16:43.517   482   635 I ThermalEngine: Sensor:tmp108:38000 mC
+10-23 03:16:43.518   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:43.528   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:43.533   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:16:43.537   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:43.538   482   635 I ThermalEngine: Sensor:VS-BATT:37620 mC
+10-23 03:16:43.665  1466  4781 D UsbDebuggingManager: Received public key: QAAAAAeHbgdJyRFOlRh0MwucGZNJcf10Lc9GWIeuSdvgzdkDwGdHiGSW5RYm9HozQ7XvataOPIopufHCV9qyjKuhz7wVWRALG1irWjMerMwUOI5m6euSGu5MitdvbzBlyljNjocXu+wKgBJNzamyasqhhoOGMEWYw+XddpXsk6w863C+TgGznPCrE3Cr0+jXcF1PhHkps6pzwkJZYKVhBTExc/nmRG4GK4imTWiqQ5GjGBSk4EnZhWXfALbMgXotP9RlU6XU3i5m2bw6ZCc98c/V0iqiL8sVwwj3FOR6ZdnXxosXA6uaDWddQcFTYjJBoADSl9IMydy4SFgH5GRlag/ypxSPIiSaNDRt3t4ye0z2wbZBC1jcPdqV8vh4eoHvDEFIh6eJLuHXEmlSz3AAQRW9VK4ERK//XLUlY+IT7v+8VST2FBgRa6WYthCAzuaL47kzNRoxzkF6D5nwzyocsM7jSDNfhFcDBYFHdmYP1TZ+4xyJVW5S2kqGyDP5EViQ2Dh4foKYL2LnC8o5v3yAVXuGgCKZqTEqU37yEsPtBPoyLGnNQKNv5MaXH0Eo/lWJDzwPS2vcLtJiHBvGV8erZFAs6d/KHZomG/RZ6ZtukWUlKJGp2fMhSuupPYfLay1gZeJ3IomwkwcoEEA1bOYbaE5YF1FjfawM0vMKXXrPyCKDVgAsGRpMfQEAAQA= bhb27@Baybucher27-Android
+10-23 03:16:43.670  1466  1526 I ActivityManager: START u0 {flg=0x10000000 cmp=com.android.systemui/.usb.UsbDebuggingActivity (has extras)} from uid 1000 on display 0
+10-23 03:16:43.801  1466  1479 I art     : Background partial concurrent mark sweep GC freed 13730(1456KB) AllocSpace objects, 13(648KB) LOS objects, 31% free, 34MB/50MB, paused 999us total 103.543ms
+10-23 03:16:43.933  1466  1561 I ActivityManager: Displayed com.android.systemui/.usb.UsbDebuggingActivity: +216ms
+10-23 03:16:45.869  2773  2773 W Settings: Setting bugreport_in_power_menu has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+10-23 03:16:45.885  2260  3044 D OpenGLRenderer: endAllStagingAnimators on 0xaeec7400 (RippleDrawable) with handle 0xa963e050
+10-23 03:16:45.895  1466  2994 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@74a710d attribute=null, token = android.os.BinderProxy@6394281
+10-23 03:16:45.974  1466  1479 I art     : Background partial concurrent mark sweep GC freed 2788(267KB) AllocSpace objects, 2(40KB) LOS objects, 31% free, 34MB/50MB, paused 1.360ms total 137.264ms
+10-23 03:16:48.277   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:48.289   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:48.296   482   621 I ThermalEngine: Sensor:apq_therm:37000 mC
+10-23 03:16:48.319   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:48.540   482   635 I ThermalEngine: Sensor:tmp108:38000 mC
+10-23 03:16:48.541   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:48.545   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:48.550   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:16:48.555   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:48.556   482   635 I ThermalEngine: Sensor:VS-BATT:37620 mC
+10-23 03:16:52.973  1645  1645 I kickstart: STATUS: SAHARA_HELLO: hw_info = 0x0102050b, pwrup_reason = 0x00004000
+10-23 03:16:52.973  1645  1645 I kickstart: STATUS: Wrote to /sys/power/wake_lock
+10-23 03:16:53.013  1645  1645 E kickstart: ERROR: function: open_file:195 filename = /dev/block/platform/msm_sdcc.1/by-name/mdm1m9kefs2
+10-23 03:16:53.013  1645  1645 I kickstart: STATUS: Opening file '/dev/block/platform/msm_sdcc.1/by-name/mdm1m9kefs2' for writing
+10-23 03:16:53.290   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:53.324   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:53.558   482   635 I ThermalEngine: Sensor:tmp108:37000 mC
+10-23 03:16:53.558   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:53.563   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:53.568   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:16:53.573   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:53.573   482   635 I ThermalEngine: Sensor:VS-BATT:36630 mC
+10-23 03:16:53.994  1645  1645 I kickstart: STATUS: Received file 'm9kefs2'
+10-23 03:16:53.994  1645  1645 I kickstart: STATUS: 950272 bytes transferred in 0.980275 seconds
+10-23 03:16:53.994  1645  1645 I kickstart: STATUS: Successfully downloaded files from target 
+10-23 03:16:53.996  1645  1645 I kickstart: STATUS: Wrote to /sys/power/wake_unlock
+10-23 03:16:53.998  1645  1645 I kickstart: STATUS: Sahara protocol completed
+10-23 03:16:55.667  1466  3423 I ActivityManager: START u0 {act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10025 on display 0
+10-23 03:16:55.757  1466  3423 I ActivityManager: Killing 4112:com.google.android.onetimeinitializer/u0a35 (adj 15): empty #17
+10-23 03:16:55.821  1466  3423 I ActivityManager: Killing 4081:com.android.managedprovisioning/u0a13 (adj 15): empty #18
+10-23 03:16:55.945  1466  1525 W art     : Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:953 waiters=1 for 190ms
+10-23 03:16:55.949  1466  2297 W art     : Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:953 waiters=3 for 136ms
+10-23 03:16:55.950  1466  2297 D ActivityManager: cleanUpApplicationRecord -- 4112
+10-23 03:16:55.957  1466  2345 D ActivityManager: cleanUpApplicationRecord -- 4081
+10-23 03:16:56.919  3926  3926 D MessagingApp: DraftMessageData: loading for conversationId=1
+10-23 03:16:57.010  3926  4796 I MessagingAppDataModel: SyncMessagesAction: Starting batch for messages from 1477199791770 to 1477199816916 (message update limit = 80, message scan limit = 4000)
+10-23 03:16:57.128  3926  4795 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:16:57.234  3926  4795 I MessagingAppDataModel: SyncMessagesAction: All messages now in sync
+10-23 03:16:57.875  2840  2840 I LatinIME: Starting input. Cursor position = 2,2
+10-23 03:16:58.278   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:58.291   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:16:58.301   482   621 I ThermalEngine: Sensor:apq_therm:36000 mC
+10-23 03:16:58.329   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:58.574   482   635 I ThermalEngine: Sensor:tmp108:37000 mC
+10-23 03:16:58.575   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:16:58.580   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:58.584   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:16:58.589   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:16:58.589   482   635 I ThermalEngine: Sensor:VS-BATT:36630 mC
+10-23 03:17:00.192  3926  3926 I MessagingApp: UI initiated message sending in conversation 1
+10-23 03:17:00.317  2840  2840 I LatinIME: Starting input. Cursor position = 6,6
+10-23 03:17:00.402  3926  3926 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:17:00.402  3926  3926 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:17:00.402  3926  3926 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:17:00.402  3926  3926 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:17:00.443   468  4802 I FFmpegExtractor: android-source:0xb5fe0fe0
+10-23 03:17:00.443   468  4802 D FFmpegExtractor: suppoted codec(pcm_s16le) by official Stagefright
+10-23 03:17:00.444   468  4802 D FFmpegExtractor: ffmpeg detected media content as 'audio/x-wav' with confidence 0.08
+10-23 03:17:00.444   468  4801 D NuPlayerDriver: notifyListener_l(0xb2258480), (1, 0, 0)
+10-23 03:17:00.444  3926  3926 D MediaPlayer: setSubtitleAnchor in MediaPlayer
+10-23 03:17:00.446   468  3093 D NuPlayerDriver: seekTo(0xb2258480) 0 ms
+10-23 03:17:00.446   468  3093 D NuPlayerDriver: notifyListener_l(0xb2258480), (7, 0, 0)
+10-23 03:17:00.447   468   468 D NuPlayerDriver: start(0xb2258480), state is 4, eos is 0
+10-23 03:17:00.463   468  4801 I GenericSource: start
+10-23 03:17:00.467   468  4801 I MetaData: srte: (int32_t) 48000
+10-23 03:17:00.467   468  4801 I MetaData: sbit: (int32_t) 16
+10-23 03:17:00.467   468  4801 I MetaData: pfmt: (int32_t) 1
+10-23 03:17:00.467   468  4801 I MetaData: mime: (char*) audio/raw
+10-23 03:17:00.467   468  4801 I MetaData: inpS: (int32_t) 32768
+10-23 03:17:00.467   468  4801 I MetaData: dura: (int64_t) 610500
+10-23 03:17:00.467   468  4801 I MetaData: chnm: (int32_t) 0
+10-23 03:17:00.467   468  4801 I MetaData: #chn: (int32_t) 2
+10-23 03:17:00.467   468  4801 I AVNuUtils: No channel mask, try channel count
+10-23 03:17:00.467   468  4801 W AVNuUtils: No bitrate info
+10-23 03:17:00.467   468  4801 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:17:00.467   468  4801 I MetaData: srte: (int32_t) 48000
+10-23 03:17:00.467   468  4801 I MetaData: sbit: (int32_t) 16
+10-23 03:17:00.467   468  4801 I MetaData: mime: (char*) audio/raw
+10-23 03:17:00.467   468  4801 I MetaData: dura: (int64_t) 610500
+10-23 03:17:00.467   468  4801 I MetaData: chnm: (int32_t) 3
+10-23 03:17:00.467   468  4801 I MetaData: #chn: (int32_t) 2
+10-23 03:17:00.467   468  4801 I AVNuUtils: decision 0 mime audio/raw
+10-23 03:17:00.467   468  4801 I MetaData: srte: (int32_t) 48000
+10-23 03:17:00.467   468  4801 I MetaData: sbit: (int32_t) 16
+10-23 03:17:00.467   468  4801 I MetaData: mime: (char*) audio/raw
+10-23 03:17:00.467   468  4801 I MetaData: dura: (int64_t) 610500
+10-23 03:17:00.467   468  4801 I MetaData: chnm: (int32_t) 3
+10-23 03:17:00.467   468  4801 I MetaData: #chn: (int32_t) 2
+10-23 03:17:00.467   468  4801 I NuPlayer: PCM offload decided: 0
+10-23 03:17:00.468   468  4801 D NuPlayerDriver: notifyListener_l(0xb2258480), (4, 0, 0)
+10-23 03:17:00.469   468  4801 I MetaData: srte: (int32_t) 48000
+10-23 03:17:00.469   468  4801 I MetaData: sbit: (int32_t) 16
+10-23 03:17:00.469   468  4801 I MetaData: pfmt: (int32_t) 1
+10-23 03:17:00.469   468  4801 I MetaData: mime: (char*) audio/raw
+10-23 03:17:00.469   468  4801 I MetaData: inpS: (int32_t) 32768
+10-23 03:17:00.469   468  4801 I MetaData: dura: (int64_t) 610500
+10-23 03:17:00.469   468  4801 I MetaData: chnm: (int32_t) 0
+10-23 03:17:00.469   468  4801 I MetaData: #chn: (int32_t) 2
+10-23 03:17:00.469   468  4801 I AVNuUtils: No channel mask, try channel count
+10-23 03:17:00.469   468  4801 W AVNuUtils: No bitrate info
+10-23 03:17:00.469   468  4801 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:17:00.469   468  4801 I MetaData: srte: (int32_t) 48000
+10-23 03:17:00.469   468  4801 I MetaData: sbit: (int32_t) 16
+10-23 03:17:00.469   468  4801 I MetaData: mime: (char*) audio/raw
+10-23 03:17:00.469   468  4801 I MetaData: dura: (int64_t) 610500
+10-23 03:17:00.469   468  4801 I MetaData: chnm: (int32_t) 3
+10-23 03:17:00.469   468  4801 I MetaData: #chn: (int32_t) 2
+10-23 03:17:00.469   468  4801 I AVNuUtils: decision 0 mime audio/raw
+10-23 03:17:00.469   468  4801 I MetaData: srte: (int32_t) 48000
+10-23 03:17:00.469   468  4801 I MetaData: sbit: (int32_t) 16
+10-23 03:17:00.469   468  4801 I MetaData: mime: (char*) audio/raw
+10-23 03:17:00.469   468  4801 I MetaData: dura: (int64_t) 610500
+10-23 03:17:00.469   468  4801 I MetaData: chnm: (int32_t) 3
+10-23 03:17:00.469   468  4801 I MetaData: #chn: (int32_t) 2
+10-23 03:17:00.469   468  4801 I NuPlayer: PCM offload decided: 0
+10-23 03:17:00.487  3926  4807 I MessagingAppDataModel: InsertNewMessageAction: inserting new message
+10-23 03:17:00.498   468  4806 E OMXNodeInstance: setConfig(37:google.raw.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+10-23 03:17:00.498   468  4806 I ACodec  : codec does not support config priority (err -2147483648)
+10-23 03:17:00.498   468  4806 I MediaCodec: MediaCodec will operate in async mode
+10-23 03:17:00.516   468  2150 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-23 03:17:00.516   468  2150 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:17:00.519   468  4801 D NuPlayerDriver: notifyListener_l(0xb2258480), (6, 0, 0)
+10-23 03:17:00.521   468  4805 I NuPlayerDecoder: [audio] saw output EOS
+10-23 03:17:00.526   468  2150 D audio_hw_primary: start_output_stream: enter: stream(0xb5ff79c0)usecase(1: low-latency-playback) devices(0x2)
+10-23 03:17:00.526   468  2150 D audio_hw_primary: start_output_stream: enter: usecase(1: low-latency-playback) devices(0x2)
+10-23 03:17:00.526   468  2150 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: )
+10-23 03:17:00.526   468  2150 W msm8974_platform: Codec backend bitwidth 16, samplerate 48000
+10-23 03:17:00.526   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:17:00.526   468  2150 I msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(14)
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path =  0
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> send_adm_topology
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> send_asm_topology
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> send_audtable
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> send_audvoltable
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE
+10-23 03:17:00.526   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:17:00.526   468  2150 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> send_afe_cal
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+10-23 03:17:00.526   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:17:00.526   468  2150 E ACDB-LOADER: Error: ACDB AFE returned = -19
+10-23 03:17:00.526   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+10-23 03:17:00.529   468  2150 D audio_hw_primary: select_devices: done
+10-23 03:17:00.594  3926  4807 I MessagingAppDataModel: ProcessPendingMessagesAction: Scheduling pending messages
+10-23 03:17:00.646  3926  4807 I MessagingAppDataModel: ProcessPendingMessagesAction: Queueing message 4 for sending
+10-23 03:17:00.659  3926  3926 D f       : mAmbientApiClient is null, initializing
+10-23 03:17:00.659  3926  3926 D f       : ambientApiClient is not connect or connecting, attempting to connect now
+10-23 03:17:00.661  3926  3926 W MOD.CyanogenAmbientUtil: Cyanogen Ambient package is missing! Version 1050100 is required.
+10-23 03:17:00.661  3926  3926 E MOD.AmbientApiClientImp: This application will not run unless you install Ambient services
+10-23 03:17:00.661  3926  3926 E f       : Unable to connect with Ambient. ConnectionResult.ErrorCode : 1
+10-23 03:17:00.693  3926  4810 I MessagingAppDataModel: SendMessageAction: Sending SMS message 4 in conversation 1
+10-23 03:17:01.241   468  4801 D NuPlayerDriver: notifyListener_l(0xb2258480), (2, 0, 0)
+10-23 03:17:01.255   468  2178 D NuPlayerDriver: stop(0xb2258480)
+10-23 03:17:01.255   468  2178 D NuPlayerDriver: notifyListener_l(0xb2258480), (8, 0, 0)
+10-23 03:17:01.256   468   468 D NuPlayerDriver: reset(0xb2258480)
+10-23 03:17:01.272   468  4801 D NuPlayerDriver: notifyResetComplete(0xb2258480)
+10-23 03:17:01.282  3926  3926 W MediaPlayer: mediaplayer went away with unhandled events
+10-23 03:17:01.288   468  2067 W AudioFlinger: removeEffect_l() 0xb1800000 cannot promote chain for effect 0xb323d800
+10-23 03:17:01.289   468  2067 W APM::EffectDescriptor: unregisterEffect() unknown effect ID 33
+10-23 03:17:01.451  1466  2203 I PowerManagerService: Going to sleep due to power button (uid 1000)...
+10-23 03:17:01.506  2840  2840 I LatinIME: Starting input. Cursor position = 0,0
+10-23 03:17:01.508  3926  3926 W IInputConnectionWrapper: getSelectedText on inactive InputConnection
+10-23 03:17:01.508  3926  3926 W IInputConnectionWrapper: requestCursorAnchorInfo on inactive InputConnection
+10-23 03:17:01.509  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.509  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.509  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:17:01.513  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.513  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.513  2840  2840 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+10-23 03:17:01.564  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.564  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.564  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:17:01.564  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.564  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.564  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:17:01.564  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.565  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.565  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:17:01.566  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.566  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.566  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:17:01.566  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.566  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.566  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:17:01.566  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.566  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.566  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:17:01.566  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.567  3926  3926 W IInputConnectionWrapper: getSelectedText on inactive InputConnection
+10-23 03:17:01.567  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:17:01.567  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:17:01.567  2840  2840 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+10-23 03:17:02.088  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOff()
+10-23 03:17:02.101  1466  1561 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+10-23 03:17:02.108   409   409 D SurfaceFlinger: Set power mode=0, type=0 flinger=0xb69e4000
+10-23 03:17:02.108   409   409 D qdhwcomposer: hwc_setPowerMode: Setting mode 0 on display: 0
+10-23 03:17:02.108   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:17:02.108   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:17:02.108   409   409 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:17:02.140  1466  1479 I art     : Background partial concurrent mark sweep GC freed 11732(937KB) AllocSpace objects, 3(60KB) LOS objects, 31% free, 34MB/50MB, paused 815us total 114.646ms
+10-23 03:17:02.338   409   804 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 0
+10-23 03:17:02.339   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:17:02.340   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:17:02.340   409   804 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:17:02.343   409   409 D qdhwcomposer: hwc_setPowerMode: Done setting mode 0 on display 0
+10-23 03:17:02.344  1466  2252 D SurfaceControl: Excessive delay in setPowerMode(): 242ms
+10-23 03:17:02.348  1466  1566 I PowerManagerService: Sleeping (uid 1000)...
+10-23 03:17:02.364  1466  2223 D WifiConfigStore: Retrieve network priorities after PNO.
+10-23 03:17:02.365  1466  2223 E WifiNative-wlan0: Update priority failed for :0
+10-23 03:17:02.366  1466  2223 E WifiStateMachine:  Fail to set up pno, want false now false
+10-23 03:17:02.374   468  2855 D audio_hw_primary: adev_set_parameters: enter: screen_state=off
+10-23 03:17:02.375   468  2855 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:17:02.375   468  2855 E bt_a2dp_hw: adev_set_parameters: ERROR: set param called even when stream out is null
+10-23 03:17:02.375   468  2855 D mot_vr_audio_hw: adev_set_parameters: screen_state=off
+10-23 03:17:02.414  2260  2260 W SurfaceComposerClient: At least one call to closeGlobalTransaction() was not matched by a prior call to openGlobalTransaction().
+10-23 03:17:02.417  2260  2260 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+10-23 03:17:02.534  2260  2260 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME* RECENT* clock SEARCH* quick_settings >
+10-23 03:17:03.014  3926  4818 I MessagingAppDataModel: ProcessSentMessageAction: Done sending SMS message 4 in conversation 1; status is SUCCEEDED
+10-23 03:17:03.014  3926  4818 I MessagingAppDataModel: ProcessPendingMessagesAction: Scheduling pending messages
+10-23 03:17:03.293   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:03.334   482   619 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:17:03.590   482   635 I ThermalEngine: Sensor:tmp108:37000 mC
+10-23 03:17:03.591   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:03.596   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:17:03.601   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:03.606   482   635 I ThermalEngine: Sensor:chg_therm:37000 mC
+10-23 03:17:03.606   482   635 I ThermalEngine: Sensor:VS-BATT:36630 mC
+10-23 03:17:04.269   468  2150 D audio_hw_primary: out_standby: enter: stream (0xb5ff79c0) usecase(1: low-latency-playback)
+10-23 03:17:04.347  1466  1566 W PowerManagerService: Sandman unresponsive, releasing suspend blocker
+10-23 03:17:04.394   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:17:06.073  2942  3135 V BlacklistProvider: Query uri=content://blacklist/bynumber/9090, match=2
+10-23 03:17:06.111  2942  3135 V GsmInboundSmsHandler: Unable to find carrier package: [], nor systemPackages: []
+10-23 03:17:06.122  2942  3135 D MmsService: getAutoPersisting
+10-23 03:17:06.129  3926  3926 D SmsReceiver.deliverSmsMessages: Is SMS Message Replaceable : false
+10-23 03:17:06.169  3926  4819 D MessageReplaceFeature: SMS Message Replaceable : false
+10-23 03:17:06.194  3926  4819 I MessagingAppDataModel: ReceiveSmsMessageAction: Received SMS message 5 in conversation 2, uri = content://sms/4
+10-23 03:17:06.194  3926  4819 I MessagingAppDataModel: ProcessPendingMessagesAction: Scheduling pending messages
+10-23 03:17:06.268  3926  4819 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:17:06.272  2260  4824 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:17:06.272  2260  4824 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:17:06.272  2260  4824 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:17:06.272  2260  4824 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:17:06.306   468  4825 D NuPlayerDriver: notifyListener_l(0xb2258480), (1, 0, 0)
+10-23 03:17:06.306  2260  4824 D MediaPlayer: setSubtitleAnchor in MediaPlayer
+10-23 03:17:06.308  1466  2994 I MediaFocusControl:  AudioFocus  requestAudioFocus() from android.media.AudioManager@e6ed867 req=3flags=0x0
+10-23 03:17:06.309   468  3093 D NuPlayerDriver: start(0xb2258480), state is 4, eos is 0
+10-23 03:17:06.309   468  4825 I GenericSource: start
+10-23 03:17:06.312   468  4825 I MetaData: vinf: (unknown type 0, size 30)
+10-23 03:17:06.312   468  4825 I MetaData: 00000000:  01 76 6f 72 62 69 73 00  00 00 00 02 44 ac 00 00  .vorbis.....D...
+10-23 03:17:06.312   468  4825 I MetaData: 00000010:  00 00 00 00 80 b5 01 00  00 00 00 00 b8 01        ..............
+10-23 03:17:06.312   468  4825 I MetaData: vboo: (unknown type 0, size 3832)
+10-23 03:17:06.312   468  4825 I MetaData: srte: (int32_t) 44100
+10-23 03:17:06.312   468  4825 I MetaData: mime: (char*) audio/vorbis
+10-23 03:17:06.312   468  4825 I MetaData: dura: (int64_t) 1200000
+10-23 03:17:06.312   468  4825 I MetaData: #chn: (int32_t) 2
+10-23 03:17:06.312   468  4825 I AVNuUtils: No channel mask, try channel count
+10-23 03:17:06.312   468  4825 W AVNuUtils: No bitrate info
+10-23 03:17:06.312   468  4825 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:17:06.313   468  4825 I MetaData: srte: (int32_t) 44100
+10-23 03:17:06.313   468  4825 I MetaData: sbit: (int32_t) 16
+10-23 03:17:06.313   468  4825 I MetaData: mime: (char*) audio/raw
+10-23 03:17:06.313   468  4825 I MetaData: dura: (int64_t) 1200000
+10-23 03:17:06.313   468  4825 I MetaData: chnm: (int32_t) 3
+10-23 03:17:06.313   468  4825 I MetaData: #chn: (int32_t) 2
+10-23 03:17:06.313   468  4825 I AVNuUtils: decision 0 mime audio/vorbis
+10-23 03:17:06.313   468  4825 I MetaData: srte: (int32_t) 44100
+10-23 03:17:06.313   468  4825 I MetaData: sbit: (int32_t) 16
+10-23 03:17:06.313   468  4825 I MetaData: mime: (char*) audio/raw
+10-23 03:17:06.313   468  4825 I MetaData: dura: (int64_t) 1200000
+10-23 03:17:06.313   468  4825 I MetaData: chnm: (int32_t) 3
+10-23 03:17:06.313   468  4825 I MetaData: #chn: (int32_t) 2
+10-23 03:17:06.313   468  4825 I NuPlayer: PCM offload decided: 0
+10-23 03:17:06.313   468  4825 I MetaData: vinf: (unknown type 0, size 30)
+10-23 03:17:06.313   468  4825 I MetaData: 00000000:  01 76 6f 72 62 69 73 00  00 00 00 02 44 ac 00 00  .vorbis.....D...
+10-23 03:17:06.313   468  4825 I MetaData: 00000010:  00 00 00 00 80 b5 01 00  00 00 00 00 b8 01        ..............
+10-23 03:17:06.314   468  4825 I MetaData: vboo: (unknown type 0, size 3832)
+10-23 03:17:06.314   468  4825 I MetaData: srte: (int32_t) 44100
+10-23 03:17:06.314   468  4825 I MetaData: mime: (char*) audio/vorbis
+10-23 03:17:06.314   468  4825 I MetaData: dura: (int64_t) 1200000
+10-23 03:17:06.314   468  4825 I MetaData: #chn: (int32_t) 2
+10-23 03:17:06.314   468  4825 I AVNuUtils: No channel mask, try channel count
+10-23 03:17:06.314   468  4825 W AVNuUtils: No bitrate info
+10-23 03:17:06.314   468  4825 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:17:06.314   468  4825 I MetaData: srte: (int32_t) 44100
+10-23 03:17:06.314   468  4825 I MetaData: sbit: (int32_t) 16
+10-23 03:17:06.314   468  4825 I MetaData: mime: (char*) audio/raw
+10-23 03:17:06.314   468  4825 I MetaData: dura: (int64_t) 1200000
+10-23 03:17:06.314   468  4825 I MetaData: chnm: (int32_t) 3
+10-23 03:17:06.314   468  4825 I MetaData: #chn: (int32_t) 2
+10-23 03:17:06.314   468  4825 I AVNuUtils: decision 0 mime audio/vorbis
+10-23 03:17:06.314   468  4825 I MetaData: srte: (int32_t) 44100
+10-23 03:17:06.314   468  4825 I MetaData: sbit: (int32_t) 16
+10-23 03:17:06.314   468  4825 I MetaData: mime: (char*) audio/raw
+10-23 03:17:06.314   468  4825 I MetaData: dura: (int64_t) 1200000
+10-23 03:17:06.314   468  4825 I MetaData: chnm: (int32_t) 3
+10-23 03:17:06.314   468  4825 I MetaData: #chn: (int32_t) 2
+10-23 03:17:06.314   468  4825 I NuPlayer: PCM offload decided: 0
+10-23 03:17:06.317   468  4831 E OMXNodeInstance: setConfig(38:google.vorbis.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+10-23 03:17:06.317   468  4831 I ACodec  : codec does not support config priority (err -2147483648)
+10-23 03:17:06.318   468  4831 I MediaCodec: MediaCodec will operate in async mode
+10-23 03:17:06.324   468  2150 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-23 03:17:06.324   468  2150 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:17:06.325   468  4825 D NuPlayerDriver: notifyListener_l(0xb2258480), (6, 0, 0)
+10-23 03:17:06.334   468  2150 D audio_hw_primary: start_output_stream: enter: stream(0xb5ff79c0)usecase(1: low-latency-playback) devices(0x2)
+10-23 03:17:06.334   468  2150 D audio_hw_primary: start_output_stream: enter: usecase(1: low-latency-playback) devices(0x2)
+10-23 03:17:06.334   468  2150 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: )
+10-23 03:17:06.334   468  2150 W msm8974_platform: Codec backend bitwidth 16, samplerate 48000
+10-23 03:17:06.334   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:17:06.334   468  2150 I msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(14)
+10-23 03:17:06.334   468  2150 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path =  0
+10-23 03:17:06.334   468  2150 D ACDB-LOADER: ACDB -> send_adm_topology
+10-23 03:17:06.334   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+10-23 03:17:06.334   468  2150 D ACDB-LOADER: ACDB -> send_asm_topology
+10-23 03:17:06.334   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+10-23 03:17:06.334   468  2150 D ACDB-LOADER: ACDB -> send_audtable
+10-23 03:17:06.334   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+10-23 03:17:06.334   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+10-23 03:17:06.335   468  2150 D ACDB-LOADER: ACDB -> send_audvoltable
+10-23 03:17:06.335   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE
+10-23 03:17:06.335   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:17:06.335   468  2150 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+10-23 03:17:06.335   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+10-23 03:17:06.335   468  2150 D ACDB-LOADER: ACDB -> send_afe_cal
+10-23 03:17:06.335   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+10-23 03:17:06.335   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:17:06.335   468  2150 E ACDB-LOADER: Error: ACDB AFE returned = -19
+10-23 03:17:06.335   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+10-23 03:17:06.335   468  2150 D audio_hw_primary: select_devices: done
+10-23 03:17:06.374  3513  4353 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:17:06.378  3513  4834 W IcingInternalCorpora: getNumBytesRead when not calculated.
+10-23 03:17:07.191   468  4830 I NuPlayerDecoder: [audio] saw output EOS
+10-23 03:17:07.388  3513  4353 I Icing   : Indexing 77C147F40E50121E6814F73D1642D2ABE7C8242F from com.google.android.gms
+10-23 03:17:07.438  3513  4353 I Icing   : Indexing done 77C147F40E50121E6814F73D1642D2ABE7C8242F
+10-23 03:17:07.653   468  4825 D NuPlayerDriver: notifyListener_l(0xb2258480), (2, 0, 0)
+10-23 03:17:07.656  1466  3423 I MediaFocusControl:  AudioFocus  abandonAudioFocus() from android.media.AudioManager@e6ed867
+10-23 03:17:08.279   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:08.294   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:08.306   482   621 I ThermalEngine: Sensor:apq_therm:36000 mC
+10-23 03:17:08.339   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:08.607   482   635 I ThermalEngine: Sensor:tmp108:37000 mC
+10-23 03:17:08.608   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:08.613   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:08.618   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:08.623   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:08.623   482   635 I ThermalEngine: Sensor:VS-BATT:36630 mC
+10-23 03:17:10.570   468  2150 D audio_hw_primary: out_standby: enter: stream (0xb5ff79c0) usecase(1: low-latency-playback)
+10-23 03:17:10.705   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:17:11.340  3513  4353 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:17:13.296   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:13.344   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:13.625   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:17:13.626   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:13.631   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:13.635   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:13.640   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:13.641   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:18.282   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:18.297   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:18.313   482   621 I ThermalEngine: Sensor:apq_therm:36000 mC
+10-23 03:17:18.350   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:18.644   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:17:18.645   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:18.650   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:18.656   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:18.661   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:18.661   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:23.300   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:23.357   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:23.664   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:17:23.665   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:23.671   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:23.676   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:23.682   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:23.682   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:28.286   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:28.301   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:28.319   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:17:28.363   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:28.686   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:17:28.687   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:28.692   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:28.698   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:28.703   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:28.703   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:33.304   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:33.369   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:33.708   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:17:33.709   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:33.715   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:33.720   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:33.726   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:33.726   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:38.289   482   626 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:38.305   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:38.324   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:17:38.375   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:38.731   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:17:38.732   482   635 I ThermalEngine: Sensor:max170xx_battery:36000 mC
+10-23 03:17:38.738   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:38.743   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:38.749   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:38.749   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:43.308   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:43.381   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:43.753   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:17:43.755   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:17:43.761   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:43.766   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:43.772   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:17:43.772   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:48.292   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:17:48.310   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:48.330   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:17:48.387   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:48.775   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:17:48.776   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:17:48.781   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:48.786   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:48.792   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:48.792   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:53.312   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:53.393   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:53.795   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:17:53.796   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:17:53.801   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:53.807   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:53.812   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:53.813   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:17:56.485  3475  3475 W ContentTaskController: Invalid task was provided to stopTracking.
+10-23 03:17:58.295   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:17:58.314   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:17:58.336   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:17:58.399   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:58.816   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:17:58.817   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:17:58.823   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:58.829   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:17:58.834   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:17:58.835   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:03.317   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:03.405   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:03.838   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:03.839   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:03.845   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:03.850   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:18:03.856   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:03.856   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:08.298   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:08.319   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:08.342   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:18:08.412   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:08.859   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:08.860   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:08.865   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:08.871   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:18:08.876   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:08.877   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:13.322   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:13.418   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:13.880   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:13.882   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:13.887   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:13.892   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:18:13.898   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:13.898   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:18.301   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:18.324   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:18.349   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:18:18.424   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:18.901   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:18.902   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:18.908   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:18.913   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:18:18.919   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:18.919   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:23.327   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:23.431   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:23.923   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:23.925   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:23.930   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:23.936   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:18:23.941   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:23.941   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:25.976  2942  3135 V BlacklistProvider: Query uri=content://blacklist/bynumber/9090, match=2
+10-23 03:18:26.110  2942  3135 V GsmInboundSmsHandler: Unable to find carrier package: [], nor systemPackages: []
+10-23 03:18:26.117  2942  3135 D MmsService: getAutoPersisting
+10-23 03:18:26.120  3926  3926 D SmsReceiver.deliverSmsMessages: Is SMS Message Replaceable : false
+10-23 03:18:26.148  3926  4845 D MessageReplaceFeature: SMS Message Replaceable : false
+10-23 03:18:26.198  3926  4845 I MessagingAppDataModel: ReceiveSmsMessageAction: Received SMS message 6 in conversation 2, uri = content://sms/5
+10-23 03:18:26.198  3926  4845 I MessagingAppDataModel: ProcessPendingMessagesAction: Scheduling pending messages
+10-23 03:18:26.292  3926  4845 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:18:26.313  2260  4851 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:18:26.313  2260  4851 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:18:26.313  2260  4851 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:18:26.313  2260  4851 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:18:26.363  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:18:26.393   468  4852 D NuPlayerDriver: notifyListener_l(0xb2258540), (1, 0, 0)
+10-23 03:18:26.394  2260  4851 D MediaPlayer: setSubtitleAnchor in MediaPlayer
+10-23 03:18:26.399  1466  2912 I MediaFocusControl:  AudioFocus  requestAudioFocus() from android.media.AudioManager@1cbb614 req=3flags=0x0
+10-23 03:18:26.404  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:18:26.421  3926  3934 W CursorWrapperInner: Cursor finalized without prior close()
+10-23 03:18:26.428   468  3086 D NuPlayerDriver: start(0xb2258540), state is 4, eos is 0
+10-23 03:18:26.428   468  4852 I GenericSource: start
+10-23 03:18:26.430   468  2232 D NuPlayerDriver: reset(0xb2258480)
+10-23 03:18:26.430   468  2232 D NuPlayerDriver: notifyListener_l(0xb2258480), (8, 0, 0)
+10-23 03:18:26.432   468  4852 I MetaData: vinf: (unknown type 0, size 30)
+10-23 03:18:26.432   468  4852 I MetaData: 00000000:  01 76 6f 72 62 69 73 00  00 00 00 02 44 ac 00 00  .vorbis.....D...
+10-23 03:18:26.432   468  4852 I MetaData: 00000010:  00 00 00 00 80 b5 01 00  00 00 00 00 b8 01        ..............
+10-23 03:18:26.432   468  4852 I MetaData: vboo: (unknown type 0, size 3832)
+10-23 03:18:26.432   468  4852 I MetaData: srte: (int32_t) 44100
+10-23 03:18:26.432   468  4852 I MetaData: mime: (char*) audio/vorbis
+10-23 03:18:26.432   468  4852 I MetaData: dura: (int64_t) 1200000
+10-23 03:18:26.432   468  4852 I MetaData: #chn: (int32_t) 2
+10-23 03:18:26.432   468  4852 I AVNuUtils: No channel mask, try channel count
+10-23 03:18:26.433   468  4852 W AVNuUtils: No bitrate info
+10-23 03:18:26.433   468  4852 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:18:26.433   468  4852 I MetaData: srte: (int32_t) 44100
+10-23 03:18:26.433   468  4852 I MetaData: sbit: (int32_t) 16
+10-23 03:18:26.433   468  4852 I MetaData: mime: (char*) audio/raw
+10-23 03:18:26.433   468  4852 I MetaData: dura: (int64_t) 1200000
+10-23 03:18:26.433   468  4852 I MetaData: chnm: (int32_t) 3
+10-23 03:18:26.433   468  4852 I MetaData: #chn: (int32_t) 2
+10-23 03:18:26.433   468  4852 I AVNuUtils: decision 0 mime audio/vorbis
+10-23 03:18:26.433   468  4852 I MetaData: srte: (int32_t) 44100
+10-23 03:18:26.433   468  4852 I MetaData: sbit: (int32_t) 16
+10-23 03:18:26.433   468  4852 I MetaData: mime: (char*) audio/raw
+10-23 03:18:26.433   468  4852 I MetaData: dura: (int64_t) 1200000
+10-23 03:18:26.433   468  4852 I MetaData: chnm: (int32_t) 3
+10-23 03:18:26.433   468  4852 I MetaData: #chn: (int32_t) 2
+10-23 03:18:26.433   468  4852 I NuPlayer: PCM offload decided: 0
+10-23 03:18:26.435   468  4852 I MetaData: vinf: (unknown type 0, size 30)
+10-23 03:18:26.435   468  4852 I MetaData: 00000000:  01 76 6f 72 62 69 73 00  00 00 00 02 44 ac 00 00  .vorbis.....D...
+10-23 03:18:26.435   468  4852 I MetaData: 00000010:  00 00 00 00 80 b5 01 00  00 00 00 00 b8 01        ..............
+10-23 03:18:26.436   468  4852 I MetaData: vboo: (unknown type 0, size 3832)
+10-23 03:18:26.436   468  4852 I MetaData: srte: (int32_t) 44100
+10-23 03:18:26.436   468  4852 I MetaData: mime: (char*) audio/vorbis
+10-23 03:18:26.436   468  4852 I MetaData: dura: (int64_t) 1200000
+10-23 03:18:26.436   468  4852 I MetaData: #chn: (int32_t) 2
+10-23 03:18:26.436   468  4852 I AVNuUtils: No channel mask, try channel count
+10-23 03:18:26.436   468  4852 W AVNuUtils: No bitrate info
+10-23 03:18:26.436   468  4852 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:18:26.436   468  4852 I MetaData: srte: (int32_t) 44100
+10-23 03:18:26.436   468  4852 I MetaData: sbit: (int32_t) 16
+10-23 03:18:26.436   468  4852 I MetaData: mime: (char*) audio/raw
+10-23 03:18:26.436   468  4852 I MetaData: dura: (int64_t) 1200000
+10-23 03:18:26.436   468  4852 I MetaData: chnm: (int32_t) 3
+10-23 03:18:26.436   468  4852 I MetaData: #chn: (int32_t) 2
+10-23 03:18:26.436   468  4852 I AVNuUtils: decision 0 mime audio/vorbis
+10-23 03:18:26.436   468  4852 I MetaData: srte: (int32_t) 44100
+10-23 03:18:26.436   468  4852 I MetaData: sbit: (int32_t) 16
+10-23 03:18:26.436   468  4852 I MetaData: mime: (char*) audio/raw
+10-23 03:18:26.436   468  4852 I MetaData: dura: (int64_t) 1200000
+10-23 03:18:26.436   468  4852 I MetaData: chnm: (int32_t) 3
+10-23 03:18:26.436   468  4852 I MetaData: #chn: (int32_t) 2
+10-23 03:18:26.436   468  4852 I NuPlayer: PCM offload decided: 0
+10-23 03:18:26.438   468  4825 D NuPlayerDriver: notifyResetComplete(0xb2258480)
+10-23 03:18:26.447   468  4864 E OMXNodeInstance: setConfig(39:google.vorbis.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+10-23 03:18:26.447   468  4864 I ACodec  : codec does not support config priority (err -2147483648)
+10-23 03:18:26.451   468  4864 I MediaCodec: MediaCodec will operate in async mode
+10-23 03:18:26.461   468  2150 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-23 03:18:26.461   468  2150 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:18:26.463   468  4852 D NuPlayerDriver: notifyListener_l(0xb2258540), (6, 0, 0)
+10-23 03:18:26.466  3513  4853 W IcingInternalCorpora: getNumBytesRead when not calculated.
+10-23 03:18:26.472   468  2150 D audio_hw_primary: start_output_stream: enter: stream(0xb5ff79c0)usecase(1: low-latency-playback) devices(0x2)
+10-23 03:18:26.472   468  2150 D audio_hw_primary: start_output_stream: enter: usecase(1: low-latency-playback) devices(0x2)
+10-23 03:18:26.472   468  2150 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: )
+10-23 03:18:26.472   468  2150 W msm8974_platform: Codec backend bitwidth 16, samplerate 48000
+10-23 03:18:26.472   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:18:26.472   468  2150 I msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(14)
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path =  0
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> send_adm_topology
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> send_asm_topology
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> send_audtable
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> send_audvoltable
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE
+10-23 03:18:26.472   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:18:26.472   468  2150 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> send_afe_cal
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+10-23 03:18:26.472   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:18:26.472   468  2150 E ACDB-LOADER: Error: ACDB AFE returned = -19
+10-23 03:18:26.472   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+10-23 03:18:26.473   468  2150 D audio_hw_primary: select_devices: done
+10-23 03:18:26.481  3513  4422 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:18:27.339   468  4863 I NuPlayerDecoder: [audio] saw output EOS
+10-23 03:18:27.494  3513  4422 I Icing   : Indexing 77C147F40E50121E6814F73D1642D2ABE7C8242F from com.google.android.gms
+10-23 03:18:27.545  3513  4422 I Icing   : Indexing done 77C147F40E50121E6814F73D1642D2ABE7C8242F
+10-23 03:18:27.795   468  4852 D NuPlayerDriver: notifyListener_l(0xb2258540), (2, 0, 0)
+10-23 03:18:27.798  1466  2914 I MediaFocusControl:  AudioFocus  abandonAudioFocus() from android.media.AudioManager@1cbb614
+10-23 03:18:28.302   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:28.328   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:28.355   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:18:28.437   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:28.944   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:28.945   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:28.950   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:28.956   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:18:28.961   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:28.962   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:30.715   468  2150 D audio_hw_primary: out_standby: enter: stream (0xb5ff79c0) usecase(1: low-latency-playback)
+10-23 03:18:30.847   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:18:31.060  1466  2203 I PowerManagerService: Waking up from sleep (uid 1000)...
+10-23 03:18:31.063  1466  1466 V KeyguardServiceDelegate: onStartedWakingUp()
+10-23 03:18:31.085  1466  1566 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+10-23 03:18:31.096  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn(showListener = com.android.server.policy.PhoneWindowManager$2@8f77046)
+10-23 03:18:31.099  1466  1561 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+10-23 03:18:31.102   409   409 D SurfaceFlinger: Set power mode=2, type=0 flinger=0xb69e4000
+10-23 03:18:31.102   409   409 D qdhwcomposer: hwc_setPowerMode: Setting mode 2 on display: 0
+10-23 03:18:31.103   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:18:31.103   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:18:31.104   409   409 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:18:31.150  1466  2353 V KeyguardServiceDelegate: **** SHOWN CALLED ****
+10-23 03:18:31.152   468  3086 D NuPlayerDriver: stop(0xb2258540)
+10-23 03:18:31.152   468  3086 D NuPlayerDriver: notifyListener_l(0xb2258540), (8, 0, 0)
+10-23 03:18:31.153  2260  3118 W MessageQueue: Handler (android.media.MediaPlayer$EventHandler) {caecebd} sending message to a Handler on a dead thread
+10-23 03:18:31.153  2260  3118 W MessageQueue: java.lang.IllegalStateException: Handler (android.media.MediaPlayer$EventHandler) {caecebd} sending message to a Handler on a dead thread
+10-23 03:18:31.153  2260  3118 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+10-23 03:18:31.153  2260  3118 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:631)
+10-23 03:18:31.153  2260  3118 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:600)
+10-23 03:18:31.153  2260  3118 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:570)
+10-23 03:18:31.153  2260  3118 W MessageQueue: 	at android.os.Handler.sendMessage(Handler.java:507)
+10-23 03:18:31.153  2260  3118 W MessageQueue: 	at android.media.MediaPlayer.postEventFromNative(MediaPlayer.java:2988)
+10-23 03:18:31.153   468  2232 D NuPlayerDriver: reset(0xb2258540)
+10-23 03:18:31.161   468  4852 D NuPlayerDriver: notifyResetComplete(0xb2258540)
+10-23 03:18:31.167  1466  2223 D WifiConfigStore: Retrieve network priorities after PNO.
+10-23 03:18:31.167  1466  2223 E WifiNative-wlan0: Update priority failed for :0
+10-23 03:18:31.168  1466  2223 E WifiStateMachine:  Fail to set up pno, want false now false
+10-23 03:18:31.173   468  3093 D audio_hw_primary: adev_set_parameters: enter: screen_state=on
+10-23 03:18:31.173   468  3093 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:18:31.173   468  3093 E bt_a2dp_hw: adev_set_parameters: ERROR: set param called even when stream out is null
+10-23 03:18:31.173   468  3093 D mot_vr_audio_hw: adev_set_parameters: screen_state=on
+10-23 03:18:31.277   409   409 D qdhwcomposer: hwc_setPowerMode: Done setting mode 2 on display 0
+10-23 03:18:31.277   409   804 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 1
+10-23 03:18:31.277   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:18:31.277   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:18:31.277   409   804 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:18:31.279  1466  2252 D SurfaceControl: Excessive delay in setPowerMode(): 181ms
+10-23 03:18:31.280  1466  1566 I DisplayPowerController: Unblocked screen on after 194 ms
+10-23 03:18:31.282  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn()
+10-23 03:18:31.340  3513  4422 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:18:33.322  2260  2260 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME RECENT clock SEARCH quick_settings >
+10-23 03:18:33.330   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:33.345  1466  1561 E WindowAnimator: Timeout waiting for animation to startup
+10-23 03:18:33.372  2260  2260 D PhoneStatusBar: disable: < expand icons* alerts system_info* back HOME RECENT clock SEARCH quick_settings >
+10-23 03:18:33.375  3926  3926 D MessagingApp: DraftMessageData: loading for conversationId=1
+10-23 03:18:33.388  2260  2260 W SurfaceComposerClient: At least one call to closeGlobalTransaction() was not matched by a prior call to openGlobalTransaction().
+10-23 03:18:33.442   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:33.455  1466  2353 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@caa8cc7 attribute=android.view.inputmethod.EditorInfo@46cc2f4, token = android.os.BinderProxy@147ecb3
+10-23 03:18:33.467  2260  2260 D PhoneStatusBar: disable: < expand icons alerts system_info back home* recent* clock search* quick_settings >
+10-23 03:18:33.471  2840  2840 I LatinIME: Starting input. Cursor position = 0,0
+10-23 03:18:33.514  3926  4874 I MessagingAppDataModel: SyncMessagesAction: Starting batch for messages from 1477199816916 to 1477199913371 (message update limit = 80, message scan limit = 4000)
+10-23 03:18:33.795  3926  4870 I MessagingAppDataModel: SyncMessagesAction: All messages now in sync
+10-23 03:18:33.969   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:33.970   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:33.975   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:33.981   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:18:33.986   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:33.987   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:34.147  2260  2260 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+10-23 03:18:35.047  1466  2949 I ActivityManager: START u0 {act=android.settings.SETTINGS flg=0x14000000 cmp=com.android.settings/.Settings} from uid 10025 on display 0
+10-23 03:18:35.213  1466  1479 I art     : Background partial concurrent mark sweep GC freed 25888(2MB) AllocSpace objects, 1(20KB) LOS objects, 31% free, 34MB/50MB, paused 797us total 107.442ms
+10-23 03:18:35.358  2942  3440 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 phoneId=0
+10-23 03:18:35.359  2942  3440 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 retVal=false
+10-23 03:18:35.360  2773  2773 D TelephonyManager: getDataEnabled: retVal=false
+10-23 03:18:35.567  2773  2773 D DashboardSummary: rebuildUI took: 355 ms
+10-23 03:18:35.631  2260  2260 D PhoneStatusBar: disable: < expand icons* alerts system_info* back home recent clock search quick_settings >
+10-23 03:18:35.745  2773  4749 D Index   : Deleting data for locale 'en_US' took 17 millis
+10-23 03:18:35.753  2773  4749 D Index   : Indexing locale 'en_US' took 8 millis
+10-23 03:18:35.770  2773  4749 D Index   : Deleting data for locale 'en_US' took 5 millis
+10-23 03:18:35.775  2773  4749 D Index   : Indexing locale 'en_US' took 5 millis
+10-23 03:18:35.791  2773  4749 D Index   : Deleting data for locale 'en_US' took 5 millis
+10-23 03:18:35.795  2773  4749 D Index   : Indexing locale 'en_US' took 4 millis
+10-23 03:18:36.936  1466  2856 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras)} from uid 1000 on display 0
+10-23 03:18:36.996  2773  2773 D SubSettings: Launching fragment com.android.settings.DeviceInfoSettings
+10-23 03:18:37.017  2773  2773 D DeviceInfoSettings: Property 'ro.url.safetylegal' missing and no 'safetylegal' preference
+10-23 03:18:37.127  1466  1561 I ActivityManager: Displayed com.android.settings/.SubSettings: +171ms
+10-23 03:18:37.154  2773  4740 D OpenGLRenderer: endAllStagingAnimators on 0xaf5b1f00 (RippleDrawable) with handle 0xb04d92f0
+10-23 03:18:38.112  2840  2840 D EmojiAltPhysicalKeyDetector: onKeyUp() : KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=59, metaState=0, flags=0x48, repeatCount=0, eventTime=261136, downTime=261068, deviceId=7, source=0x101 }
+10-23 03:18:38.112  2840  2840 D EmojiAltPhysicalKeyDetector: onKeyUp() : Not Mapped: 4
+10-23 03:18:38.207  2942  2971 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 phoneId=0
+10-23 03:18:38.207  2942  2971 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 retVal=false
+10-23 03:18:38.207  2773  2773 D TelephonyManager: getDataEnabled: retVal=false
+10-23 03:18:38.302  2773  2773 D DashboardSummary: rebuildUI took: 130 ms
+10-23 03:18:38.303   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:38.330   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:38.360   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:18:38.375  2773  4739 D Index   : Deleting data for locale 'en_US' took 6 millis
+10-23 03:18:38.383  2773  4739 D Index   : Indexing locale 'en_US' took 8 millis
+10-23 03:18:38.417  2773  4739 D Index   : Deleting data for locale 'en_US' took 15 millis
+10-23 03:18:38.419  2773  4739 D Index   : Indexing locale 'en_US' took 2 millis
+10-23 03:18:38.436  2773  4739 D Index   : Deleting data for locale 'en_US' took 3 millis
+10-23 03:18:38.439  2773  4739 D Index   : Indexing locale 'en_US' took 3 millis
+10-23 03:18:38.447   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:18:38.670  2773  2773 I art     : Starting a blocking GC Explicit
+10-23 03:18:38.719  2773  2773 I art     : Explicit concurrent mark sweep GC freed 10551(696KB) AllocSpace objects, 2(200KB) LOS objects, 34% free, 30MB/46MB, paused 372us total 36.501ms
+10-23 03:18:38.753  2773  2773 I art     : Starting a blocking GC Explicit
+10-23 03:18:38.765  2773  2773 I art     : Explicit concurrent mark sweep GC freed 24643(1811KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 28MB/44MB, paused 197us total 12.194ms
+10-23 03:18:38.765  2773  2773 I art     : Starting a blocking GC Explicit
+10-23 03:18:38.775  2773  2773 I art     : Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 35% free, 28MB/44MB, paused 193us total 9.557ms
+10-23 03:18:38.988   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:18:38.988   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:38.993   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:18:38.998   482   635 I ThermalEngine: Sensor:wchg_therm:35000 mC
+10-23 03:18:39.002   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:18:39.002   482   635 I ThermalEngine: Sensor:VS-BATT:36400 mC
+10-23 03:18:40.821  1466  1499 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras)} from uid 1000 on display 0
+10-23 03:18:40.912  2773  2773 D SubSettings: Launching fragment com.android.settings.DisplaySettings
+10-23 03:18:40.982  1466  1499 W DreamManagerService: Dream ComponentInfo{com.google.android.deskclock/com.android.deskclock.Screensaver} does not exist
+10-23 03:18:40.982  1466  1499 W DreamManagerService: Falling back to default dream ComponentInfo{com.google.android.deskclock/com.android.deskclock.Screensaver}
+10-23 03:18:41.060  1466  1561 I ActivityManager: Displayed com.android.settings/.SubSettings: +205ms
+10-23 03:18:41.104  2773  4740 D OpenGLRenderer: endAllStagingAnimators on 0xade7bd80 (RippleDrawable) with handle 0x7d5c25d0
+10-23 03:18:43.332   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:43.452   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:18:44.006   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:18:44.007   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:44.012   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:18:44.018   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:18:44.023   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:18:44.024   482   635 I ThermalEngine: Sensor:VS-BATT:35640 mC
+10-23 03:18:45.788  1466  2991 I ActivityManager: START u0 {act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10025 on display 0
+10-23 03:18:46.910  1466  3423 I ActivityManager: Killing 4152:com.google.android.partnersetup/u0a37 (adj 15): empty #17
+10-23 03:18:46.998  1466  3423 I ActivityManager: Killing 2773:com.android.settings/1000 (adj 9): remove task
+10-23 03:18:47.165  1466  2202 W InputDispatcher: channel 'ea777b9 com.android.settings/com.android.settings.SubSettings (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+10-23 03:18:47.165  1466  2202 E InputDispatcher: channel 'ea777b9 com.android.settings/com.android.settings.SubSettings (server)' ~ Channel is unrecoverably broken and will be disposed!
+10-23 03:18:47.167  1466  1498 D GraphicsStats: Buffer count: 4
+10-23 03:18:47.168  1466  2949 I WindowState: WIN DEATH: Window{ea777b9 u0 com.android.settings/com.android.settings.SubSettings}
+10-23 03:18:47.168  1466  2949 W InputDispatcher: Attempted to unregister already unregistered input channel 'ea777b9 com.android.settings/com.android.settings.SubSettings (server)'
+10-23 03:18:47.180  1466  2224 D WifiService: Client connection lost with reason: 4
+10-23 03:18:47.183  1466  2202 W InputDispatcher: channel 'd96d723 com.android.settings/com.android.settings.Settings (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+10-23 03:18:47.183  1466  2202 E InputDispatcher: channel 'd96d723 com.android.settings/com.android.settings.Settings (server)' ~ Channel is unrecoverably broken and will be disposed!
+10-23 03:18:47.187  1466  2914 D ActivityManager: cleanUpApplicationRecord -- 4152
+10-23 03:18:47.189  1466  1520 W art     : Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.removeTask(int) from ActivityManagerService.java:9130 waiters=2 for 287ms
+10-23 03:18:47.194  1466  2345 I WindowState: WIN DEATH: Window{d96d723 u0 com.android.settings/com.android.settings.Settings}
+10-23 03:18:47.194  1466  2345 W InputDispatcher: Attempted to unregister already unregistered input channel 'd96d723 com.android.settings/com.android.settings.Settings (server)'
+10-23 03:18:47.213  1466  3167 D ActivityManager: cleanUpApplicationRecord -- 2773
+10-23 03:18:47.257  3926  3926 D MessagingApp: DraftMessageData: loading for conversationId=1
+10-23 03:18:47.351  3926  4885 I MessagingAppDataModel: SyncMessagesAction: Starting batch for messages from 1477199913371 to 1477199927254 (message update limit = 80, message scan limit = 4000)
+10-23 03:18:47.492  3926  4884 I MessagingAppDataModel: SyncMessagesAction: All messages now in sync
+10-23 03:18:48.305   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:48.333   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:48.365   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:18:48.458   482   619 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:18:49.026   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:18:49.027   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:49.033   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:49.039   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:18:49.044   482   635 I ThermalEngine: Sensor:chg_therm:36000 mC
+10-23 03:18:49.045   482   635 I ThermalEngine: Sensor:VS-BATT:35640 mC
+10-23 03:18:53.336   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:53.464   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:54.048   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:54.049   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:54.055   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:54.060   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:18:54.066   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:54.067   482   635 I ThermalEngine: Sensor:VS-BATT:35360 mC
+10-23 03:18:58.307   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:58.338   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:18:58.372   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:18:58.470   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:59.068   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:18:59.069   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:18:59.074   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:59.079   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:18:59.084   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:18:59.084   482   635 I ThermalEngine: Sensor:VS-BATT:35360 mC
+10-23 03:19:03.339   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:19:03.475   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:04.087   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:19:04.088   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:04.093   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:04.098   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:19:04.104   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:04.104   482   635 I ThermalEngine: Sensor:VS-BATT:35360 mC
+10-23 03:19:07.075  1466  2202 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.cyanogenmod.trebuchet/com.android.launcher3.Launcher (has extras)} from uid 1000 on display 0
+10-23 03:19:07.805  2959  3173 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+10-23 03:19:07.805  2959  3173 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+10-23 03:19:08.309   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:08.341   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:19:08.378   482   621 I ThermalEngine: Sensor:apq_therm:34000 mC
+10-23 03:19:08.481   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:09.106   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:19:09.106   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:09.111   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:09.116   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:19:09.121   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:09.121   482   635 I ThermalEngine: Sensor:VS-BATT:35360 mC
+10-23 03:19:13.344   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:19:13.450  1466  2203 I PowerManagerService: Going to sleep due to power button (uid 1000)...
+10-23 03:19:13.486   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:14.024  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOff()
+10-23 03:19:14.036  1466  1561 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+10-23 03:19:14.047   409   409 D SurfaceFlinger: Set power mode=0, type=0 flinger=0xb69e4000
+10-23 03:19:14.047   409   409 D qdhwcomposer: hwc_setPowerMode: Setting mode 0 on display: 0
+10-23 03:19:14.047   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:14.047   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:14.047   409   409 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:14.123   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:19:14.123   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:14.128   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:14.133   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:19:14.138   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:14.138   482   635 I ThermalEngine: Sensor:VS-BATT:35640 mC
+10-23 03:19:14.265   409   804 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 0
+10-23 03:19:14.266   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:14.267   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:14.267   409   804 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:14.269   409   409 D qdhwcomposer: hwc_setPowerMode: Done setting mode 0 on display 0
+10-23 03:19:14.272  1466  2252 D SurfaceControl: Excessive delay in setPowerMode(): 236ms
+10-23 03:19:14.277  1466  1566 I DreamManagerService: Entering dreamland.
+10-23 03:19:14.278  1466  1566 I PowerManagerService: Dozing...
+10-23 03:19:14.294  1466  1526 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+10-23 03:19:14.327  1466  2223 D WifiConfigStore: Retrieve network priorities after PNO.
+10-23 03:19:14.327  1466  2223 E WifiNative-wlan0: Update priority failed for :0
+10-23 03:19:14.327  1466  2223 E WifiStateMachine:  Fail to set up pno, want false now false
+10-23 03:19:14.327   468   468 D audio_hw_primary: adev_set_parameters: enter: screen_state=off
+10-23 03:19:14.327   468   468 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:19:14.327   468   468 E bt_a2dp_hw: adev_set_parameters: ERROR: set param called even when stream out is null
+10-23 03:19:14.328   468   468 D mot_vr_audio_hw: adev_set_parameters: screen_state=off
+10-23 03:19:14.352  2260  2260 W SurfaceComposerClient: At least one call to closeGlobalTransaction() was not matched by a prior call to openGlobalTransaction().
+10-23 03:19:14.355  2260  2260 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+10-23 03:19:14.422  2260  2260 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME* RECENT* clock SEARCH* quick_settings >
+10-23 03:19:18.311   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:18.345   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:19:18.383   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:19:18.491   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:19.139   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:19:19.140   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:19.145   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:19.150   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:19:19.154   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:19.155   482   635 I ThermalEngine: Sensor:VS-BATT:35360 mC
+10-23 03:19:20.717  1466  2203 I PowerManagerService: Waking up from dozing (uid 1000)...
+10-23 03:19:20.720  1466  1466 V KeyguardServiceDelegate: onStartedWakingUp()
+10-23 03:19:20.737  1466  1566 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+10-23 03:19:20.744  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn(showListener = com.android.server.policy.PhoneWindowManager$2@8f77046)
+10-23 03:19:20.748  1466  1561 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+10-23 03:19:20.756   409   409 D SurfaceFlinger: Set power mode=2, type=0 flinger=0xb69e4000
+10-23 03:19:20.756   409   409 D qdhwcomposer: hwc_setPowerMode: Setting mode 2 on display: 0
+10-23 03:19:20.757   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:20.757   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:20.757   409   409 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:20.799  1466  3423 V KeyguardServiceDelegate: **** SHOWN CALLED ****
+10-23 03:19:20.824  1466  2223 D WifiConfigStore: Retrieve network priorities after PNO.
+10-23 03:19:20.824  1466  2223 E WifiNative-wlan0: Update priority failed for :0
+10-23 03:19:20.824  1466  2223 E WifiStateMachine:  Fail to set up pno, want false now false
+10-23 03:19:20.827   468  2178 D audio_hw_primary: adev_set_parameters: enter: screen_state=on
+10-23 03:19:20.827   468  2178 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:19:20.827   468  2178 E bt_a2dp_hw: adev_set_parameters: ERROR: set param called even when stream out is null
+10-23 03:19:20.827   468  2178 D mot_vr_audio_hw: adev_set_parameters: screen_state=on
+10-23 03:19:20.888  1466  1566 I DisplayPowerController: Unblocked screen on after 151 ms
+10-23 03:19:20.889  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn()
+10-23 03:19:20.890  1466  1566 I DreamManagerService: Gently waking up from dream.
+10-23 03:19:20.896  1466  2856 I DreamManagerService: Leaving dreamland.
+10-23 03:19:20.896  1466  1526 I DreamController: Stopping dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+10-23 03:19:20.943   409   409 D qdhwcomposer: hwc_setPowerMode: Done setting mode 2 on display 0
+10-23 03:19:20.944   409   804 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 1
+10-23 03:19:20.944   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:20.944   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:20.944   409   804 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:20.944  1466  2252 D SurfaceControl: Excessive delay in setPowerMode(): 197ms
+10-23 03:19:21.670  2260  2260 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME RECENT clock SEARCH quick_settings >
+10-23 03:19:21.691  1466  1561 E WindowAnimator: Timeout waiting for animation to startup
+10-23 03:19:21.692  2260  2260 D PhoneStatusBar: disable: < expand icons* alerts system_info* back HOME RECENT clock SEARCH quick_settings >
+10-23 03:19:21.705  2260  2260 W SurfaceComposerClient: At least one call to closeGlobalTransaction() was not matched by a prior call to openGlobalTransaction().
+10-23 03:19:21.744  1466  3167 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@a084b22 attribute=android.view.inputmethod.EditorInfo@ab889b3, token = android.os.BinderProxy@9020325
+10-23 03:19:21.760  2260  2260 D PhoneStatusBar: disable: < expand icons alerts system_info back home* recent* clock search* quick_settings >
+10-23 03:19:23.347   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:19:23.457  1466  2856 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.messaging/.ui.conversationlist.ConversationListActivity bnds=[328,2268][596,2572] (has extras)} from uid 10032 on display 0
+10-23 03:19:23.476  1466  1524 W BroadcastQueue: Permission Denial: broadcasting Intent { act=com.android.launcher3.action.LAUNCH flg=0x10 (has extras) } from com.cyanogenmod.trebuchet (pid=2959, uid=10032) requires com.google.android.launcher.permission.RECEIVE_LAUNCH_BROADCASTS due to receiver com.google.android.gms/.icing.proxy.ApplicationLauncherReceiver
+10-23 03:19:23.496   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:23.524  3926  3926 D MessagingApp: DraftMessageData: loading for conversationId=1
+10-23 03:19:23.633  3926  4914 I MessagingAppDataModel: SyncMessagesAction: Starting batch for messages from 1477199927254 to 1477199963521 (message update limit = 80, message scan limit = 4000)
+10-23 03:19:23.684  3926  4913 I MessagingAppDataModel: SyncMessagesAction: All messages now in sync
+10-23 03:19:24.156   482   635 I ThermalEngine: Sensor:tmp108:35000 mC
+10-23 03:19:24.156   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:24.161   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:24.165   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:19:24.170   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:24.170   482   635 I ThermalEngine: Sensor:VS-BATT:35360 mC
+10-23 03:19:24.492  2840  2840 I LatinIME: Starting input. Cursor position = 0,0
+10-23 03:19:25.874  3926  3926 I MessagingApp: UI initiated message sending in conversation 1
+10-23 03:19:25.927  2840  2840 I LatinIME: Starting input. Cursor position = 4,4
+10-23 03:19:25.943  3926  3926 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:19:25.943  3926  3926 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:19:25.943  3926  3926 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:19:25.943  3926  3926 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:19:25.954   468  4920 I FFmpegExtractor: android-source:0xb5fe0e50
+10-23 03:19:25.955   468  4920 D FFmpegExtractor: suppoted codec(pcm_s16le) by official Stagefright
+10-23 03:19:25.955   468  4920 D FFmpegExtractor: ffmpeg detected media content as 'audio/x-wav' with confidence 0.08
+10-23 03:19:25.955   468  4919 D NuPlayerDriver: notifyListener_l(0xb22585a0), (1, 0, 0)
+10-23 03:19:25.955  3926  3926 D MediaPlayer: setSubtitleAnchor in MediaPlayer
+10-23 03:19:25.957   468  3093 D NuPlayerDriver: seekTo(0xb22585a0) 0 ms
+10-23 03:19:25.957   468  3093 D NuPlayerDriver: notifyListener_l(0xb22585a0), (7, 0, 0)
+10-23 03:19:25.957   468  3086 D NuPlayerDriver: start(0xb22585a0), state is 4, eos is 0
+10-23 03:19:25.968   468  4919 I GenericSource: start
+10-23 03:19:25.969   468  4919 I MetaData: srte: (int32_t) 48000
+10-23 03:19:25.969   468  4919 I MetaData: sbit: (int32_t) 16
+10-23 03:19:25.969   468  4919 I MetaData: pfmt: (int32_t) 1
+10-23 03:19:25.969   468  4919 I MetaData: mime: (char*) audio/raw
+10-23 03:19:25.969   468  4919 I MetaData: inpS: (int32_t) 32768
+10-23 03:19:25.969   468  4919 I MetaData: dura: (int64_t) 610500
+10-23 03:19:25.969   468  4919 I MetaData: chnm: (int32_t) 0
+10-23 03:19:25.969   468  4919 I MetaData: #chn: (int32_t) 2
+10-23 03:19:25.969   468  4919 I AVNuUtils: No channel mask, try channel count
+10-23 03:19:25.969   468  4919 W AVNuUtils: No bitrate info
+10-23 03:19:25.969   468  4919 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:19:25.969   468  4919 I MetaData: srte: (int32_t) 48000
+10-23 03:19:25.969   468  4919 I MetaData: sbit: (int32_t) 16
+10-23 03:19:25.969   468  4919 I MetaData: mime: (char*) audio/raw
+10-23 03:19:25.969   468  4919 I MetaData: dura: (int64_t) 610500
+10-23 03:19:25.969   468  4919 I MetaData: chnm: (int32_t) 3
+10-23 03:19:25.969   468  4919 I MetaData: #chn: (int32_t) 2
+10-23 03:19:25.969   468  4919 I AVNuUtils: decision 0 mime audio/raw
+10-23 03:19:25.969   468  4919 I MetaData: srte: (int32_t) 48000
+10-23 03:19:25.969   468  4919 I MetaData: sbit: (int32_t) 16
+10-23 03:19:25.969   468  4919 I MetaData: mime: (char*) audio/raw
+10-23 03:19:25.969   468  4919 I MetaData: dura: (int64_t) 610500
+10-23 03:19:25.969   468  4919 I MetaData: chnm: (int32_t) 3
+10-23 03:19:25.969   468  4919 I MetaData: #chn: (int32_t) 2
+10-23 03:19:25.969   468  4919 I NuPlayer: PCM offload decided: 0
+10-23 03:19:25.970   468  4919 D NuPlayerDriver: notifyListener_l(0xb22585a0), (4, 0, 0)
+10-23 03:19:25.970   468  4919 I MetaData: srte: (int32_t) 48000
+10-23 03:19:25.970   468  4919 I MetaData: sbit: (int32_t) 16
+10-23 03:19:25.970   468  4919 I MetaData: pfmt: (int32_t) 1
+10-23 03:19:25.970   468  4919 I MetaData: mime: (char*) audio/raw
+10-23 03:19:25.970   468  4919 I MetaData: inpS: (int32_t) 32768
+10-23 03:19:25.970   468  4919 I MetaData: dura: (int64_t) 610500
+10-23 03:19:25.970   468  4919 I MetaData: chnm: (int32_t) 0
+10-23 03:19:25.970   468  4919 I MetaData: #chn: (int32_t) 2
+10-23 03:19:25.970   468  4919 I AVNuUtils: No channel mask, try channel count
+10-23 03:19:25.970   468  4919 W AVNuUtils: No bitrate info
+10-23 03:19:25.970   468  4919 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:19:25.970   468  4919 I MetaData: srte: (int32_t) 48000
+10-23 03:19:25.971   468  4919 I MetaData: sbit: (int32_t) 16
+10-23 03:19:25.971   468  4919 I MetaData: mime: (char*) audio/raw
+10-23 03:19:25.971   468  4919 I MetaData: dura: (int64_t) 610500
+10-23 03:19:25.971   468  4919 I MetaData: chnm: (int32_t) 3
+10-23 03:19:25.971   468  4919 I MetaData: #chn: (int32_t) 2
+10-23 03:19:25.971   468  4919 I AVNuUtils: decision 0 mime audio/raw
+10-23 03:19:25.971   468  4919 I MetaData: srte: (int32_t) 48000
+10-23 03:19:25.971   468  4919 I MetaData: sbit: (int32_t) 16
+10-23 03:19:25.972   468  4919 I MetaData: mime: (char*) audio/raw
+10-23 03:19:25.972   468  4919 I MetaData: dura: (int64_t) 610500
+10-23 03:19:25.972   468  4919 I MetaData: chnm: (int32_t) 3
+10-23 03:19:25.972   468  4919 I MetaData: #chn: (int32_t) 2
+10-23 03:19:25.972   468  4919 I NuPlayer: PCM offload decided: 0
+10-23 03:19:25.981  3926  4925 I MessagingAppDataModel: InsertNewMessageAction: inserting new message
+10-23 03:19:25.982   468  4924 E OMXNodeInstance: setConfig(3a:google.raw.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+10-23 03:19:25.982   468  4924 I ACodec  : codec does not support config priority (err -2147483648)
+10-23 03:19:25.982   468  4924 I MediaCodec: MediaCodec will operate in async mode
+10-23 03:19:26.000   468  2150 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-23 03:19:26.000   468  2150 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:19:26.003   468  4919 D NuPlayerDriver: notifyListener_l(0xb22585a0), (6, 0, 0)
+10-23 03:19:26.004   468  4923 I NuPlayerDecoder: [audio] saw output EOS
+10-23 03:19:26.011   468  2150 D audio_hw_primary: start_output_stream: enter: stream(0xb5ff79c0)usecase(1: low-latency-playback) devices(0x2)
+10-23 03:19:26.011   468  2150 D audio_hw_primary: start_output_stream: enter: usecase(1: low-latency-playback) devices(0x2)
+10-23 03:19:26.011   468  2150 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: )
+10-23 03:19:26.011   468  2150 W msm8974_platform: Codec backend bitwidth 16, samplerate 48000
+10-23 03:19:26.011   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:19:26.011   468  2150 I msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(14)
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path =  0
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> send_adm_topology
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> send_asm_topology
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> send_audtable
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> send_audvoltable
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE
+10-23 03:19:26.011   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:19:26.011   468  2150 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> send_afe_cal
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+10-23 03:19:26.011   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:19:26.011   468  2150 E ACDB-LOADER: Error: ACDB AFE returned = -19
+10-23 03:19:26.011   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+10-23 03:19:26.013   468  2150 D audio_hw_primary: select_devices: done
+10-23 03:19:26.068  3926  4925 I MessagingAppDataModel: ProcessPendingMessagesAction: Scheduling pending messages
+10-23 03:19:26.100  3926  4925 I MessagingAppDataModel: ProcessPendingMessagesAction: Queueing message 7 for sending
+10-23 03:19:26.109  3926  3926 D f       : mAmbientApiClient is null, initializing
+10-23 03:19:26.109  3926  3926 D f       : ambientApiClient is not connect or connecting, attempting to connect now
+10-23 03:19:26.110  3926  3926 W MOD.CyanogenAmbientUtil: Cyanogen Ambient package is missing! Version 1050100 is required.
+10-23 03:19:26.110  3926  3926 E MOD.AmbientApiClientImp: This application will not run unless you install Ambient services
+10-23 03:19:26.110  3926  3926 E f       : Unable to connect with Ambient. ConnectionResult.ErrorCode : 1
+10-23 03:19:26.196  3926  4929 I MessagingAppDataModel: SendMessageAction: Sending SMS message 7 in conversation 1
+10-23 03:19:26.733   468  4919 D NuPlayerDriver: notifyListener_l(0xb22585a0), (2, 0, 0)
+10-23 03:19:26.745   468  2178 D NuPlayerDriver: stop(0xb22585a0)
+10-23 03:19:26.746   468  2178 D NuPlayerDriver: notifyListener_l(0xb22585a0), (8, 0, 0)
+10-23 03:19:26.750   468  2855 D NuPlayerDriver: reset(0xb22585a0)
+10-23 03:19:26.767   468  4919 D NuPlayerDriver: notifyResetComplete(0xb22585a0)
+10-23 03:19:26.777  3926  3926 W MediaPlayer: mediaplayer went away with unhandled events
+10-23 03:19:27.045  1466  2203 I PowerManagerService: Going to sleep due to power button (uid 1000)...
+10-23 03:19:27.102  2840  2840 I LatinIME: Starting input. Cursor position = 0,0
+10-23 03:19:27.103  3926  3926 W IInputConnectionWrapper: getSelectedText on inactive InputConnection
+10-23 03:19:27.105  3926  3926 W IInputConnectionWrapper: requestCursorAnchorInfo on inactive InputConnection
+10-23 03:19:27.107  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.107  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.107  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:19:27.117  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.118  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.118  2840  2840 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+10-23 03:19:27.143  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.143  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.143  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:19:27.143  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.144  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.144  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:19:27.144  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.144  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.144  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:19:27.144  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.145  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.145  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:19:27.145  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.145  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.145  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:19:27.145  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.146  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.146  2840  2840 D RichInputConnection: Will try to retrieve text later.
+10-23 03:19:27.146  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.147  3926  3926 W IInputConnectionWrapper: getSelectedText on inactive InputConnection
+10-23 03:19:27.148  3926  3926 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+10-23 03:19:27.148  2840  2840 E RichInputConnection: Unable to connect to the editor to retrieve text.
+10-23 03:19:27.148  2840  2840 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+10-23 03:19:27.693  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOff()
+10-23 03:19:27.700  1466  1561 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+10-23 03:19:27.705   409   409 D SurfaceFlinger: Set power mode=0, type=0 flinger=0xb69e4000
+10-23 03:19:27.705   409   409 D qdhwcomposer: hwc_setPowerMode: Setting mode 0 on display: 0
+10-23 03:19:27.705   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:27.705   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:27.705   409   409 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:27.747  1466  1479 I art     : Background partial concurrent mark sweep GC freed 21674(2MB) AllocSpace objects, 6(116KB) LOS objects, 31% free, 34MB/50MB, paused 1.356ms total 102.336ms
+10-23 03:19:27.940   409   804 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 0
+10-23 03:19:27.941   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:27.941   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:27.941   409   804 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:27.943   409   409 D qdhwcomposer: hwc_setPowerMode: Done setting mode 0 on display 0
+10-23 03:19:27.944  1466  2252 D SurfaceControl: Excessive delay in setPowerMode(): 244ms
+10-23 03:19:27.948  1466  1566 I DreamManagerService: Entering dreamland.
+10-23 03:19:27.948  1466  1566 I PowerManagerService: Dozing...
+10-23 03:19:27.950  1466  1526 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+10-23 03:19:27.993  1466  2223 D WifiConfigStore: Retrieve network priorities after PNO.
+10-23 03:19:27.993   468   468 D audio_hw_primary: adev_set_parameters: enter: screen_state=off
+10-23 03:19:27.993  1466  2223 E WifiNative-wlan0: Update priority failed for :0
+10-23 03:19:27.993   468   468 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:19:27.993   468   468 E bt_a2dp_hw: adev_set_parameters: ERROR: set param called even when stream out is null
+10-23 03:19:27.993   468   468 D mot_vr_audio_hw: adev_set_parameters: screen_state=off
+10-23 03:19:27.993  1466  2223 E WifiStateMachine:  Fail to set up pno, want false now false
+10-23 03:19:28.029  2260  2260 W SurfaceComposerClient: At least one call to closeGlobalTransaction() was not matched by a prior call to openGlobalTransaction().
+10-23 03:19:28.034  2260  2260 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+10-23 03:19:28.161  2260  2260 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME* RECENT* clock SEARCH* quick_settings >
+10-23 03:19:28.313   482   626 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:28.349   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:19:28.390   482   621 I ThermalEngine: Sensor:apq_therm:35000 mC
+10-23 03:19:28.500   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:28.504  3926  4934 I MessagingAppDataModel: ProcessSentMessageAction: Done sending SMS message 7 in conversation 1; status is SUCCEEDED
+10-23 03:19:28.504  3926  4934 I MessagingAppDataModel: ProcessPendingMessagesAction: Scheduling pending messages
+10-23 03:19:29.171   482   635 I ThermalEngine: Sensor:tmp108:36000 mC
+10-23 03:19:29.172   482   635 I ThermalEngine: Sensor:max170xx_battery:35000 mC
+10-23 03:19:29.177   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:29.182   482   635 I ThermalEngine: Sensor:wchg_therm:34000 mC
+10-23 03:19:29.187   482   635 I ThermalEngine: Sensor:chg_therm:35000 mC
+10-23 03:19:29.187   482   635 I ThermalEngine: Sensor:VS-BATT:35640 mC
+10-23 03:19:29.676   468  2150 D audio_hw_primary: out_standby: enter: stream (0xb5ff79c0) usecase(1: low-latency-playback)
+10-23 03:19:29.812   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:19:31.404  2942  3135 V BlacklistProvider: Query uri=content://blacklist/bynumber/9090, match=2
+10-23 03:19:31.426  2942  3135 V GsmInboundSmsHandler: Unable to find carrier package: [], nor systemPackages: []
+10-23 03:19:31.437  2942  3135 D MmsService: getAutoPersisting
+10-23 03:19:31.444  3926  3926 D SmsReceiver.deliverSmsMessages: Is SMS Message Replaceable : false
+10-23 03:19:31.500  3926  4935 D MessageReplaceFeature: SMS Message Replaceable : false
+10-23 03:19:31.535  3926  4935 I MessagingAppDataModel: ReceiveSmsMessageAction: Received SMS message 8 in conversation 2, uri = content://sms/7
+10-23 03:19:31.536  3926  4935 I MessagingAppDataModel: ProcessPendingMessagesAction: Scheduling pending messages
+10-23 03:19:31.572  3926  4935 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:19:31.584  2260  4941 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:19:31.585  2260  4941 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:19:31.585  2260  4941 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:19:31.585  2260  4941 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:19:31.597  1466  2182 E MotoSensors: Proximity uncovered
+10-23 03:19:31.627   468  4942 D NuPlayerDriver: notifyListener_l(0xb2258300), (1, 0, 0)
+10-23 03:19:31.627  2260  4941 D MediaPlayer: setSubtitleAnchor in MediaPlayer
+10-23 03:19:31.630  1466  2856 I MediaFocusControl:  AudioFocus  requestAudioFocus() from android.media.AudioManager@505d04 req=3flags=0x0
+10-23 03:19:31.635   468  3086 D NuPlayerDriver: start(0xb2258300), state is 4, eos is 0
+10-23 03:19:31.635   468  4942 I GenericSource: start
+10-23 03:19:31.638   468  4942 I MetaData: vinf: (unknown type 0, size 30)
+10-23 03:19:31.638   468  4942 I MetaData: 00000000:  01 76 6f 72 62 69 73 00  00 00 00 02 44 ac 00 00  .vorbis.....D...
+10-23 03:19:31.638   468  4942 I MetaData: 00000010:  00 00 00 00 80 b5 01 00  00 00 00 00 b8 01        ..............
+10-23 03:19:31.638   468  4942 I MetaData: vboo: (unknown type 0, size 3832)
+10-23 03:19:31.638   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.638   468  4942 I MetaData: mime: (char*) audio/vorbis
+10-23 03:19:31.638   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.638   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.638   468  4942 I AVNuUtils: No channel mask, try channel count
+10-23 03:19:31.639   468  4942 W AVNuUtils: No bitrate info
+10-23 03:19:31.639   468  4942 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:19:31.639   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.639   468  4942 I MetaData: sbit: (int32_t) 16
+10-23 03:19:31.639   468  4942 I MetaData: mime: (char*) audio/raw
+10-23 03:19:31.639   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.639   468  4942 I MetaData: chnm: (int32_t) 3
+10-23 03:19:31.639   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.639   468  4942 I AVNuUtils: decision 0 mime audio/vorbis
+10-23 03:19:31.639   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.639   468  4942 I MetaData: sbit: (int32_t) 16
+10-23 03:19:31.639   468  4942 I MetaData: mime: (char*) audio/raw
+10-23 03:19:31.639   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.639   468  4942 I MetaData: chnm: (int32_t) 3
+10-23 03:19:31.639   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.639   468  4942 I NuPlayer: PCM offload decided: 0
+10-23 03:19:31.640   468  4942 I MetaData: vinf: (unknown type 0, size 30)
+10-23 03:19:31.640   468  4942 I MetaData: 00000000:  01 76 6f 72 62 69 73 00  00 00 00 02 44 ac 00 00  .vorbis.....D...
+10-23 03:19:31.640   468  4942 I MetaData: 00000010:  00 00 00 00 80 b5 01 00  00 00 00 00 b8 01        ..............
+10-23 03:19:31.640   468  4942 I MetaData: vboo: (unknown type 0, size 3832)
+10-23 03:19:31.640   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.640   468  4942 I MetaData: mime: (char*) audio/vorbis
+10-23 03:19:31.640   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.640   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.640   468  4942 I AVNuUtils: No channel mask, try channel count
+10-23 03:19:31.640   468  4942 W AVNuUtils: No bitrate info
+10-23 03:19:31.640   468  4942 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:19:31.640   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.640   468  4942 I MetaData: sbit: (int32_t) 16
+10-23 03:19:31.640   468  4942 I MetaData: mime: (char*) audio/raw
+10-23 03:19:31.640   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.640   468  4942 I MetaData: chnm: (int32_t) 3
+10-23 03:19:31.640   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.640   468  4942 I AVNuUtils: decision 0 mime audio/vorbis
+10-23 03:19:31.640   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.640   468  4942 I MetaData: sbit: (int32_t) 16
+10-23 03:19:31.640   468  4942 I MetaData: mime: (char*) audio/raw
+10-23 03:19:31.640   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.640   468  4942 I MetaData: chnm: (int32_t) 3
+10-23 03:19:31.640   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.640   468  4942 I NuPlayer: PCM offload decided: 0
+10-23 03:19:31.646   468  4947 E OMXNodeInstance: setConfig(3b:google.vorbis.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+10-23 03:19:31.646   468  4947 I ACodec  : codec does not support config priority (err -2147483648)
+10-23 03:19:31.647   468  4947 I MediaCodec: MediaCodec will operate in async mode
+10-23 03:19:31.655   468  2150 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-23 03:19:31.655   468  2150 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:19:31.655   468  4942 D NuPlayerDriver: notifyListener_l(0xb2258300), (6, 0, 0)
+10-23 03:19:31.665   468  2150 D audio_hw_primary: start_output_stream: enter: stream(0xb5ff79c0)usecase(1: low-latency-playback) devices(0x2)
+10-23 03:19:31.665   468  2150 D audio_hw_primary: start_output_stream: enter: usecase(1: low-latency-playback) devices(0x2)
+10-23 03:19:31.665   468  2150 W msm8974_platform: Codec backend bitwidth 16, samplerate 48000
+10-23 03:19:31.665   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:19:31.665   468  2150 I msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(14)
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path =  0
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_adm_topology
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_asm_topology
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_audtable
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_audvoltable
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE
+10-23 03:19:31.665   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:19:31.665   468  2150 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_afe_cal
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+10-23 03:19:31.665   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:19:31.665   468  2150 E ACDB-LOADER: Error: ACDB AFE returned = -19
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+10-23 03:19:31.666   468  2150 D audio_hw_primary: select_devices: done
+10-23 03:19:31.686  1466  1566 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+10-23 03:19:31.687  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn(showListener = com.android.server.policy.PhoneWindowManager$2@8f77046)
+10-23 03:19:31.688  1466  1561 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+10-23 03:19:31.697   409   409 D SurfaceFlinger: Set power mode=2, type=0 flinger=0xb69e4000
+10-23 03:19:31.697   409   409 D qdhwcomposer: hwc_setPowerMode: Setting mode 2 on display: 0
+10-23 03:19:31.697   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:31.698   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:31.698   409   409 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:31.711  1466  2297 V KeyguardServiceDelegate: **** SHOWN CALLED ****
+10-23 03:19:31.723  3513  4422 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:19:31.742  3513  4950 W IcingInternalCorpora: getNumBytesRead when not calculated.
+10-23 03:19:31.782  1466  1566 I DisplayPowerController: Unblocked screen on after 96 ms
+10-23 03:19:31.782  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn()
+10-23 03:19:31.846   409   409 D qdhwcomposer: hwc_setPowerMode: Done setting mode 2 on display 0
+10-23 03:19:31.846   409   804 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 1
+10-23 03:19:31.847   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:31.848   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:31.848   409   804 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:31.848  1466  2252 D SurfaceControl: Excessive delay in setPowerMode(): 160ms
+10-23 03:19:32.490   468  4946 I NuPlayerDecoder: [audio] saw output EOS
+10-23 03:19:32.732  3513  4422 I Icing   : Indexing 77C147F40E50121E6814F73D1642D2ABE7C8242F from com.google.android.gms
+10-23 03:19:32.787  3513  4422 I Icing   : Indexing done 77C147F40E50121E6814F73D1642D2ABE7C8242F
+10-23 03:19:32.989   468  4942 D NuPlayerDriver: notifyListener_l(0xb2258300), (2, 0, 0)
+10-23 03:19:32.993  1466  2297 I MediaFocusControl:  AudioFocus  abandonAudioFocus() from android.media.AudioManager@505d04
+10-23 03:19:33.350   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:19:33.505   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+^C
+130|shell@quark:/ $ 
+

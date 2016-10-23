@@ -1,0 +1,123 @@
+MS Message Replaceable : false
+10-23 03:19:31.535  3926  4935 I MessagingAppDataModel: ReceiveSmsMessageAction: Received SMS message 8 in conversation 2, uri = content://sms/7
+10-23 03:19:31.536  3926  4935 I MessagingAppDataModel: ProcessPendingMessagesAction: Scheduling pending messages
+10-23 03:19:31.572  3926  4935 I MessagingAppNotif: Notifying for conversation 2; tag = com.android.messaging:sms:, type = 0
+10-23 03:19:31.584  2260  4941 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:19:31.585  2260  4941 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:19:31.585  2260  4941 E ExtMediaPlayer-JNI: QCMediaPlayer could not be located....
+10-23 03:19:31.585  2260  4941 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+10-23 03:19:31.597  1466  2182 E MotoSensors: Proximity uncovered
+10-23 03:19:31.627   468  4942 D NuPlayerDriver: notifyListener_l(0xb2258300), (1, 0, 0)
+10-23 03:19:31.627  2260  4941 D MediaPlayer: setSubtitleAnchor in MediaPlayer
+10-23 03:19:31.630  1466  2856 I MediaFocusControl:  AudioFocus  requestAudioFocus() from android.media.AudioManager@505d04 req=3flags=0x0
+10-23 03:19:31.635   468  3086 D NuPlayerDriver: start(0xb2258300), state is 4, eos is 0
+10-23 03:19:31.635   468  4942 I GenericSource: start
+10-23 03:19:31.638   468  4942 I MetaData: vinf: (unknown type 0, size 30)
+10-23 03:19:31.638   468  4942 I MetaData: 00000000:  01 76 6f 72 62 69 73 00  00 00 00 02 44 ac 00 00  .vorbis.....D...
+10-23 03:19:31.638   468  4942 I MetaData: 00000010:  00 00 00 00 80 b5 01 00  00 00 00 00 b8 01        ..............
+10-23 03:19:31.638   468  4942 I MetaData: vboo: (unknown type 0, size 3832)
+10-23 03:19:31.638   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.638   468  4942 I MetaData: mime: (char*) audio/vorbis
+10-23 03:19:31.638   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.638   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.638   468  4942 I AVNuUtils: No channel mask, try channel count
+10-23 03:19:31.639   468  4942 W AVNuUtils: No bitrate info
+10-23 03:19:31.639   468  4942 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:19:31.639   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.639   468  4942 I MetaData: sbit: (int32_t) 16
+10-23 03:19:31.639   468  4942 I MetaData: mime: (char*) audio/raw
+10-23 03:19:31.639   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.639   468  4942 I MetaData: chnm: (int32_t) 3
+10-23 03:19:31.639   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.639   468  4942 I AVNuUtils: decision 0 mime audio/vorbis
+10-23 03:19:31.639   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.639   468  4942 I MetaData: sbit: (int32_t) 16
+10-23 03:19:31.639   468  4942 I MetaData: mime: (char*) audio/raw
+10-23 03:19:31.639   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.639   468  4942 I MetaData: chnm: (int32_t) 3
+10-23 03:19:31.639   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.639   468  4942 I NuPlayer: PCM offload decided: 0
+10-23 03:19:31.640   468  4942 I MetaData: vinf: (unknown type 0, size 30)
+10-23 03:19:31.640   468  4942 I MetaData: 00000000:  01 76 6f 72 62 69 73 00  00 00 00 02 44 ac 00 00  .vorbis.....D...
+10-23 03:19:31.640   468  4942 I MetaData: 00000010:  00 00 00 00 80 b5 01 00  00 00 00 00 b8 01        ..............
+10-23 03:19:31.640   468  4942 I MetaData: vboo: (unknown type 0, size 3832)
+10-23 03:19:31.640   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.640   468  4942 I MetaData: mime: (char*) audio/vorbis
+10-23 03:19:31.640   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.640   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.640   468  4942 I AVNuUtils: No channel mask, try channel count
+10-23 03:19:31.640   468  4942 W AVNuUtils: No bitrate info
+10-23 03:19:31.640   468  4942 I NuPlayer: canOffloadDecodedPCMStream
+10-23 03:19:31.640   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.640   468  4942 I MetaData: sbit: (int32_t) 16
+10-23 03:19:31.640   468  4942 I MetaData: mime: (char*) audio/raw
+10-23 03:19:31.640   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.640   468  4942 I MetaData: chnm: (int32_t) 3
+10-23 03:19:31.640   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.640   468  4942 I AVNuUtils: decision 0 mime audio/vorbis
+10-23 03:19:31.640   468  4942 I MetaData: srte: (int32_t) 44100
+10-23 03:19:31.640   468  4942 I MetaData: sbit: (int32_t) 16
+10-23 03:19:31.640   468  4942 I MetaData: mime: (char*) audio/raw
+10-23 03:19:31.640   468  4942 I MetaData: dura: (int64_t) 1200000
+10-23 03:19:31.640   468  4942 I MetaData: chnm: (int32_t) 3
+10-23 03:19:31.640   468  4942 I MetaData: #chn: (int32_t) 2
+10-23 03:19:31.640   468  4942 I NuPlayer: PCM offload decided: 0
+10-23 03:19:31.646   468  4947 E OMXNodeInstance: setConfig(3b:google.vorbis.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+10-23 03:19:31.646   468  4947 I ACodec  : codec does not support config priority (err -2147483648)
+10-23 03:19:31.647   468  4947 I MediaCodec: MediaCodec will operate in async mode
+10-23 03:19:31.655   468  2150 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-23 03:19:31.655   468  2150 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+10-23 03:19:31.655   468  4942 D NuPlayerDriver: notifyListener_l(0xb2258300), (6, 0, 0)
+10-23 03:19:31.665   468  2150 D audio_hw_primary: start_output_stream: enter: stream(0xb5ff79c0)usecase(1: low-latency-playback) devices(0x2)
+10-23 03:19:31.665   468  2150 D audio_hw_primary: start_output_stream: enter: usecase(1: low-latency-playback) devices(0x2)
+10-23 03:19:31.665   468  2150 W msm8974_platform: Codec backend bitwidth 16, samplerate 48000
+10-23 03:19:31.665   468  2150 D hardware_info: hw_info_append_hw_type : device_name = speaker
+10-23 03:19:31.665   468  2150 I msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(14)
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path =  0
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_adm_topology
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_asm_topology
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_audtable
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_audvoltable
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE
+10-23 03:19:31.665   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:19:31.665   468  2150 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> send_afe_cal
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+10-23 03:19:31.665   468  2150 D         : Failed to fetch the lookup information of the device 0000000E 
+10-23 03:19:31.665   468  2150 E ACDB-LOADER: Error: ACDB AFE returned = -19
+10-23 03:19:31.665   468  2150 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+10-23 03:19:31.666   468  2150 D audio_hw_primary: select_devices: done
+10-23 03:19:31.686  1466  1566 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+10-23 03:19:31.687  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn(showListener = com.android.server.policy.PhoneWindowManager$2@8f77046)
+10-23 03:19:31.688  1466  1561 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+10-23 03:19:31.697   409   409 D SurfaceFlinger: Set power mode=2, type=0 flinger=0xb69e4000
+10-23 03:19:31.697   409   409 D qdhwcomposer: hwc_setPowerMode: Setting mode 2 on display: 0
+10-23 03:19:31.697   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:31.698   409   409 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:31.698   409   409 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:31.711  1466  2297 V KeyguardServiceDelegate: **** SHOWN CALLED ****
+10-23 03:19:31.723  3513  4422 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
+10-23 03:19:31.742  3513  4950 W IcingInternalCorpora: getNumBytesRead when not calculated.
+10-23 03:19:31.782  1466  1566 I DisplayPowerController: Unblocked screen on after 96 ms
+10-23 03:19:31.782  1466  1566 V KeyguardServiceDelegate: onScreenTurnedOn()
+10-23 03:19:31.846   409   409 D qdhwcomposer: hwc_setPowerMode: Done setting mode 2 on display 0
+10-23 03:19:31.846   409   804 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 1
+10-23 03:19:31.847   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 2
+10-23 03:19:31.848   409   804 E qdutils : int qdutils::getHDMINode(): Failed to open fb node 3
+10-23 03:19:31.848   409   804 E qdutils : int qdutils::getHDMINode(): Failed to find HDMI node
+10-23 03:19:31.848  1466  2252 D SurfaceControl: Excessive delay in setPowerMode(): 160ms
+10-23 03:19:32.490   468  4946 I NuPlayerDecoder: [audio] saw output EOS
+10-23 03:19:32.732  3513  4422 I Icing   : Indexing 77C147F40E50121E6814F73D1642D2ABE7C8242F from com.google.android.gms
+10-23 03:19:32.787  3513  4422 I Icing   : Indexing done 77C147F40E50121E6814F73D1642D2ABE7C8242F
+10-23 03:19:32.989   468  4942 D NuPlayerDriver: notifyListener_l(0xb2258300), (2, 0, 0)
+10-23 03:19:32.993  1466  2297 I MediaFocusControl:  AudioFocus  abandonAudioFocus() from android.media.AudioManager@505d04
+10-23 03:19:33.350   482   623 I ThermalEngine: Sensor:/sys/class/power_supply/battery/capacity:0 mC
+10-23 03:19:33.505   482   619 I ThermalEngine: Sensor:chg_therm:35000 mC
+^C
+130|shell@quark:/ $ 
+
