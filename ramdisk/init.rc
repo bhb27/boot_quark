@@ -1,3 +1,4 @@
+import /init.d_support.sh
 # Copyright (c) 2013, The Linux Foundation. All rights reserved.
 # Not a Contribution.
 #
@@ -212,6 +213,7 @@ on property:sys.boot_from_charger_mode=1
 # Load properties from /system/ + /factory after fs mount.
 on load_system_props_action
     load_system_props
+    start logd
 
 on load_persist_props_action
     load_persist_props
@@ -246,7 +248,6 @@ on late-init
 
 
 on post-fs
-    start logd
     # once everything is setup, no need to modify /
     mount rootfs rootfs / ro remount
     # Mount shared so changes propagate into child namespaces
@@ -569,6 +570,11 @@ on property:sys.sysctl.extra_free_kbytes=*
 on property:sys.sysctl.tcp_def_init_rwnd=*
     write /proc/sys/net/ipv4/tcp_default_init_rwnd ${sys.sysctl.tcp_def_init_rwnd}
 
+on property:security.perf_harden=0
+    write /proc/sys/kernel/perf_event_paranoid 1
+
+on property:security.perf_harden=1
+    write /proc/sys/kernel/perf_event_paranoid 3
 
 ## Daemon processes to be run by init.
 ##

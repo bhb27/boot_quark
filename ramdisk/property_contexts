@@ -31,6 +31,7 @@ bluetooth.              u:object_r:bluetooth_prop:s0
 debug.                  u:object_r:debug_prop:s0
 debug.db.               u:object_r:debuggerd_prop:s0
 log.                    u:object_r:shell_prop:s0
+security.perf_harden    u:object_r:shell_prop:s0
 service.adb.root        u:object_r:shell_prop:s0
 service.adb.tcp.port    u:object_r:shell_prop:s0
 
@@ -141,6 +142,7 @@ ctl.hostapd             u:object_r:ctl_hostapd_prop:s0
 ctl.thermal-engine      u:object_r:ctl_thermal_engine_prop:s0
 ctl.thermal-com         u:object_r:ctl_thermal_com_prop:s0
 ctl.diag_mdlog          u:object_r:ctl_mdlog_prop:s0
+ctl.mods_camd           u:object_r:ctl_mods_camd_prop:s0
 
 #media props
 media.proxy.            u:object_r:media_proxy_prop:s0
@@ -151,6 +153,12 @@ rcs.                    u:object_r:rcs_prop:s0
 manufacturedate         u:object_r:moto_init_prop:s0
 sf.lcd_inverted         u:object_r:moto_init_prop:s0
 mot.hw.                 u:object_r:moto_init_prop:s0
+mot.iccid               u:object_r:moto_init_prop:s0
+mot.cust_md5            u:object_r:moto_init_prop:s0
 vzw.os.rooted           u:object_r:qe_prop:s0
 
 build.version.base_os   u:object_r:base_os_prop:s0
+build.version.full      u:object_r:blur_version_prop:s0
+build.description       u:object_r:description_prop:s0
+build.display.id        u:object_r:display_id_prop:s0
+build.flavor            u:object_r:flavor_prop:s0
