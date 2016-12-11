@@ -15,7 +15,7 @@
     <item type="dimen" name="highlight_alpha_material_dark">0.2</item>
     <item type="dimen" name="highlight_alpha_material_colored">0.26</item>
     <dimen name="config_prefDialogWidth">320.0dip</dimen>
-    <dimen name="config_viewConfigurationTouchSlop">14.0dip</dimen>
+    <dimen name="config_viewConfigurationTouchSlop">13.0dip</dimen>
     <dimen name="config_viewMinFlingVelocity">50.0dip</dimen>
     <dimen name="config_viewMaxFlingVelocity">8000.0dip</dimen>
     <dimen name="config_minScalingSpan">27.0mm</dimen>
