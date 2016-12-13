@@ -75,10 +75,6 @@ nfc.                    u:object_r:nfc_prop:s0
 # emulator/goldfish.
 config.                 u:object_r:config_prop:s0
 dalvik.                 u:object_r:dalvik_prop:s0
-#line 1 "vendor/semc/system/sepolicy/Keys/1.0.0/kobjeventd/property_contexts"
-sys.charger_plugged    u:object_r:sys_charger_plugged_prop:s0
-sys.cover_state        u:object_r:sys_cover_state_prop:s0
-sys.wireless_charging  u:object_r:sys_wireless_charging_prop:s0
 #line 1 "vendor/semc/system/sepolicy/Bootstrap_Applications/1.1.0/updatemiscta/property_contexts"
 semc.version.                u:object_r:semc_version_prop:s0
 persist.tareset.notfirstboot u:object_r:tareset_notfirstboot_prop:s0

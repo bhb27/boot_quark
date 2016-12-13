@@ -317,8 +317,6 @@
 /mnt/user(/.*)?             u:object_r:mnt_user_file:s0
 /mnt/runtime(/.*)?          u:object_r:storage_file:s0
 /storage(/.*)?              u:object_r:storage_file:s0
-#line 1 "vendor/semc/system/sepolicy/Keys/1.0.0/kobjeventd/file_contexts"
-/system/bin/kobjeventd       u:object_r:kobjeventd_exec:s0
 #line 1 "vendor/semc/system/sepolicy/Basic_Audio/1.0.0//file_contexts"
 /dev/tfa98xx                    u:object_r:audio_amp_device:s0
 /dev/sony_hweffect_params       u:object_r:audio_hweffect_device:s0

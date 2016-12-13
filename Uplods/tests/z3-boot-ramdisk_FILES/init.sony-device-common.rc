@@ -4,10 +4,6 @@
 #
 import init.sony-platform.rc
 
-on fs
-    # start hvdcp to enable quck charge 2.0 in power off charge
-    start hvdcp
-
 on post-fs
     # Touch
     mkdir /dev/socket/tfsw 0770 system system
@@ -36,54 +32,30 @@ on boot
     chown system system /system/etc/tfswinfo/default.tfswinfo
     chmod 0600          /system/etc/tfswinfo/default.tfswinfo
 
-    # Cover mode
-    chown system system /sys/devices/virtual/input/clearpad/cover_mode_enabled
-    chown system system /sys/devices/virtual/input/clearpad/cover_win_bottom
-    chown system system /sys/devices/virtual/input/clearpad/cover_win_left
-    chown system system /sys/devices/virtual/input/clearpad/cover_win_right
-    chown system system /sys/devices/virtual/input/clearpad/cover_win_top
-
 # Touch
-on property:sys.charger_plugged=0
-    write /sys/devices/virtual/input/clearpad/charger_status 0
-
-on property:sys.charger_plugged=1
-    write /sys/devices/virtual/input/clearpad/charger_status 1
-
 on property:persist.sys.touch.glove_mode=0
-    write /sys/devices/virtual/input/clearpad/glove 0
+    write /sys/devices/virtual/input/max1187x/glove 0
 
 on property:persist.sys.touch.glove_mode=1
-    write /sys/devices/virtual/input/clearpad/glove 1
+    write /sys/devices/virtual/input/max1187x/glove 1
 
 on property:sys.screen_on=0
-    write /sys/devices/virtual/input/clearpad/screen_status 0
+    write /sys/devices/virtual/input/max1187x/screen_status 0
 
 on property:sys.screen_on=1
-    write /sys/devices/virtual/input/clearpad/screen_status 1
+    write /sys/devices/virtual/input/max1187x/screen_status 1
 
 on property:persist.sys.touch.easywakeup=0
-    write /sys/devices/virtual/input/clearpad/wakeup_gesture 0
+    write /sys/devices/virtual/input/max1187x/power/wakeup disabled
 
 on property:persist.sys.touch.easywakeup=1
-    write /sys/devices/virtual/input/clearpad/wakeup_gesture 1
+    write /sys/devices/virtual/input/max1187x/power/wakeup enabled
 
 on property:init.svc.illumination=running
     start touchscreend
 
-on property:sys.cover_state=0
-    write /sys/devices/virtual/input/clearpad/cover_status 0
-
-on property:sys.cover_state=1
-    write /sys/devices/virtual/input/clearpad/cover_status 1
-
 service touchscreend /system/bin/touchscreend
     disabled
-    user system
-    group system
-    class core
-
-service kobjeventd /system/bin/kobjeventd
     user system
     group system
     class core

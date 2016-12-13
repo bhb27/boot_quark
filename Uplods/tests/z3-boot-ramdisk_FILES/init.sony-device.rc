@@ -5,7 +5,7 @@
 import init.sony-device-common.rc
 
 on boot
-    # Oneseg
+    # OneSeg
     chown system system /dev/onesegtuner
     chmod 660 /dev/onesegtuner
     chown system system /dev/i2c-11
@@ -32,15 +32,14 @@ on boot
     chmod 660 /dev/dvb/adapter0/dvr3
     chown system system /sys/devices/onesegtuner_pdev/oneseg_power_ctrl
     chmod 660 /sys/devices/onesegtuner_pdev/oneseg_power_ctrl
-    chown system system /sys/devices/onesegtuner_pdev/oneseg_irq
-    chmod 660 /sys/devices/onesegtuner_pdev/oneseg_irq
-    chown system system /sys/devices/onesegtuner_pdev/oneseg_irq_ctrl
-    chmod 660 /sys/devices/onesegtuner_pdev/oneseg_irq_ctrl
+    chown system system /sys/module/mpq_dmx_hw_plugin/parameters/tsif_mode
+    chmod 660 /sys/module/mpq_dmx_hw_plugin/parameters/tsif_mode
 
 on post-fs
     # Create directory for DTV-GINGA
     mkdir /dev/socket/isdbt 0755 system system
 
+# DTV-GINGA
 service dtvserver /system/bin/dtvserver
     class main
     user system
