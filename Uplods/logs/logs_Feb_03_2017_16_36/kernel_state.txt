@@ -1,0 +1,302 @@
+Path: /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq | Value: 422400
+Path: /sys/class/thermal/thermal_zone0/temp | Value: 40700
+Path: /sys/class/thermal/thermal_zone1/temp | Value: 50
+Path: /sys/devices/system/cpu/cpu0/online | Value: 1
+Path: /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq | Value: 1958400
+Path: /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq | Value: 300000
+Path: /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies | Value: 300000 422400 652800 729600 883200 960000 1036800 1190400 1267200 1497600 1574400 1728000 1958400 2265600 2419200 2496000 2572800 2649600
+Path: /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor | Value: interactive
+Path: /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors | Value: interactive conservative userspace powersave performance
+Dir: /sys/devices/system/cpu/cpufreq
+File: /sys/devices/system/cpu/cpufreq/all_time_in_state | Value: freq		cpu0		cpu1		cpu2		cpu3		
+300000		11242		10556		12282		13130		
+422400		696		520		498		582		
+652800		602		666		565		474		
+729600		211		145		135		129		
+883200		207		233		259		177		
+960000		115		100		88		65		
+1036800		94		131		104		52		
+1190400		167		110		115		135		
+1267200		79		52		82		49		
+1497600		1681		1712		1568		1603		
+1574400		132		184		134		127		
+1728000		127		185		93		47		
+1958400		1701		1233		1609		1336		
+2265600		118		80		138		103		
+2419200		64		55		44		25		
+2496000		11		49		48		23		
+2572800		42		51		5		13		
+2649600		3008		4236		2526		2227
+File: /sys/devices/system/cpu/cpufreq/current_in_state | Value: CPU0:300000=71000 422400=83000 652800=97000 729600=106000 883200=115000 960000=146000 1036800=153000 1190400=167000 1267200=213000 1497600=249000 1574400=263000 1728000=288000 1958400=324000 2265600=377000 2419200=405000 2496000=405000 2572800=413000 2649600=414000 
+CPU1:300000=40470 422400=47309 652800=55289 729600=60419 883200=65550 960000=83220 1036800=87209 1190400=95189 1267200=121409 1497600=141930 1574400=149910 1728000=164160 1958400=184679 2265600=214889 2419200=230849 2496000=230849 2572800=235409 2649600=235979 
+CPU2:300000=46860 422400=54780 652800=64020 729600=69960 883200=75900 960000=96360 1036800=100980 1190400=110220 1267200=140580 1497600=164340 1574400=173580 1728000=190080 1958400=213840 2265600=248820 2419200=267300 2496000=267300 2572800=272580 2649600=273240 
+CPU3:300000=53960 422400=63080 652800=73720 729600=80560 883200=87400 960000=110960 1036800=116280 1190400=126920 1267200=161880 1497600=189240 1574400=199880 1728000=218880 1958400=246240 2265600=286520 2419200=307800 2496000=307800 2572800=313880 2649600=314640
+Dir: /sys/devices/system/cpu/cpufreq/interactive
+File: /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay | Value: 20000 1400000:40000 1700000:20000
+File: /sys/devices/system/cpu/cpufreq/interactive/boost | Value: 0
+File: /sys/devices/system/cpu/cpufreq/interactive/boostpulse | Value: 
+File: /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration | Value: 80000
+File: /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load | Value: 90
+File: /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq | Value: 1497600
+File: /sys/devices/system/cpu/cpufreq/interactive/io_is_busy | Value: 1
+File: /sys/devices/system/cpu/cpufreq/interactive/min_sample_time | Value: 40000
+File: /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor | Value: 100000
+File: /sys/devices/system/cpu/cpufreq/interactive/sync_freq | Value: 0
+File: /sys/devices/system/cpu/cpufreq/interactive/target_loads | Value: 85 1500000:90 1800000:70
+File: /sys/devices/system/cpu/cpufreq/interactive/timer_rate | Value: 30000
+File: /sys/devices/system/cpu/cpufreq/interactive/timer_slack | Value: 80000
+File: /sys/devices/system/cpu/cpufreq/interactive/up_threshold_any_cpu_freq | Value: 0
+File: /sys/devices/system/cpu/cpufreq/interactive/up_threshold_any_cpu_load | Value: 0
+Dir: /sys/devices/system/cpu/cpufreq/stats
+Dir: /sys/devices/system/cpu/cpufreq/stats/cpu0
+File: /sys/devices/system/cpu/cpufreq/stats/cpu0/time_in_state | Value: 300000 11241
+422400 707
+652800 602
+729600 211
+883200 207
+960000 115
+1036800 94
+1190400 167
+1267200 85
+1497600 1666
+1574400 132
+1728000 127
+1958400 1701
+2265600 118
+2419200 64
+2496000 11
+2572800 42
+2649600 3008
+Dir: /sys/devices/system/cpu/cpufreq/stats/cpu1
+File: /sys/devices/system/cpu/cpufreq/stats/cpu1/time_in_state | Value: 300000 10556
+422400 520
+652800 666
+729600 145
+883200 233
+960000 100
+1036800 131
+1190400 114
+1267200 52
+1497600 1711
+1574400 184
+1728000 185
+1958400 1233
+2265600 80
+2419200 55
+2496000 49
+2572800 51
+2649600 4236
+Dir: /sys/devices/system/cpu/cpufreq/stats/cpu2
+File: /sys/devices/system/cpu/cpufreq/stats/cpu2/time_in_state | Value: 300000 12297
+422400 498
+652800 571
+729600 135
+883200 259
+960000 88
+1036800 104
+1190400 115
+1267200 82
+1497600 1556
+1574400 134
+1728000 93
+1958400 1609
+2265600 138
+2419200 44
+2496000 48
+2572800 5
+2649600 2526
+Dir: /sys/devices/system/cpu/cpufreq/stats/cpu3
+File: /sys/devices/system/cpu/cpufreq/stats/cpu3/time_in_state | Value: 300000 13161
+422400 582
+652800 474
+729600 129
+883200 177
+960000 65
+1036800 52
+1190400 135
+1267200 49
+1497600 1587
+1574400 127
+1728000 47
+1958400 1336
+2265600 103
+2419200 25
+2496000 23
+2572800 13
+2649600 2227
+File: /sys/devices/system/cpu/cpufreq/stats/enable | Value: 1
+File: /sys/devices/system/cpu/cpufreq/stats/reset | Value: 
+Dir: /sys/devices/system/cpu/cpu0/cpufreq
+File: /sys/devices/system/cpu/cpu0/cpufreq/UV_mV_table | Value: 300mhz: 640 mV
+422mhz: 650 mV
+652mhz: 670 mV
+729mhz: 700 mV
+883mhz: 710 mV
+960mhz: 730 mV
+1036mhz: 790 mV
+1190mhz: 800 mV
+1267mhz: 820 mV
+1497mhz: 830 mV
+1574mhz: 860 mV
+1728mhz: 870 mV
+1958mhz: 890 mV
+2265mhz: 920 mV
+2419mhz: 975 mV
+2496mhz: 1005 mV
+2572mhz: 1020 mV
+2649mhz: 1035 mV
+File: /sys/devices/system/cpu/cpu0/cpufreq/affected_cpus | Value: 0
+File: /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq | Value: 300000
+File: /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq | Value: 2649600
+File: /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq | Value: 300000
+File: /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_transition_latency | Value: 0
+File: /sys/devices/system/cpu/cpu0/cpufreq/related_cpus | Value: 0
+File: /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies | Value: 300000 422400 652800 729600 883200 960000 1036800 1190400 1267200 1497600 1574400 1728000 1958400 2265600 2419200 2496000 2572800 2649600
+File: /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors | Value: interactive conservative userspace powersave performance
+File: /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq | Value: 300000
+File: /sys/devices/system/cpu/cpu0/cpufreq/scaling_driver | Value: msm
+File: /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor | Value: interactive
+File: /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq | Value: 1958400
+File: /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq | Value: 300000
+File: /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed | Value: <unsupported>
+Dir: /sys/devices/system/cpu/cpu0/cpufreq/stats
+File: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state | Value: 300000 11284
+422400 714
+652800 602
+729600 211
+883200 207
+960000 115
+1036800 94
+1190400 167
+1267200 85
+1497600 1685
+1574400 132
+1728000 127
+1958400 1701
+2265600 118
+2419200 64
+2496000 11
+2572800 42
+2649600 3008
+File: /sys/devices/system/cpu/cpu0/cpufreq/stats/total_trans | Value: 950
+Dir: /sys/module/cpu_boost/parameters
+File: /sys/module/cpu_boost/parameters/boost_ms | Value: 20
+File: /sys/module/cpu_boost/parameters/input_boost_freq | Value: 1497600
+File: /sys/module/cpu_boost/parameters/input_boost_ms | Value: 40
+File: /sys/module/cpu_boost/parameters/load_based_syncs | Value: N
+File: /sys/module/cpu_boost/parameters/migration_load_threshold | Value: 15
+File: /sys/module/cpu_boost/parameters/sync_threshold | Value: 1728000
+Path: /sys/devices/system/cpu/cpu0/cpufreq/UV_mV_table | Value: 300mhz: 640 mV
+422mhz: 650 mV
+652mhz: 670 mV
+729mhz: 700 mV
+883mhz: 710 mV
+960mhz: 730 mV
+1036mhz: 790 mV
+1190mhz: 800 mV
+1267mhz: 820 mV
+1497mhz: 830 mV
+1574mhz: 860 mV
+1728mhz: 870 mV
+1958mhz: 890 mV
+2265mhz: 920 mV
+2419mhz: 975 mV
+2496mhz: 1005 mV
+2572mhz: 1020 mV
+2649mhz: 1035 mV
+Path: /sys/module/msm_pm/modes/cpu0/wfi/idle_enabled | Value: 1
+Path: /sys/module/msm_pm/modes/cpu0/retention/idle_enabled | Value: 1
+Path: /sys/module/msm_pm/modes/cpu0/standalone_power_collapse/idle_enabled | Value: 1
+Path: /sys/module/msm_pm/modes/cpu0/power_collapse/idle_enabled | Value: 1
+Path: /sys/block/mmcblk0/queue/scheduler | Value: noop deadline row cfq [bfq]
+Dir: /sys/block/mmcblk0/queue/iosched
+File: /sys/block/mmcblk0/queue/iosched/back_seek_max | Value: 16384
+File: /sys/block/mmcblk0/queue/iosched/back_seek_penalty | Value: 2
+File: /sys/block/mmcblk0/queue/iosched/fifo_expire_async | Value: 250
+File: /sys/block/mmcblk0/queue/iosched/fifo_expire_sync | Value: 123
+File: /sys/block/mmcblk0/queue/iosched/low_latency | Value: 1
+File: /sys/block/mmcblk0/queue/iosched/max_budget | Value: 0
+File: /sys/block/mmcblk0/queue/iosched/max_budget_async_rq | Value: 4
+File: /sys/block/mmcblk0/queue/iosched/slice_idle | Value: 0
+File: /sys/block/mmcblk0/queue/iosched/timeout_async | Value: 40
+File: /sys/block/mmcblk0/queue/iosched/timeout_sync | Value: 123
+File: /sys/block/mmcblk0/queue/iosched/weights | Value: Tot reqs queued 0
+
+Active:
+Idle:
+File: /sys/block/mmcblk0/queue/iosched/wr_coeff | Value: 20
+File: /sys/block/mmcblk0/queue/iosched/wr_max_softrt_rate | Value: 7000
+File: /sys/block/mmcblk0/queue/iosched/wr_max_time | Value: 2000
+File: /sys/block/mmcblk0/queue/iosched/wr_min_idle_time | Value: 2000
+File: /sys/block/mmcblk0/queue/iosched/wr_min_inter_arr_async | Value: 500
+File: /sys/block/mmcblk0/queue/iosched/wr_rt_max_time | Value: 300
+Path: /sys/block/mmcblk0/queue/read_ahead_kb | Value: 512
+Path: /sys/block/mmcblk0/queue/rotational | Value: 0
+Path: /sys/block/mmcblk0/queue/iostats | Value: 1
+Path: /sys/block/mmcblk0/queue/add_random | Value: 0
+Path: /sys/block/mmcblk0/queue/rq_affinity | Value: 1
+Path: /dev/block/zram0 | Value: 
+Path: /sys/block/zram0/disksize | Value: 0
+Path: /sys/block/zram0/reset | Value: 
+Path: /proc/sys/vm/dirty_ratio | Value: 20
+Path: /proc/sys/vm/dirty_background_ratio | Value: 5
+Path: /proc/sys/vm/dirty_expire_centisecs | Value: 200
+Path: /proc/sys/vm/dirty_writeback_centisecs | Value: 500
+Path: /proc/sys/vm/min_free_kbytes | Value: 2954
+Path: /proc/sys/vm/overcommit_ratio | Value: 50
+Path: /proc/sys/vm/swappiness | Value: 60
+Path: /proc/sys/vm/vfs_cache_pressure | Value: 100
+Path: /proc/sys/vm/laptop_mode | Value: 1
+Path: /proc/sys/vm/extra_free_kbytes | Value: 43200
+Dir: /sys/module/msm_thermal
+Dir: /sys/module/msm_thermal/core_control
+File: /sys/module/msm_thermal/core_control/cpus_offlined | Value: 0
+File: /sys/module/msm_thermal/core_control/enabled | Value: 1
+Dir: /sys/module/msm_thermal/cx_phase_ctrl
+File: /sys/module/msm_thermal/cx_phase_ctrl/temp_band | Value: 5
+Dir: /sys/module/msm_thermal/gfx_phase_ctrl
+File: /sys/module/msm_thermal/gfx_phase_ctrl/temp_band | Value: 4
+Dir: /sys/module/msm_thermal/parameters
+File: /sys/module/msm_thermal/parameters/enabled | Value: N
+File: /sys/module/msm_thermal/uevent | Value: 
+Dir: /sys/module/msm_thermal/vdd_restriction
+File: /sys/module/msm_thermal/vdd_restriction/enabled | Value: 0
+Dir: /sys/module/msm_thermal/vdd_restriction/vdd-apps
+File: /sys/module/msm_thermal/vdd_restriction/vdd-apps/level | Value: -1
+File: /sys/module/msm_thermal/vdd_restriction/vdd-apps/value | Value: -1
+Dir: /sys/module/msm_thermal/vdd_restriction/vdd-dig
+File: /sys/module/msm_thermal/vdd_restriction/vdd-dig/level | Value: -1
+File: /sys/module/msm_thermal/vdd_restriction/vdd-dig/value | Value: -1
+Dir: /sys/module/msm_thermal/vdd_restriction/vdd-gfx
+File: /sys/module/msm_thermal/vdd_restriction/vdd-gfx/level | Value: -1
+File: /sys/module/msm_thermal/vdd_restriction/vdd-gfx/value | Value: -1
+Path: /sys/devices/platform/kcal_ctrl.0/kcal | Value: 236 240 255
+Path: /sys/class/graphics/fb0/rgb | Value: 32768 32768 32768
+Path: /sys/devices/platform/kcal_ctrl.0/kcal_enable | Value: 1
+Path: /sys/devices/platform/kcal_ctrl.0/kcal_enable | Value: 1
+Path: /sys/devices/platform/kcal_ctrl.0/kcal_invert | Value: 0
+Path: /sys/devices/platform/kcal_ctrl.0/kcal_sat | Value: 285
+Path: /sys/devices/platform/kcal_ctrl.0/kcal_hue | Value: 0
+Path: /sys/devices/platform/kcal_ctrl.0/kcal_val | Value: 240
+Path: /sys/devices/platform/kcal_ctrl.0/kcal_cont | Value: 270
+Path: /sys/devices/platform/kcal_ctrl.0/kcal_min | Value: 35
+Path: /sys/devices/virtual/graphics/fb0/hbm | Value: 0
+Path: /sys/android_touch/doubletap2wake | Value: 1
+Path: /sys/android_touch/sweep2wake | Value: 0
+Path: /sys/android_touch/sweep2sleep | Value: 0
+Path: /sys/android_touch/camera_gesture | Value: 0
+Path: /sys/android_touch/dt2w_time | Value: 80
+Path: /sys/android_touch/dt2w_feather_x | Value: 150
+Path: /sys/android_touch/dt2w_feather_y | Value: 150
+Path: /sys/android_touch/vib_strength | Value: 60
+Path: /sys/android_touch/sweep_timeout | Value: 100
+Path: /sys/kernel/sound_control_3/gpl_speaker_gain | Value: 6 6
+Path: /sys/kernel/sound_control_3/gpl_headphone_gain | Value: 6 6
+Path: /sys/kernel/sound_control_3/gpl_mic_gain | Value: 6
+Path: /sys/kernel/sound_control_3/gpl_cam_mic_gain | Value: 6
+Path: /sys/kernel/sound_control_3/gpl_headphone_pa_gain | Value: 32 32
+Path: /sys/module/snd_soc_wcd9320/parameters/high_perf_mode | Value: 0
+Path: /sys/module/snd_soc_wcd9320/parameters/spkr_drv_wrnd | Value: -1
+Path: /sys/class/timed_output/vibrator/vtg_level | Value: 88
+Path: /proc/sys/net/ipv4/tcp_available_congestion_control | Value: westwood reno bic cubic highspeed hybla htcp vegas veno scalable lp yeah illinois
+Path: /sys/devices/qcom,bcl.38/mode | Value: enabled

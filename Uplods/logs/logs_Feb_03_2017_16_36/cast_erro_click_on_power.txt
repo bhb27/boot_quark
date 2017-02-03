@@ -1,0 +1,300 @@
+
+02-03 16:36:48.398  6533  6533 I getprop : type=1400 audit(0.0:43): avc: denied { open } for uid=0 path="/dev/__properties__/u:object_r:spcomlib_prop:s0" dev="tmpfs" ino=11300 scontext=u:r:sudaemon:s0 tcontext=u:object_r:spcomlib_prop:s0 tclass=file permissive=1
+02-03 16:36:48.398  6533  6533 I getprop : type=1400 audit(0.0:44): avc: denied { getattr } for uid=0 path="/dev/__properties__/u:object_r:spcomlib_prop:s0" dev="tmpfs" ino=11300 scontext=u:r:sudaemon:s0 tcontext=u:object_r:spcomlib_prop:s0 tclass=file permissive=1
+02-03 16:38:40.265  6940  6940 V MediaRouter: Dispatching route change: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=Scanning..., category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=null }
+02-03 16:38:41.688  6940  6940 V MediaRouter: Dispatching route change: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=Scanning..., category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=null }
+02-03 16:38:42.273  6940  6940 V MediaRouter: Dispatching route change: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=Connecting..., category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=null }
+02-03 16:38:42.316  6940  6940 V MediaRouter: Selecting route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=Connecting..., category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=null }
+02-03 16:38:42.955  6940  6940 V MediaRouter: Selecting route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=Connecting..., category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=null }
+02-03 16:38:43.805  6940  6940 V MediaRouter: Dispatching route change: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=null }
+02-03 16:38:43.821  6940  6940 V MediaRouter: Selecting route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=null }
+02-03 16:38:44.936   420  7395 E QCNEA   : |CAC| communication to CAS is down
+02-03 16:38:44.939   420  7396 E QCNEA   : |CAC| readCallback: end of stream
+02-04 07:44:07.529  7347  7347 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+02-04 07:44:56.619   373   373 I init    : type=1400 audit(0.0:3): avc: denied { execute_no_trans } for uid=0 path="/system/bin/sh" dev="mmcblk0p40" ino=445 scontext=u:r:init:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+02-04 07:44:56.695   416   416 I init    : type=1400 audit(0.0:4): avc: denied { execute_no_trans } for uid=0 path="/system/vendor/bin/thermal-engine" dev="mmcblk0p40" ino=2239 scontext=u:r:init:s0 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=1
+02-04 07:44:56.769   442   442 I mount   : type=1400 audit(0.0:5): avc: denied { remount } for uid=0 scontext=u:r:toolbox:s0 tcontext=u:object_r:labeledfs:s0 tclass=filesystem permissive=1
+02-03 16:38:54.764  3962  4049 W OpenGLRenderer: Incorrectly called buildLayer on View: method, destroying layer...
+02-03 16:39:00.494  6940  6940 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:00.873  3962  7404 W ContextImpl: Failed to ensure /data/user/0/com.google.android.gms/shared_prefs: mkdir failed: EACCES (Permission denied)
+02-03 16:39:01.146  6940  6940 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+02-03 16:39:01.163  6940  6940 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:01.174  6940  6940 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:01.242  6940  6940 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:01.286  6940  6940 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: FATAL EXCEPTION: main
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: Process: com.android.systemui, PID: 6940
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at com.android.keyguard.KeyguardStatusView.onWeatherChanged(KeyguardStatusView.java:326)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at com.android.internal.util.rr.WeatherControllerImpl.addCallback(WeatherControllerImpl.java:78)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at com.android.keyguard.KeyguardStatusView.onAttachedToWindow(KeyguardStatusView.java:289)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.View.dispatchAttachedToWindow(View.java:15513)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2916)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1526)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1254)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6343)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:874)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.Choreographer.doCallbacks(Choreographer.java:686)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.Choreographer.doFrame(Choreographer.java:621)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:860)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:751)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6176)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:888)
+02-03 16:39:01.288  6940  6940 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:778)
+02-03 16:39:01.302  6940  6940 I Process : Sending signal. PID: 6940 SIG: 9
+02-03 16:39:01.447  7423  7423 W System  : ClassLoader referenced unknown path: /system/priv-app/SystemUI/lib/arm
+02-03 16:39:01.502  7423  7423 V SystemUIService: Starting SystemUI services for user 0.
+02-03 16:39:01.552  7423  7423 V MediaRouter: Adding route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:01.559  7423  7423 V MediaRouter: Adding route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:01.561  7423  7423 V MediaRouter: Selecting route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:01.573  7423  7423 V MediaRouter: Updating audio routes: AudioRoutesInfo{ type=SPEAKER }
+--------- beginning of system
+02-03 16:39:01.627  7423  7423 V FingerprintManager: FingerprintManagerService was null
+02-03 16:39:01.674  7423  7423 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:01.674  7423  7423 W FingerprintManager: addLockoutResetCallback(): Service not connected!
+02-03 16:39:01.727  7423  7438 E WVMExtractor: Failed to open libwvm.so: dlopen failed: library "libwvm.so" not found
+02-03 16:39:01.765  7423  7439 I OMXClient: MuxOMX ctor
+02-03 16:39:01.960  7423  7446 I OMXClient: MuxOMX ctor
+02-03 16:39:02.084  7423  7450 I OMXClient: MuxOMX ctor
+02-03 16:39:02.098  7423  7423 I vol.Events: writeEvent collection_started
+02-03 16:39:02.119  7423  7453 I vol.Events: writeEvent external_ringer_mode_changed normal
+02-03 16:39:02.119  7423  7453 I vol.Events: writeEvent internal_ringer_mode_changed normal
+02-03 16:39:02.320  7423  7453 I vol.Events: writeEvent level_changed STREAM_ALARM 6
+02-03 16:39:02.322  7423  7453 I vol.Events: writeEvent level_changed STREAM_BLUETOOTH_SCO 7
+02-03 16:39:02.341  7423  7453 I vol.Events: writeEvent level_changed STREAM_MUSIC 11
+02-03 16:39:02.351  7423  7453 I vol.Events: writeEvent level_changed STREAM_RING 5
+02-03 16:39:02.355  7423  7453 I vol.Events: writeEvent level_changed STREAM_SYSTEM 5
+02-03 16:39:02.369  7423  7453 I vol.Events: writeEvent level_changed STREAM_VOICE_CALL 4
+02-03 16:39:02.407  7423  7423 D StorageNotification: Notifying about private volume: VolumeInfo{private}:
+02-03 16:39:02.407  7423  7423 D StorageNotification:     type=PRIVATE diskId=null partGuid=null mountFlags=0 mountUserId=-1 
+02-03 16:39:02.407  7423  7423 D StorageNotification:     state=MOUNTED 
+02-03 16:39:02.407  7423  7423 D StorageNotification:     fsType=null fsUuid=null fsLabel=null 
+02-03 16:39:02.407  7423  7423 D StorageNotification:     path=/data internalPath=null 
+02-03 16:39:02.592  7423  7423 W ResourceType: Bad XML block: header size 18254 or total size 169478669 is larger than data size 543
+02-03 16:39:02.770  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:03.132  7423  7460 V RenderScript: Successfully loaded runtime: libRSDriver_adreno.so
+02-03 16:39:03.220  7423  7423 W System  : ClassLoader referenced unknown path: 
+02-03 16:39:03.221  7423  7423 W System  : ClassLoader referenced unknown path: /system/priv-app/Dialer/lib/arm
+02-03 16:39:03.222  7423  7423 D ApplicationLoaders: ignored Vulkan layer search path /system/priv-app/Dialer/lib/arm:/system/lib:/vendor/lib for namespace 0xb6d06090
+02-03 16:39:03.273  7423  7423 D ClockController: onTuningChanged key=cmsystem:status_bar_clock value=1
+02-03 16:39:03.285  7423  7423 D ClockController: onTuningChanged key=cmsystem:status_bar_am_pm value=null
+02-03 16:39:03.287  7423  7423 D ClockController: onTuningChanged key=clock_seconds value=0
+02-03 16:39:03.369  7423  7423 D LocalBluetoothProfileManager: Adding local MAP profile
+02-03 16:39:03.376  7423  7423 D BluetoothMap: Create BluetoothMap proxy object
+02-03 16:39:03.383  7423  7423 D BluetoothDun: BluetoothDun() call bindService
+02-03 16:39:03.398  7423  7423 D LocalBluetoothProfileManager: LocalBluetoothProfileManager construction complete
+02-03 16:39:03.451  7423  7423 I CameraManagerGlobal: Connecting to camera service
+02-03 16:39:03.559  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:03.702  7423  7455 D OpenGLRenderer: profile bars disabled
+02-03 16:39:03.702  7423  7455 D OpenGLRenderer: ambientRatio = 1.50
+02-03 16:39:03.747  7423  7423 D PhoneStatusBar: disable: < EXPAND* icons alerts system_info BACK* HOME* RECENT* clock SEARCH* quick_settings >
+02-03 16:39:04.699  7423  7423 D PhoneStatusBar: heads up is enabled
+02-03 16:39:04.865  7423  7423 D PhoneStatusBar: disable: < EXPAND ICONS* alerts SYSTEM_INFO* BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:04.879  7423  7423 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:04.879  7423  7423 D PhoneStatusBar: disable: < EXPAND ICONS alerts SYSTEM_INFO BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:04.882  7423  7423 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:04.917  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:04.979  7423  7423 D PhoneStatusBar: disable: < EXPAND ICONS alerts SYSTEM_INFO BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:04.983  7423  7423 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:05.004  7423  7423 I Choreographer: Skipped 135 frames!  The application may be doing too much work on its main thread.
+02-03 16:39:05.045  7423  7455 I Adreno  : QUALCOMM build                   : a5b4970, If5818605d9
+02-03 16:39:05.045  7423  7455 I Adreno  : Build Date                       : 10/12/16
+02-03 16:39:05.045  7423  7455 I Adreno  : OpenGL ES Shader Compiler Version: XE031.09.00.04
+02-03 16:39:05.045  7423  7455 I Adreno  : Local Branch                     : N24D
+02-03 16:39:05.045  7423  7455 I Adreno  : Remote Branch                    : 
+02-03 16:39:05.045  7423  7455 I Adreno  : Remote Branch                    : 
+02-03 16:39:05.045  7423  7455 I Adreno  : Reconstruct Branch               : 
+02-03 16:39:05.052  7423  7455 I OpenGLRenderer: Initialized EGL, version 1.4
+02-03 16:39:05.053  7423  7455 D OpenGLRenderer: Swap behavior 1
+02-03 16:39:05.163  7423  7423 D ViewRootImpl[StatusBar]: changeCanvasOpacity: opaque=true
+02-03 16:39:05.682  7423  7423 D AndroidRuntime: Shutting down VM
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: FATAL EXCEPTION: main
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: Process: com.android.systemui, PID: 7423
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at com.android.keyguard.KeyguardStatusView.onWeatherChanged(KeyguardStatusView.java:326)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at com.android.internal.util.rr.WeatherControllerImpl.addCallback(WeatherControllerImpl.java:78)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at com.android.keyguard.KeyguardStatusView.onAttachedToWindow(KeyguardStatusView.java:289)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.View.dispatchAttachedToWindow(View.java:15513)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2916)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1526)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1254)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6343)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:874)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.Choreographer.doCallbacks(Choreographer.java:686)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.Choreographer.doFrame(Choreographer.java:621)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:860)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:751)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6176)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:888)
+02-03 16:39:05.683  7423  7423 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:778)
+02-03 16:39:05.695  7423  7423 I Process : Sending signal. PID: 7423 SIG: 9
+02-03 16:39:05.857  7479  7479 W System  : ClassLoader referenced unknown path: /system/priv-app/SystemUI/lib/arm
+02-03 16:39:05.886  7479  7479 V SystemUIService: Starting SystemUI services for user 0.
+02-03 16:39:05.904  7479  7479 V MediaRouter: Adding route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:05.907  7479  7479 V MediaRouter: Adding route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:05.907  7479  7479 V MediaRouter: Selecting route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:05.910  7479  7479 V MediaRouter: Updating audio routes: AudioRoutesInfo{ type=SPEAKER }
+02-03 16:39:05.933  7479  7479 V FingerprintManager: FingerprintManagerService was null
+02-03 16:39:05.958  7479  7479 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:05.958  7479  7479 W FingerprintManager: addLockoutResetCallback(): Service not connected!
+02-03 16:39:05.986  7479  7494 E WVMExtractor: Failed to open libwvm.so: dlopen failed: library "libwvm.so" not found
+02-03 16:39:06.018  7479  7495 I OMXClient: MuxOMX ctor
+02-03 16:39:06.095  7479  7502 I OMXClient: MuxOMX ctor
+02-03 16:39:06.190  7479  7506 I OMXClient: MuxOMX ctor
+02-03 16:39:06.206  7479  7479 I vol.Events: writeEvent collection_started
+02-03 16:39:06.219  7479  7509 I vol.Events: writeEvent external_ringer_mode_changed normal
+02-03 16:39:06.219  7479  7509 I vol.Events: writeEvent internal_ringer_mode_changed normal
+02-03 16:39:06.366  7479  7509 I vol.Events: writeEvent level_changed STREAM_ALARM 6
+02-03 16:39:06.375  7479  7509 I vol.Events: writeEvent level_changed STREAM_BLUETOOTH_SCO 7
+02-03 16:39:06.393  7479  7509 I vol.Events: writeEvent level_changed STREAM_MUSIC 11
+02-03 16:39:06.405  7479  7509 I vol.Events: writeEvent level_changed STREAM_RING 5
+02-03 16:39:06.406  7479  7509 I vol.Events: writeEvent level_changed STREAM_SYSTEM 5
+02-03 16:39:06.413  7479  7509 I vol.Events: writeEvent level_changed STREAM_VOICE_CALL 4
+02-03 16:39:06.434  7479  7479 D StorageNotification: Notifying about private volume: VolumeInfo{private}:
+02-03 16:39:06.434  7479  7479 D StorageNotification:     type=PRIVATE diskId=null partGuid=null mountFlags=0 mountUserId=-1 
+02-03 16:39:06.434  7479  7479 D StorageNotification:     state=MOUNTED 
+02-03 16:39:06.434  7479  7479 D StorageNotification:     fsType=null fsUuid=null fsLabel=null 
+02-03 16:39:06.434  7479  7479 D StorageNotification:     path=/data internalPath=null 
+02-03 16:39:06.534  7479  7479 W ResourceType: Bad XML block: header size 18254 or total size 169478669 is larger than data size 543
+02-03 16:39:06.811  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:07.306  7479  7514 V RenderScript: Successfully loaded runtime: libRSDriver_adreno.so
+02-03 16:39:07.452  7479  7479 W System  : ClassLoader referenced unknown path: 
+02-03 16:39:07.453  7479  7479 W System  : ClassLoader referenced unknown path: /system/priv-app/Dialer/lib/arm
+02-03 16:39:07.457  7479  7479 D ApplicationLoaders: ignored Vulkan layer search path /system/priv-app/Dialer/lib/arm:/system/lib:/vendor/lib for namespace 0xb6d06090
+02-03 16:39:07.528  7479  7479 D ClockController: onTuningChanged key=cmsystem:status_bar_clock value=1
+02-03 16:39:07.539  7479  7479 D ClockController: onTuningChanged key=cmsystem:status_bar_am_pm value=null
+02-03 16:39:07.543  7479  7479 D ClockController: onTuningChanged key=clock_seconds value=0
+02-03 16:39:07.634  7479  7479 D LocalBluetoothProfileManager: Adding local MAP profile
+02-03 16:39:07.638  7479  7479 D BluetoothMap: Create BluetoothMap proxy object
+02-03 16:39:07.647  7479  7479 D BluetoothDun: BluetoothDun() call bindService
+02-03 16:39:07.668  7479  7479 D LocalBluetoothProfileManager: LocalBluetoothProfileManager construction complete
+02-03 16:39:07.697  7479  7479 I CameraManagerGlobal: Connecting to camera service
+02-03 16:39:07.765  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:07.954  7479  7510 D OpenGLRenderer: profile bars disabled
+02-03 16:39:07.954  7479  7510 D OpenGLRenderer: ambientRatio = 1.50
+02-03 16:39:07.988  7479  7479 D PhoneStatusBar: disable: < EXPAND* icons alerts system_info BACK* HOME* RECENT* clock SEARCH* quick_settings >
+02-03 16:39:09.159  7479  7479 D PhoneStatusBar: heads up is enabled
+02-03 16:39:09.320  7479  7479 D PhoneStatusBar: disable: < EXPAND ICONS* alerts SYSTEM_INFO* BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:09.345  7479  7479 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:09.346  7479  7479 D PhoneStatusBar: disable: < EXPAND ICONS alerts SYSTEM_INFO BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:09.352  7479  7479 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:09.425  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:09.489  7479  7479 D PhoneStatusBar: disable: < EXPAND ICONS alerts SYSTEM_INFO BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:09.496  7479  7479 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:09.499  7479  7479 I Choreographer: Skipped 164 frames!  The application may be doing too much work on its main thread.
+02-03 16:39:09.569  7479  7510 I Adreno  : QUALCOMM build                   : a5b4970, If5818605d9
+02-03 16:39:09.569  7479  7510 I Adreno  : Build Date                       : 10/12/16
+02-03 16:39:09.569  7479  7510 I Adreno  : OpenGL ES Shader Compiler Version: XE031.09.00.04
+02-03 16:39:09.569  7479  7510 I Adreno  : Local Branch                     : N24D
+02-03 16:39:09.569  7479  7510 I Adreno  : Remote Branch                    : 
+02-03 16:39:09.569  7479  7510 I Adreno  : Remote Branch                    : 
+02-03 16:39:09.569  7479  7510 I Adreno  : Reconstruct Branch               : 
+02-03 16:39:09.591  7479  7510 I OpenGLRenderer: Initialized EGL, version 1.4
+02-03 16:39:09.591  7479  7510 D OpenGLRenderer: Swap behavior 1
+02-03 16:39:09.690  7479  7479 D ViewRootImpl[StatusBar]: changeCanvasOpacity: opaque=true
+02-03 16:39:10.626  7479  7479 D AndroidRuntime: Shutting down VM
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: FATAL EXCEPTION: main
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: Process: com.android.systemui, PID: 7479
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at com.android.keyguard.KeyguardStatusView.onWeatherChanged(KeyguardStatusView.java:326)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at com.android.internal.util.rr.WeatherControllerImpl.addCallback(WeatherControllerImpl.java:78)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at com.android.keyguard.KeyguardStatusView.onAttachedToWindow(KeyguardStatusView.java:289)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.View.dispatchAttachedToWindow(View.java:15513)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2916)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2923)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1526)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1254)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6343)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:874)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.Choreographer.doCallbacks(Choreographer.java:686)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.Choreographer.doFrame(Choreographer.java:621)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:860)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:751)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6176)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:888)
+02-03 16:39:10.630  7479  7479 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:778)
+02-03 16:39:10.644  7479  7479 I Process : Sending signal. PID: 7479 SIG: 9
+02-03 16:39:10.795  7530  7530 W System  : ClassLoader referenced unknown path: /system/priv-app/SystemUI/lib/arm
+02-03 16:39:10.823  7530  7530 V SystemUIService: Starting SystemUI services for user 0.
+02-03 16:39:10.838  7530  7530 V MediaRouter: Adding route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:10.841  7530  7530 V MediaRouter: Adding route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:10.841  7530  7530 V MediaRouter: Selecting route: RouteInfo{ name=DESKTOP-5U3SDUE, description=Wireless display, status=null, category=RouteCategory{ name=null types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO ROUTE_TYPE_REMOTE_DISPLAY , presentationDisplay=Display id 3: DisplayInfo{"DESKTOP-5U3SDUE", uniqueId "wifi:2e:76:8a:8c:b9:a3", app 1280 x 720, real 1280 x 720, largest app 1280 x 720, smallest app 1280 x 720, mode 4, defaultMode 4, modes [{id=4, width=1280, height=720, fps=60.0}], colorMode 0, supportedColorModes [0], hdrCapabilities null, rotation 0, density 213 (213.0 x 213.0) dpi, layerStack 3, appVsyncOff 0, presDeadline 16666666, type WIFI, address 2e:76:8a:8c:b9:a3, state ON, FLAG_PRESENTATION}, DisplayMetrics{density=1.3312501, width=1280, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}, isValid=true }
+02-03 16:39:10.844  7530  7530 V MediaRouter: Updating audio routes: AudioRoutesInfo{ type=SPEAKER }
+02-03 16:39:10.859  7530  7530 V FingerprintManager: FingerprintManagerService was null
+02-03 16:39:10.873  7530  7530 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:10.874  7530  7530 W FingerprintManager: addLockoutResetCallback(): Service not connected!
+02-03 16:39:10.887  7530  7545 E WVMExtractor: Failed to open libwvm.so: dlopen failed: library "libwvm.so" not found
+02-03 16:39:10.898  7530  7546 I OMXClient: MuxOMX ctor
+02-03 16:39:11.061  7530  7553 I OMXClient: MuxOMX ctor
+02-03 16:39:11.071  7530  7530 I vol.Events: writeEvent collection_started
+02-03 16:39:11.079  7530  7556 I vol.Events: writeEvent external_ringer_mode_changed normal
+02-03 16:39:11.079  7530  7556 I vol.Events: writeEvent internal_ringer_mode_changed normal
+02-03 16:39:11.141  7530  7558 I OMXClient: MuxOMX ctor
+02-03 16:39:11.221  7530  7556 I vol.Events: writeEvent level_changed STREAM_ALARM 6
+02-03 16:39:11.223  7530  7556 I vol.Events: writeEvent level_changed STREAM_BLUETOOTH_SCO 7
+02-03 16:39:11.237  7530  7556 I vol.Events: writeEvent level_changed STREAM_MUSIC 11
+02-03 16:39:11.248  7530  7556 I vol.Events: writeEvent level_changed STREAM_RING 5
+02-03 16:39:11.251  7530  7556 I vol.Events: writeEvent level_changed STREAM_SYSTEM 5
+02-03 16:39:11.269  7530  7556 I vol.Events: writeEvent level_changed STREAM_VOICE_CALL 4
+02-03 16:39:11.296  7530  7530 D StorageNotification: Notifying about private volume: VolumeInfo{private}:
+02-03 16:39:11.296  7530  7530 D StorageNotification:     type=PRIVATE diskId=null partGuid=null mountFlags=0 mountUserId=-1 
+02-03 16:39:11.296  7530  7530 D StorageNotification:     state=MOUNTED 
+02-03 16:39:11.296  7530  7530 D StorageNotification:     fsType=null fsUuid=null fsLabel=null 
+02-03 16:39:11.296  7530  7530 D StorageNotification:     path=/data internalPath=null 
+02-03 16:39:11.438  7530  7530 W ResourceType: Bad XML block: header size 18254 or total size 169478669 is larger than data size 543
+02-03 16:39:11.606  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:12.067  7530  7566 V RenderScript: Successfully loaded runtime: libRSDriver_adreno.so
+02-03 16:39:12.145  7530  7530 W System  : ClassLoader referenced unknown path: 
+02-03 16:39:12.146  7530  7530 W System  : ClassLoader referenced unknown path: /system/priv-app/Dialer/lib/arm
+02-03 16:39:12.147  7530  7530 D ApplicationLoaders: ignored Vulkan layer search path /system/priv-app/Dialer/lib/arm:/system/lib:/vendor/lib for namespace 0xb6d06090
+02-03 16:39:12.199  7530  7530 D ClockController: onTuningChanged key=cmsystem:status_bar_clock value=1
+02-03 16:39:12.207  7530  7530 D ClockController: onTuningChanged key=cmsystem:status_bar_am_pm value=null
+02-03 16:39:12.209  7530  7530 D ClockController: onTuningChanged key=clock_seconds value=0
+02-03 16:39:12.269  7530  7530 D LocalBluetoothProfileManager: Adding local MAP profile
+02-03 16:39:12.272  7530  7530 D BluetoothMap: Create BluetoothMap proxy object
+02-03 16:39:12.278  7530  7530 D BluetoothDun: BluetoothDun() call bindService
+02-03 16:39:12.287  7530  7530 D LocalBluetoothProfileManager: LocalBluetoothProfileManager construction complete
+02-03 16:39:12.325  7530  7530 I CameraManagerGlobal: Connecting to camera service
+02-03 16:39:12.399  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:12.579  7530  7561 D OpenGLRenderer: profile bars disabled
+02-03 16:39:12.579  7530  7561 D OpenGLRenderer: ambientRatio = 1.50
+02-03 16:39:12.614  7530  7530 D PhoneStatusBar: disable: < EXPAND* icons alerts system_info BACK* HOME* RECENT* clock SEARCH* quick_settings >
+02-03 16:39:13.532  7530  7530 D PhoneStatusBar: heads up is enabled
+02-03 16:39:13.650  7530  7530 D PhoneStatusBar: disable: < EXPAND ICONS* alerts SYSTEM_INFO* BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:13.659  7530  7530 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:13.659  7530  7530 D PhoneStatusBar: disable: < EXPAND ICONS alerts SYSTEM_INFO BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:13.661  7530  7530 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:13.688  4479  4479 D WeatherUpdateService: Service started, but shouldn't update ... stopping
+02-03 16:39:13.733  7530  7530 D PhoneStatusBar: disable: < EXPAND ICONS alerts SYSTEM_INFO BACK HOME RECENT clock SEARCH quick_settings >
+02-03 16:39:13.737  7530  7530 W FingerprintManager: isFingerprintHardwareDetected(): Service not connected!
+02-03 16:39:13.766  7530  7530 I Choreographer: Skipped 131 frames!  The application may be doing too much work on its main thread.
+02-03 16:39:13.797  7530  7561 I Adreno  : QUALCOMM build                   : a5b4970, If5818605d9
+02-03 16:39:13.797  7530  7561 I Adreno  : Build Date                       : 10/12/16
+02-03 16:39:13.797  7530  7561 I Adreno  : OpenGL ES Shader Compiler Version: XE031.09.00.04
+02-03 16:39:13.797  7530  7561 I Adreno  : Local Branch                     : N24D
+02-03 16:39:13.797  7530  7561 I Adreno  : Remote Branch                    : 
+02-03 16:39:13.797  7530  7561 I Adreno  : Remote Branch                    : 
+02-03 16:39:13.797  7530  7561 I Adreno  : Reconstruct Branch               : 
+02-03 16:39:13.806  7530  7561 I OpenGLRenderer: Initialized EGL, version 1.4
+02-03 16:39:13.806  7530  7561 D OpenGLRenderer: Swap behavior 1

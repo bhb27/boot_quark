@@ -1,0 +1,1552 @@
+01-01 12:11:53.916 D/RILD    (  417): **RIL Daemon Started**
+01-01 12:11:53.916 D/RILD    (  417): **RILd param count=1**
+02-03 16:33:53.621 W/RILD    (  417): RIL_SAP_Init not defined or exported in /system/vendor/lib/libril-qc-qmi-1.so: undefined symbol: RIL_SAP_Init
+02-03 16:33:53.621 D/RILD    (  417): RIL_Init argc = 3 clientId = 0
+02-03 16:33:53.626 E/RILQ    (  417): log to /data/misc/radio/ril_log for QCRIL logging is not enabled
+02-03 16:33:56.230 D/TelephonyManager(  421): No /proc/cmdline exception=java.io.FileNotFoundException: /proc/cmdline (Permission denied)
+02-03 16:33:56.230 D/TelephonyManager(  421): /proc/cmdline=
+02-03 16:33:56.666 I/RILQ    (  417): (0/417):RIL[0][rild] qmi_ril_qmi_client_pre_initialization_acquire: entry
+02-03 16:33:56.667 I/RILQ    (  417): (0/417):RIL[0][rild] qmi_ril_qmi_client_pre_initialization_acquire: exit
+02-03 16:33:56.674 D/RILD    (  417): RIL_Init rilInit completed
+02-03 16:33:56.674 I/RILC    (  417): SIM_COUNT: 1
+02-03 16:33:56.674 E/RILC    (  417): RIL_register: RIL version 11
+02-03 16:33:56.674 I/RILC    (  417): s_registerCalled flag set, 1
+02-03 16:33:56.674 I/RILC    (  417): Start to listen RIL_SOCKET_1
+02-03 16:33:56.674 D/RILD    (  417): RIL_Init RIL_register completed
+02-03 16:33:56.674 D/RILD    (  417): RIL_register_socket completed
+02-03 16:33:56.674 D/RILD    (  417): RIL_Init starting sleep loop
+02-03 16:34:05.497 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:05.666 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:05.732 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:05.759 D/TelephonyRegistry( 1497): systemRunning register for intents
+02-03 16:34:06.322 D/TDC     ( 2268): updateOrInsert: inserting: Modem { uuid=modem, state=0, rilModel=0, rat={}, maxActiveVoiceCall=1, maxActiveDataCall=1, maxStandby=1 }
+02-03 16:34:06.322 D/TDC     ( 2268): updateOrInsert: inserting: Sim { uuid=sim, modemUuid=modem, state=0 }
+02-03 16:34:06.331 D/TelephonyComponentFactory( 2268): classLoader = dalvik.system.PathClassLoader[DexPathList[[],nativeLibraryDirectories=[/system/lib, /vendor/lib]]]
+02-03 16:34:06.341 E/TelephonyComponentFactory( 2268): Error loading TelephonyComponentFactory
+02-03 16:34:06.341 D/TelephonyManager( 2268): getLteOnCdmaMode=0 curVal=-1 product_type='' lteOnCdmaProductType=''
+02-03 16:34:06.351 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.351 I/PhoneFactory( 2268): Cdma Subscription set to 0
+02-03 16:34:06.368 I/PhoneFactory( 2268): RILClassname is RIL
+02-03 16:34:06.368 I/PhoneFactory( 2268): Network Mode set to 9
+02-03 16:34:06.376 D/RILJ    ( 2268): RIL(context, preferredNetworkType=9 cdmaSubscription=0)
+02-03 16:34:06.378 D/RILJ    ( 2268): Starting RILReceiver0 [SUB0]
+02-03 16:34:06.380 I/RILJ    ( 2268): (0) Connected to 'rild' socket
+02-03 16:34:06.384 D/RILJ    ( 2268): [3648]> GET_HARDWARE_CONFIG [SUB0]
+02-03 16:34:06.385 I/PhoneFactory( 2268): Creating SubscriptionController
+02-03 16:34:06.385 D/TelephonyComponentFactory( 2268): initSubscriptionController
+02-03 16:34:06.390 D/SubscriptionController( 2268): [SubscriptionController] init by Context
+02-03 16:34:06.394 D/UiccController( 2268): Creating UiccController
+02-03 16:34:06.395 D/TelephonyComponentFactory( 2268): makePhone
+02-03 16:34:06.397 D/TelephonyTester( 2268): register for intent action=com.android.internal.telephony.action_detached
+02-03 16:34:06.397 D/TelephonyTester( 2268): register for intent action=com.android.internal.telephony.action_attached
+02-03 16:34:06.402 D/Phone   ( 2268): mDoesRilSendMultipleCallRing=false
+02-03 16:34:06.402 D/Phone   ( 2268): mCallRingDelay=3000
+02-03 16:34:06.402 D/TelephonyComponentFactory( 2268): makeSmsStorageMonitor
+02-03 16:34:06.404 D/TelephonyComponentFactory( 2268): makeSmsUsageMonitor
+02-03 16:34:06.408 D/RILJ    ( 2268): [3649]> RIL_REQUEST_START_LCE [SUB0]
+02-03 16:34:06.408 D/TelephonyComponentFactory( 2268): makeGsmCdmaCallTracker
+02-03 16:34:06.412 D/TelephonyComponentFactory( 2268): makeIccPhoneBookInterfaceManager
+02-03 16:34:06.417 D/TelephonyComponentFactory( 2268): makeIccSmsInterfaceManager
+02-03 16:34:06.419 E/RIL_ImsSms( 2268): getFormat should never be called from here!
+02-03 16:34:06.419 D/SMSDispatcher( 2268): SMSDispatcher: ctor mSmsCapable=true format=unknown mSmsSendDisabled=false
+02-03 16:34:06.419 D/RIL_ImsSms( 2268): ImsSMSDispatcher created
+02-03 16:34:06.420 D/SMSDispatcher( 2268): SMSDispatcher: ctor mSmsCapable=true format=3gpp2 mSmsSendDisabled=false
+02-03 16:34:06.420 D/CdmaSMSDispatcher( 2268): CdmaSMSDispatcher created
+02-03 16:34:06.432 D/TelephonyComponentFactory( 2268): getIDeviceIdleController
+02-03 16:34:06.435 D/TelephonyComponentFactory( 2268): getIDeviceIdleController
+02-03 16:34:06.435 D/GsmInboundSmsHandler( 2268): created InboundSmsHandler
+02-03 16:34:06.443 D/TelephonyComponentFactory( 2268): getIDeviceIdleController
+02-03 16:34:06.455 D/TelephonyComponentFactory( 2268): getIDeviceIdleController
+02-03 16:34:06.456 D/CdmaInboundSmsHandler( 2268): created InboundSmsHandler
+02-03 16:34:06.466 D/SMSDispatcher( 2268): SMSDispatcher: ctor mSmsCapable=true format=3gpp mSmsSendDisabled=false
+02-03 16:34:06.466 D/GsmSMSDispatcher( 2268): GsmSMSDispatcher created
+02-03 16:34:06.483 D/GsmInboundSmsHandler( 2268): StartupState.processMessage:6
+02-03 16:34:06.483 D/GsmInboundSmsHandler( 2268): entering Idle state
+02-03 16:34:06.483 D/GsmInboundSmsHandler( 2268): IdleState.processMessage:5
+02-03 16:34:06.483 D/GsmInboundSmsHandler( 2268): Idle state processing message type 5
+02-03 16:34:06.483 D/CdmaInboundSmsHandler( 2268): StartupState.processMessage:6
+02-03 16:34:06.483 D/CdmaInboundSmsHandler( 2268): entering Idle state
+02-03 16:34:06.483 D/CdmaInboundSmsHandler( 2268): IdleState.processMessage:5
+02-03 16:34:06.483 D/CdmaInboundSmsHandler( 2268): Idle state processing message type 5
+02-03 16:34:06.483 D/GsmInboundSmsHandler( 2268): mWakeLock released wakelockcount = 0
+02-03 16:34:06.484 D/CdmaInboundSmsHandler( 2268): mWakeLock released wakelockcount = 0
+02-03 16:34:06.484 D/TelephonyComponentFactory( 2268): makeIccCardProxy
+02-03 16:34:06.488 D/IccCardProxy( 2268): ctor: ci=com.android.internal.telephony.RIL@b7e6f2a phoneId=0
+02-03 16:34:06.488 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.488 D/CdmaSSM ( 2268): cdmaSSM constructor: 0
+02-03 16:34:06.488 D/IccCardProxy( 2268): update icc_operator_numeric=
+02-03 16:34:06.488 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.numeric value:  propVal=
+02-03 16:34:06.488 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.iso-country value:  propVal=
+02-03 16:34:06.489 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.alpha value:  propVal=
+02-03 16:34:06.489 E/IccCardProxy( 2268): setExternalState: set mPhoneId=0 mExternalState=NOT_READY
+02-03 16:34:06.489 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.state value: NOT_READY propVal=NOT_READY
+02-03 16:34:06.490 D/IccCardProxy( 2268): broadcastIccStateChangedIntent intent ACTION_SIM_STATE_CHANGED value=NOT_READY reason=null for mPhoneId=0
+02-03 16:34:06.491 D/TelephonyComponentFactory( 2268): getCdmaSubscriptionSourceManagerInstance
+02-03 16:34:06.491 D/TelephonyComponentFactory( 2268): makeEriManager
+02-03 16:34:06.492 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] Precise phone type 1
+02-03 16:34:06.492 D/RILJ    ( 2268): setPhoneType=1 old value=0 [SUB0]
+02-03 16:34:06.493 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.current.phone-type value: 1 propVal=1
+02-03 16:34:06.493 D/IccCardProxy( 2268): Setting radio tech UMTS
+02-03 16:34:06.494 D/IccCardProxy( 2268): updateQuietMode: 3GPP subscription -> newQuietMode=false
+02-03 16:34:06.494 D/IccCardProxy( 2268): updateQuietMode: no changes don't setExternalState
+02-03 16:34:06.494 D/IccCardProxy( 2268): updateQuietMode: QuietMode is false (app_type=1 cdmaSource=-1)
+02-03 16:34:06.494 D/TelephonyComponentFactory( 2268): makeServiceStateTracker
+02-03 16:34:06.498 W/CarrierConfigManager( 2268): Error getting config for subId -1 ICarrierConfigLoader is null
+02-03 16:34:06.499 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:06.503 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+02-03 16:34:06.504 D/RILJ    ( 2268): [3650]> SIGNAL_STRENGTH [SUB0]
+02-03 16:34:06.508 D/SST     ( 2268): notifyDataRegStateRilRadioTechnologyChanged: drs=1 rat=0
+02-03 16:34:06.508 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+02-03 16:34:06.508 D/TelephonyComponentFactory( 2268): makeDcTracker
+02-03 16:34:06.514 D/DCT     ( 2268): [0]DCT.constructor
+02-03 16:34:06.521 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:06.522 D/Dcc     ( 2268): E ctor
+02-03 16:34:06.523 D/Dcc     ( 2268): X ctor
+02-03 16:34:06.525 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=-1
+02-03 16:34:06.528 D/DcTesterDeacativateAll( 2268): register for intent action=com.android.internal.telephony.dataconnection.action_deactivate_all
+02-03 16:34:06.528 D/DcTesterDeacativateAll( 2268): register for intent action=com.android.internal.telephony.action_detached
+02-03 16:34:06.530 D/DcTesterFailBrinupAll( 2268): register for intent action=com.android.internal.telephony.dataconnection.action_fail_bringup
+02-03 16:34:06.530 D/DcTesterFailBrinupAll( 2268): register for intent action=com.android.internal.telephony.action_detached
+02-03 16:34:06.530 D/DcTesterFailBrinupAll( 2268): register for intent action=com.android.internal.telephony.action_attached
+02-03 16:34:06.533 D/SST     ( 2268): notifyDataRegStateRilRadioTechnologyChanged: drs=1 rat=0
+02-03 16:34:06.533 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+02-03 16:34:06.533 D/DCT     ( 2268): [0]update sub = -2
+02-03 16:34:06.533 D/DCT     ( 2268): [0]update(): Active DDS, register for all events now!
+02-03 16:34:06.534 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] updateCurrentCarrierInProvider: mSubId = -2 currentDds = 1 operatorNumeric = null
+02-03 16:34:06.537 D/DCT     ( 2268): [0]initApnContexts: E
+02-03 16:34:06.537 D/DCT     ( 2268): [0]initApnContexts: skipping unknown type=1
+02-03 16:34:06.537 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=fota mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=ims mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=cbs mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: skipping unknown type=13
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: skipping unknown type=9
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: skipping unknown type=7
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: skipping unknown type=37
+02-03 16:34:06.538 D/DCT     ( 2268): [0]initApnContexts: apnContext={mApnType=emergency mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+02-03 16:34:06.544 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.561 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] GsmCdmaPhone: constructor: sub = 0
+02-03 16:34:06.561 I/PhoneFactory( 2268): Creating Phone with type = 1 sub = 0
+02-03 16:34:06.564 I/PhoneFactory( 2268): defaultSmsApplication: NONE
+02-03 16:34:06.566 I/PhoneFactory( 2268): Creating SubInfoRecordUpdater 
+02-03 16:34:06.566 D/TelephonyComponentFactory( 2268): makeSubscriptionInfoUpdater
+02-03 16:34:06.566 D/SubscriptionInfoUpdater( 2268): Constructor invoked
+02-03 16:34:06.622 D/TelephonyRegistry( 1497): notifyCellLocationForSubscriber: subId=0 cellLocation=Bundle[{cid=-1, lac=-1, psc=-1}]
+02-03 16:34:06.622 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.696 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:06.696 D/SubscriptionController( 2268): [getActiveSubInfoForSubscriber]- subId=-2 subList=null subInfo=null
+02-03 16:34:06.696 E/SubscriptionController( 2268): getUserNwMode: invalid subId = -2
+02-03 16:34:06.698 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:06.698 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.699 D/TelephonyComponentFactory( 2268): makePhoneSwitcher
+02-03 16:34:06.700 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:06.702 D/PhoneSwitcher( 2268): PhoneSwitcher started
+02-03 16:34:06.703 D/ProxyController( 2268): Constructor - Enter
+02-03 16:34:06.705 D/ProxyController( 2268): clearTransaction
+02-03 16:34:06.705 D/ProxyController( 2268): clearTransaction: phoneId=0 status=IDLE
+02-03 16:34:06.705 D/ProxyController( 2268): Constructor - Exit
+02-03 16:34:06.706 D/TelephonyNetworkFactory[0]( 2268): Registering NetworkFactory
+02-03 16:34:06.706 D/TelephonyComponentFactory( 2268): makeExtTelephonyClasses
+02-03 16:34:06.708 D/CallManager( 2268): registerPhone(GSM Handler (com.android.internal.telephony.GsmCdmaPhone) {934c801})
+02-03 16:34:06.708 D/RILJ    ( 2268): [3651]> SET_SUPP_SVC_NOTIFICATION [SUB0]
+02-03 16:34:06.711 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:06.733 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:06.749 D/RILJ    ( 2268): [3652]> RIL_REQUEST_SET_TTY_MODE : 0 [SUB0]
+02-03 16:34:06.758 D/TelephonyRegistry( 1497): listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+02-03 16:34:06.759 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=-1
+02-03 16:34:06.762 D/UiccController( 2268): EVENT_RADIO_UNAVAILABLE, dispose card
+02-03 16:34:06.763 D/RILJ    ( 2268): [3653]> GET_CURRENT_CALLS [SUB0]
+02-03 16:34:06.763 D/GsmSMSDispatcher( 2268): GsmSMSDispatcher: subId = -2 slotId = 0
+02-03 16:34:06.764 E/IccCardProxy( 2268): setExternalState: !override and newstate unchanged from NOT_READY
+02-03 16:34:06.764 E/IccCardProxy( 2268): setExternalState: !override and newstate unchanged from NOT_READY
+02-03 16:34:06.764 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] Event EVENT_RADIO_OFF_OR_NOT_AVAILABLE Received
+02-03 16:34:06.764 E/IccCardProxy( 2268): setExternalState: !override and newstate unchanged from NOT_READY
+02-03 16:34:06.764 D/SST     ( 2268): mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_UNAVAILABLE, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+02-03 16:34:06.764 D/SST     ( 2268): Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported 0 0 RoamInd=0 DefRoamInd=0 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:34:06.765 D/SST     ( 2268): updateSpnDisplay: radio is on but out of service, set plmn='No service'
+02-03 16:34:06.766 D/SST     ( 2268): updateSpnDisplay: changed sending intent rule=0 showPlmn='true' plmn='No service' showSpn='false' spn='' dataSpn='' subId='-2'
+02-03 16:34:06.768 D/SubscriptionController( 2268): [setPlmnSpn] No valid subscription to store info
+02-03 16:34:06.768 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:06.768 D/TelephonyRegistry( 1497): notifySubscriptionInfoChanged: first invocation mRecords.size=16
+02-03 16:34:06.769 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:06.770 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.alpha value:  propVal=
+02-03 16:34:06.770 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.numeric value:  propVal=
+02-03 16:34:06.771 D/SST     ( 2268): operatorNumeric is null
+02-03 16:34:06.771 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.iso-country value:  propVal=
+02-03 16:34:06.771 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.771 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.isroaming value: false propVal=false
+02-03 16:34:06.771 D/SST     ( 2268): Broadcasting ServiceState : 1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false
+02-03 16:34:06.772 D/DefaultPhoneNotifier( 2268): nofityServiceState: mRegistry=com.android.internal.telephony.ITelephonyRegistry$Stub$Proxy@ebae47e ss=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false sender=Handler (com.android.internal.telephony.GsmCdmaPhone) {934c801} phondId=0 subId=-2
+02-03 16:34:06.773 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:06.773 D/TelephonyManager( 1497): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:06.778 D/SST     ( 2268): mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_UNAVAILABLE, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+02-03 16:34:06.779 D/SST     ( 2268): Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:34:06.779 D/DCT     ( 2268): [0]onRadioOffOrNotAvailable: is off and clean up all connections
+02-03 16:34:06.779 D/DCT     ( 2268): [0]cleanUpAllConnections: tearDown=false reason=radioTurnedOff
+02-03 16:34:06.779 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=default ret=DISCONNECTED
+02-03 16:34:06.779 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.781 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.781 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.782 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.782 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=mms ret=DISCONNECTED
+02-03 16:34:06.782 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.784 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.784 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.784 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.784 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=cbs ret=DISCONNECTED
+02-03 16:34:06.784 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.785 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.786 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.786 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=cbs mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.786 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=fota ret=DISCONNECTED
+02-03 16:34:06.786 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.787 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.787 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.787 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=fota mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.787 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=supl ret=DISCONNECTED
+02-03 16:34:06.787 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.789 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.789 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.789 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.789 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=emergency ret=DISCONNECTED
+02-03 16:34:06.790 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.790 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.790 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=emergency mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.790 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=dun ret=DISCONNECTED
+02-03 16:34:06.790 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.792 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.792 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.792 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.792 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=hipri ret=DISCONNECTED
+02-03 16:34:06.793 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.796 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.796 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.796 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.796 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=ims ret=DISCONNECTED
+02-03 16:34:06.796 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.799 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:34:06.799 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:06.799 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=ims mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:06.799 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:34:06.800 D/DCT     ( 2268): [0]cleanUpConnection: mDisconnectPendingCount = 0
+02-03 16:34:06.801 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.802 D/DCT     ( 2268): [0]isDataAllowed: No - SIM not loaded - Not attached
+02-03 16:34:06.802 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.804 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.805 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.807 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.808 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.811 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.812 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.813 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.815 D/DCT     ( 2268): [0]onDataConnectionDetached: stop polling and notify detached
+02-03 16:34:06.815 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:34:06.815 D/DCT     ( 2268): [0]notifyDataConnection: reason=dataDetached
+02-03 16:34:06.815 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.815 D/DCT     ( 2268): [0]isDataAllowed: No - SIM not loaded - Not attached
+02-03 16:34:06.815 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.817 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.818 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.819 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.820 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.823 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.824 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.828 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:06.830 D/DCT     ( 2268): [0]onRoamingOff
+02-03 16:34:06.830 D/DCT     ( 2268): [0]setupDataOnConnectableApns: nwTypeChanged hipri:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] emergency:[state=IDLE,enabled=false] 
+02-03 16:34:06.830 D/SubscriptionInfoUpdater( 2268): [Receiver]+
+02-03 16:34:06.830 D/SubscriptionInfoUpdater( 2268): Action: android.intent.action.SIM_STATE_CHANGED
+02-03 16:34:06.830 D/SubscriptionInfoUpdater( 2268): slotId: 0
+02-03 16:34:06.830 D/SubscriptionInfoUpdater( 2268): simStatus: NOT_READY
+02-03 16:34:06.830 D/SubscriptionInfoUpdater( 2268): Ignoring simStatus: NOT_READY
+02-03 16:34:06.831 D/SubscriptionInfoUpdater( 2268): [Receiver]-
+02-03 16:34:06.831 D/TelephonyNetworkFactory[0]( 2268): onSubIdChange -1->-2
+02-03 16:34:06.831 D/TelephonyNetworkFactory[0]( 2268): got request NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 0
+02-03 16:34:06.832 D/DebugService( 2268): DebugService DebugService:
+02-03 16:34:06.834 D/GsmSMSDispatcher( 2268): GsmSMSDispatcher: subId = -2 slotId = 0
+02-03 16:34:06.834 E/IccCardProxy( 2268): setExternalState: !override and newstate unchanged from NOT_READY
+02-03 16:34:06.836 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:06.836 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] updateVoiceMail countVoiceMessages = 0 subId -2
+02-03 16:34:06.836 E/Phone   ( 2268): setVoiceMessageCount in sharedPreference: invalid subId -2
+02-03 16:34:06.836 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:06.837 D/PhoneSwitcher( 2268): evaluating due to subChanged default 0->1 phone[0] 0->-2
+02-03 16:34:06.837 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:06.838 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:06.864 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.865 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.867 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.867 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.868 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.869 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.869 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.871 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.871 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.872 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.872 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.873 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.874 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.874 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.875 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.875 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.876 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.877 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.877 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.878 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.878 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.879 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.879 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.880 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.880 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.881 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.882 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:06.882 D/PhoneSwitcher( 2268): evaluating due to netRequest
+02-03 16:34:06.883 D/TelephonyNetworkFactory[0]( 2268): not acting - isApp=false, isAct=false NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+02-03 16:34:07.255 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:07.257 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:07.260 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:07.747 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=-1
+02-03 16:34:07.790 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:07.791 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:07.799 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:07.800 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:07.804 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:07.804 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:07.887 I/RILQ    (  417): (0/417):RIL[0][main] qmi_ril_qmi_client_pre_initialization_release: entry
+02-03 16:34:07.887 I/RILQ    (  417): (0/417):RIL[0][main] qmi_ril_qmi_client_pre_initialization_release: exit
+02-03 16:34:08.262 E/RILQ    (  417): (0/417): RIL[0][main] qcril_qmi_init_core_client_handles: qcril_qmi_presence_init returned failure(-3)
+02-03 16:34:08.287 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.287 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.312 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.313 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.325 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.325 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.327 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.327 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.328 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.330 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.493 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.494 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.545 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.550 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.573 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.574 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.591 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.592 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.594 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.595 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.598 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.599 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.606 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.607 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.608 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.609 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.616 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:08.616 D/TelephonyManager( 2091): getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+02-03 16:34:08.676 E/RILQ    (  417): (0/417): RIL[0][main] qcril_qmi_nas_init: QCRIL_OPERATOR_NAME is persist.env.spec,  property_name is persist.env.spec. Failed to get operator name
+02-03 16:34:08.810 E/RILQ    (  417): (0/417): RIL[0] qcril_qmi_pdc_get_selected_config_ind_hdlr: no selected config id
+02-03 16:34:08.810 E/RILQ    (  417): (0/417): RIL[0] mot_qcril_qmi_pdc_try_to_load_mbn: MCFG feature is NOT enabled
+02-03 16:34:08.869 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:09.424 E/RILQ    (  417): (0/417): RIL[0][main] qcril_data_qmi_wds_init: qmi_wds_bind_subscription: subs_id binding failed
+02-03 16:34:09.432 D/GsmCellBroadcastHandler( 2268): mWakeLock released
+02-03 16:34:09.444 D/CellBroadcastHandler( 2268): mWakeLock released
+02-03 16:34:09.471 D/CdmaServiceCategoryProgramHandler( 2268): mWakeLock released
+02-03 16:34:09.522 I/RILQ    (  417): (0/417):RIL[0][main] qcril_arb_set_dsd_sys_status: old_pref_data 0 - new_data_pref 0
+02-03 16:34:09.522 I/RILQ    (  417): (0/417):RIL[0][main] qcril_arb_set_dsd_sys_status: preferred dsd_sys_status nw=0x0, rat_value=0x0, so_mask=0x0000000000000800
+02-03 16:34:09.522 I/RILQ    (  417): (0/417):RIL[0][main] qcril_arb_set_dsd_sys_status: preferred 1 - dsd_sys_status nw=0x0, rat_value=0x0, so_mask=0x0000000000000800
+02-03 16:34:09.523 I/RILQ    (  417): (0/417):RIL[0][main] qcril_arb_set_dsd_sys_status: is_wwan_available 0
+02-03 16:34:09.574 E/RILQ    (  417): (0/417): RIL[0][event] get_ecc_property_name: ecc list name : ril.ecclist.
+02-03 16:34:09.584 E/RILQ    (  417): (0/417): RIL[0][event] qcril_uim_update_pbm_card_event: PBM_HANDLE_CARD 397313 processing Failed!
+02-03 16:34:09.584 E/RILQ    (  417): (0/417): RIL[0][event] qcril_uim_update_pbm_card_event: PBM_HANDLE_CARD 397314 processing Failed!
+02-03 16:34:09.655 E/RILQ    (  417): (0/417): RIL[0][event] qcril_dispatch_event: CHECK FAILED
+02-03 16:34:09.656 E/RILQ    (  417): (0/417): RIL[0][event] qcril_dispatch_event: .. failure details instance id -1239005336, modem id -1244546691
+02-03 16:34:09.656 E/RILQ    (  417): (0/417): RIL[0][event] qcril_event_main: Error processing event! (2)
+02-03 16:34:09.675 E/RILQ    (  417): (0/417): RIL[0][main] qcril_sms_perform_transport_layer_info_initialization: error while retrieving transport layer reg info
+02-03 16:34:09.687 I/RILC    (  417): libril: new connection to RIL_SOCKET_1
+02-03 16:34:09.687 I/RILC    (  417): RIL Daemon version: Qualcomm RIL 1.0
+02-03 16:34:09.688 D/RILJ    ( 2268): [UNSL]< UNSOL_RIL_CONNECTED {11} [SUB0]
+02-03 16:34:09.688 D/RILJ    ( 2268): [3654]> RADIO_POWER off [SUB0]
+02-03 16:34:09.689 D/RILJ    ( 2268): [3655]> RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE : 0 [SUB0]
+02-03 16:34:09.691 D/RILJ    ( 2268): setCellInfoListRate: 2147483647 [SUB0]
+02-03 16:34:09.691 D/RILJ    ( 2268): [3656]> RIL_REQUEST_SET_CELL_INFO_LIST_RATE [SUB0]
+02-03 16:34:09.693 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED RADIO_OFF [SUB0]
+02-03 16:34:09.693 E/use-Rlog/RLOG-RIL-MOTEXT(  417): qcrilUpdVoiceCallCount, called , VcCount =0
+02-03 16:34:09.693 I/RILQ    (  417): (0/417):RIL[0][main] qcril_qmi_get_call_list_to_send: RILVI: calls rep: reported/skipped 0/0 calls
+02-03 16:34:09.693 D/Dcc     ( 2268): DccDefaultState: msg.what=EVENT_RIL_CONNECTED mRilVersion=11
+02-03 16:34:09.694 D/RILJ    ( 2268): [3657]> SCREEN_STATE: true [SUB0]
+02-03 16:34:09.694 D/SST     ( 2268): mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_OFF, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+02-03 16:34:09.694 D/RILJ    ( 2268): [3658]> RADIO_POWER on [SUB0]
+02-03 16:34:09.697 D/RilRequest( 2268): [3648]< GET_HARDWARE_CONFIG error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+02-03 16:34:09.697 E/use-Rlog/RLOG-RIL-MOTEXT(  417): mothook_oem: header type 0, requestCode 0x0
+02-03 16:34:09.697 D/RILJ    ( 2268): [3659]> OPERATOR [SUB0]
+02-03 16:34:09.697 D/RilRequest( 2268): [3649]< RIL_REQUEST_START_LCE error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+02-03 16:34:09.699 D/RILJ    ( 2268): [3650]< SIGNAL_STRENGTH SignalStrength: 0 0 0 0 0 0 0 0 0 0 0 0 0 gsm|lte [SUB0]
+02-03 16:34:09.699 D/RILJ    ( 2268): [3660]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:09.699 D/RILJ    ( 2268): [3653]< GET_CURRENT_CALLS {} [SUB0]
+02-03 16:34:09.702 D/RILJ    ( 2268): [3656]< RIL_REQUEST_SET_CELL_INFO_LIST_RATE  [SUB0]
+02-03 16:34:09.702 D/RILJ    ( 2268): [3657]< SCREEN_STATE  [SUB0]
+02-03 16:34:09.702 D/RILJ    ( 2268): [3661]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:09.704 D/RILJ    ( 2268): [3662]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:09.705 D/UiccController( 2268): Received EVENT_ICC_STATUS_CHANGED, calling getIccCardStatus
+02-03 16:34:09.705 D/RILJ    ( 2268): [3663]> GET_SIM_STATUS [SUB0]
+02-03 16:34:09.706 D/RILJ    ( 2268): [3652]< RIL_REQUEST_SET_TTY_MODE  [SUB0]
+02-03 16:34:09.707 D/RILJ    ( 2268): [3664]> BASEBAND_VERSION [SUB0]
+02-03 16:34:09.711 E/RILC    (  417): RIL_onRequestComplete: invalid RIL_Token
+02-03 16:34:09.711 D/RILJ    ( 2268): [3665]> GET_IMEI [SUB0]
+02-03 16:34:09.712 D/RILJ    ( 2268): [3666]> GET_IMEISV [SUB0]
+02-03 16:34:09.712 D/RILJ    ( 2268): [3663]< GET_SIM_STATUS IccCardState {CARDSTATE_PRESENT,PINSTATE_UNKNOWN,num_apps=1,gsm_id=0{APPTYPE_SIM,APPSTATE_READY},cdma_id=-1,ims_id=-1} [SUB0]
+02-03 16:34:09.713 D/RILJ    ( 2268): [3667]> RIL_REQUEST_GET_RADIO_CAPABILITY [SUB0]
+02-03 16:34:09.714 D/RILJ    ( 2268): [3668]> RIL_REQUEST_START_LCE [SUB0]
+02-03 16:34:09.714 D/DCT     ( 2268): [0]onRadioAvailable
+02-03 16:34:09.714 D/Phone   ( 2268): config LCE service failed: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+02-03 16:34:09.714 D/GsmCdmaCallTracker( 2268): Event EVENT_POLL_CALLS_RESULT Received
+02-03 16:34:09.714 D/GsmCdmaCallTracker( 2268): [GsmCdmaCallTracker] update phone state, old=IDLE new=IDLE
+02-03 16:34:09.714 D/RILJ    ( 2268): [3669]> RIL_REQUEST_QUERY_TTY_MODE [SUB0]
+02-03 16:34:09.715 D/RILJ    ( 2268): Faking RIL_REQUEST_GET_RADIO_CAPABILITY response using 786430 [SUB0]
+02-03 16:34:09.715 D/RILJ    ( 2268): [3667]< RIL_REQUEST_GET_RADIO_CAPABILITY {mPhoneId = 0 mVersion=1 mSession=0 mPhase=0 mRadioAccessFamily=786430 mLogicModemId= mStatus=1} [SUB0]
+02-03 16:34:09.715 D/UiccController( 2268): Received EVENT_GET_ICC_STATUS_DONE
+02-03 16:34:09.716 D/RilRequest( 2268): [3668]< RIL_REQUEST_START_LCE error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+02-03 16:34:09.716 D/UiccCard( 2268): 1 applications
+02-03 16:34:09.716 D/UiccCardApplication( 2268): Creating UiccApp: {APPTYPE_SIM,APPSTATE_READY}
+02-03 16:34:09.719 W/VoiceMailConstants( 2268): Can't open /system/etc/voicemail-conf.xml
+02-03 16:34:09.719 D/SpnOverride( 2268): No SPN in OEM image = /oem/telephony/spn-conf.xml Load SPN from system image
+02-03 16:34:09.720 W/SpnOverride( 2268): Can not open /system/etc/spn-conf.xml
+02-03 16:34:09.720 D/SIMRecords( 2268): [SIMRecords] setting0 mMncLength-1
+02-03 16:34:09.720 D/SIMRecords( 2268): [SIMRecords] SIMRecords: onRadioOffOrNotAvailable set 'gsm.sim.operator.numeric' to operator=null
+02-03 16:34:09.720 D/SIMRecords( 2268): [SIMRecords] update icc_operator_numeric=null
+02-03 16:34:09.721 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.numeric value:  propVal=
+02-03 16:34:09.721 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.alpha value:  propVal=
+02-03 16:34:09.722 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.iso-country value:  propVal=
+02-03 16:34:09.722 D/UiccCardApplication( 2268): Notifying 1 registrant: READY
+02-03 16:34:09.723 D/SIMRecords( 2268): [SIMRecords] getOperatorNumeric: IMSI == null
+02-03 16:34:09.723 D/SIMRecords( 2268): [SIMRecords] SIMRecords X ctor this=SimRecords: mDestroyed=false mContext=com.android.phone.PhoneGlobals@28d02c4 mCi=com.android.internal.telephony.RIL@b7e6f2a mFh=Handler (com.android.internal.telephony.uicc.SIMFileHandler) {47a15ad} mParentApp=com.android.internal.telephony.uicc.UiccCardApplication@b6420e2 recordsLoadedRegistrants=android.os.RegistrantList@c730c73 mImsiReadyRegistrants=android.os.RegistrantList@eb98730 mRecordsEventsRegistrants=android.os.RegistrantList@b4f5fa9 mNewSmsRegistrants=android.os.RegistrantList@5a7692e mNetworkSelectionModeAutomaticRegistrants=android.os.RegistrantList@1e7fccf recordsToLoad=0 adnCache=Handler (com.android.internal.telephony.uicc.AdnRecordCache) {5e7e65c} recordsRequested=false iccid=null msisdnTag=null voiceMailNum=null voiceMailTag=null voiceMailNum=null newVoiceMailTag=null isVoiceMailFixed=false mImsi=null mncLength=-1 mailboxIndex=0 spn=null mVmConfigcom.android.internal.telephony.uicc.VoiceMailConstants@3154d65 mSpnOverride=mSpnOverride callForwardingEnabled=0 spnState=null mCphsInfo=null mCspPlmnEnabled=true efMWIS=null efCPHS_MWI=null mEfCff=null mEfCfis=null getOperatorNumeric=null
+02-03 16:34:09.724 D/RILJ    ( 2268): [3670]> QUERY_FACILITY_LOCK [FD 7 ] [SUB0]
+02-03 16:34:09.724 D/RILJ    ( 2268): [3671]> QUERY_FACILITY_LOCK [SC 7 ] [SUB0]
+02-03 16:34:09.727 D/RilRequest( 2268): [3655]< RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=
+02-03 16:34:09.729 D/RILJ    ( 2268): [3671]< QUERY_FACILITY_LOCK {0} [SUB0]
+02-03 16:34:09.729 D/CAT     ( 2268): CatService: registerForRecordsLoaded slotid=0 instance:Handler (com.android.internal.telephony.cat.CatService) {f0b6c7}
+02-03 16:34:09.730 D/CAT     ( 2268): CatService: Running CAT service on Slotid: 0. STK app installed:true
+02-03 16:34:09.730 D/UiccCard( 2268): Before privilege rules: null : CARDSTATE_PRESENT
+02-03 16:34:09.730 D/RILJ    ( 2268): [3672]> RIL_REQUEST_SIM_OPEN_CHANNEL [SUB0]
+02-03 16:34:09.731 D/UiccCard( 2268): update: radioState=RADIO_OFF mLastRadioState=RADIO_UNAVAILABLE
+02-03 16:34:09.731 D/UiccController( 2268): Notifying IccChangedRegistrants
+02-03 16:34:09.733 D/GsmCdmaPhone( 2268): EVENT_GET_RADIO_CAPABILITY: phone rc: {mPhoneId = 0 mVersion=1 mSession=0 mPhase=0 mRadioAccessFamily=786430 mLogicModemId= mStatus=1}
+02-03 16:34:09.733 D/Phone   ( 2268): config LCE service failed: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+02-03 16:34:09.733 D/SIMRecords( 2268): [SIMRecords] fetchSimRecords 0
+02-03 16:34:09.733 D/RILJ    ( 2268): [3673]> getIMSI: GET_IMSI aid:  [SUB0]
+02-03 16:34:09.733 D/RILJ    ( 2268): [3674]> iccIO: SIM_IO 0xc0 0x2fe2  path: 3F00,0,0,0 aid:  [SUB0]
+02-03 16:34:09.734 D/RILJ    ( 2268): [3675]> iccIO: SIM_IO 0xc0 0x6f40  path: 3F007F10,0,0,15 aid:  [SUB0]
+02-03 16:34:09.735 D/RILJ    ( 2268): [3676]> iccIO: SIM_IO 0xc0 0x6fc9  path: 3F007F20,0,0,15 aid:  [SUB0]
+02-03 16:34:09.735 D/RILJ    ( 2268): [3677]> iccIO: SIM_IO 0xc0 0x6fad  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.736 D/RILJ    ( 2268): [3678]> iccIO: SIM_IO 0xc0 0x6fca  path: 3F007F20,0,0,15 aid:  [SUB0]
+02-03 16:34:09.736 D/RILJ    ( 2268): [3679]> iccIO: SIM_IO 0xc0 0x6f11  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.736 D/RILJ    ( 2268): [3680]> iccIO: SIM_IO 0xc0 0x6fcb  path: 3F007F20,0,0,15 aid:  [SUB0]
+02-03 16:34:09.737 D/RILJ    ( 2268): [3681]> iccIO: SIM_IO 0xc0 0x6f13  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.738 D/RILJ    ( 2268): [3682]> iccIO: SIM_IO 0xc0 0x6f46  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.739 D/RILJ    ( 2268): [3683]> iccIO: SIM_IO 0xc0 0x6fcd  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.739 D/RILJ    ( 2268): [3684]> iccIO: SIM_IO 0xc0 0x6fc5  path: 3F007F20,0,0,15 aid:  [SUB0]
+02-03 16:34:09.740 D/RILJ    ( 2268): [3685]> iccIO: SIM_IO 0xc0 0x6f38  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.740 D/RILJ    ( 2268): [3686]> iccIO: SIM_IO 0xc0 0x6f16  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.741 D/RILJ    ( 2268): [3687]> iccIO: SIM_IO 0xc0 0x6f15  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.742 D/RILJ    ( 2268): [3664]< BASEBAND_VERSION MDM9625_104438.245.02.85R [SUB0]
+02-03 16:34:09.743 D/RILJ    ( 2268): [3688]> iccIO: SIM_IO 0xc0 0x6f3e  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.743 D/RILJ    ( 2268): [3689]> iccIO: SIM_IO 0xc0 0x6f3f  path: 3F007F20,0,0,0 aid:  [SUB0]
+02-03 16:34:09.743 D/RILJ    ( 2268): [3690]> iccIO: SIM_IO 0xc0 0x6f3c  path: 3F007F10,0,0,15 aid:  [SUB0]
+02-03 16:34:09.744 D/SIMRecords( 2268): [SIMRecords] fetchSimRecords 17 requested: true
+02-03 16:34:09.744 D/UiccCardApplication( 2268): Query facility lock : 0
+02-03 16:34:09.744 D/CAT     ( 2268): CatService: handleMessage[8]
+02-03 16:34:09.744 D/CAT     ( 2268): CatService: MSG_ID_ICC_CHANGED
+02-03 16:34:09.744 D/CAT     ( 2268): CatService: New Card State = CARDSTATE_PRESENT Old Card State = CARDSTATE_ABSENT
+02-03 16:34:09.744 D/RILJ    ( 2268): [3691]> RIL_REQUEST_REPORT_STK_SERVICE_IS_RUNNING [SUB0]
+02-03 16:34:09.745 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] New Uicc application found. type = APPTYPE_SIM
+02-03 16:34:09.745 D/SIMRecords( 2268): [SIMRecords] getOperatorNumeric: IMSI == null
+02-03 16:34:09.745 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] mIccRecords = SimRecords: mDestroyed=false mContext=com.android.phone.PhoneGlobals@28d02c4 mCi=com.android.internal.telephony.RIL@b7e6f2a mFh=Handler (com.android.internal.telephony.uicc.SIMFileHandler) {47a15ad} mParentApp=com.android.internal.telephony.uicc.UiccCardApplication@b6420e2 recordsLoadedRegistrants=android.os.RegistrantList@c730c73 mImsiReadyRegistrants=android.os.RegistrantList@eb98730 mRecordsEventsRegistrants=android.os.RegistrantList@b4f5fa9 mNewSmsRegistrants=android.os.RegistrantList@5a7692e mNetworkSelectionModeAutomaticRegistrants=android.os.RegistrantList@1e7fccf recordsToLoad=17 adnCache=Handler (com.android.internal.telephony.uicc.AdnRecordCache) {5e7e65c} recordsRequested=true iccid=null msisdnTag=null voiceMailNum=null voiceMailTag=null voiceMailNum=null newVoiceMailTag=null isVoiceMailFixed=false mImsi=null mncLength=-1 mailboxIndex=0 spn=null mVmConfigcom.android.internal.telephony.uicc.VoiceMailConstants@3154d65 mSpnOverride=mSpnOverride callForwardingEnabled=0 spnState=READ_SPN_3GPP mCphsInfo=null mCspPlmnEnabled=true efMWIS=null efCPHS_MWI=null mEfCff=null mEfCfis=null getOperatorNumeric=null
+02-03 16:34:09.745 D/GsmSMSDispatcher( 2268): GsmSMSDispatcher: subId = -2 slotId = 0
+02-03 16:34:09.745 D/GsmSMSDispatcher( 2268): New Uicc application found
+02-03 16:34:09.745 D/RILJ    ( 2268): [3666]< GET_IMEISV  [SUB0]
+02-03 16:34:09.745 D/IccCardProxy( 2268): Icc changed. Reregestering.
+02-03 16:34:09.745 D/UiccCardApplication( 2268): Notifying 1 registrant: READY
+02-03 16:34:09.745 E/IccCardProxy( 2268): setExternalState: set mPhoneId=0 mExternalState=READY
+02-03 16:34:09.745 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.state value: READY propVal=READY
+02-03 16:34:09.746 D/IccCardProxy( 2268): broadcastIccStateChangedIntent intent ACTION_SIM_STATE_CHANGED value=READY reason=null for mPhoneId=0
+02-03 16:34:09.748 D/SST     ( 2268): New card found
+02-03 16:34:09.748 D/UiccCardApplication( 2268): Notifying 1 registrant: READY
+02-03 16:34:09.748 D/CAT     ( 2268): CatService: handleMessage[8]
+02-03 16:34:09.748 D/CAT     ( 2268): CatService: MSG_ID_ICC_CHANGED
+02-03 16:34:09.748 D/CAT     ( 2268): CatService: New Card State = CARDSTATE_PRESENT Old Card State = CARDSTATE_PRESENT
+02-03 16:34:09.748 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] Baseband version: MDM9625_104438.245.02.85R
+02-03 16:34:09.749 D/Phone   ( 2268): Get video call forwarding info from preferences
+02-03 16:34:09.749 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:09.750 E/IccCardProxy( 2268): setExternalState: !override and newstate unchanged from READY
+02-03 16:34:09.751 D/SubscriptionInfoUpdater( 2268): [Receiver]+
+02-03 16:34:09.751 D/SubscriptionInfoUpdater( 2268): Action: android.intent.action.SIM_STATE_CHANGED
+02-03 16:34:09.751 D/SubscriptionInfoUpdater( 2268): slotId: 0
+02-03 16:34:09.751 D/SubscriptionInfoUpdater( 2268): simStatus: READY
+02-03 16:34:09.751 D/SubscriptionInfoUpdater( 2268): Ignoring simStatus: READY
+02-03 16:34:09.751 D/SubscriptionInfoUpdater( 2268): [Receiver]-
+02-03 16:34:09.751 D/SST     ( 2268): set service state as POWER_OFF
+02-03 16:34:09.751 D/SST     ( 2268): Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:34:09.751 D/RILJ    ( 2268): [3691]< RIL_REQUEST_REPORT_STK_SERVICE_IS_RUNNING  [SUB0]
+02-03 16:34:09.752 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:09.752 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=null
+02-03 16:34:09.752 D/SST     ( 2268): updateSpnDisplay: radio is off w/ showPlmn=true plmn=No service
+02-03 16:34:09.752 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=null
+02-03 16:34:09.752 D/SST     ( 2268): updateSpnDisplay: changed sending intent rule=2 showPlmn='true' plmn='No service' showSpn='false' spn='null' dataSpn='null' subId='-2'
+02-03 16:34:09.755 D/SubscriptionController( 2268): [setPlmnSpn] No valid subscription to store info
+02-03 16:34:09.755 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:09.757 D/RILJ    ( 2268): [3665]< GET_IMEI  [SUB0]
+02-03 16:34:09.759 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:09.759 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:09.760 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.alpha value:  propVal=
+02-03 16:34:09.760 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.numeric value:  propVal=
+02-03 16:34:09.760 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:09.760 D/SST     ( 2268): operatorNumeric is null
+02-03 16:34:09.760 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.iso-country value:  propVal=
+02-03 16:34:09.761 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.isroaming value: false propVal=false
+02-03 16:34:09.761 D/SST     ( 2268): Broadcasting ServiceState : 3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false
+02-03 16:34:09.761 D/DefaultPhoneNotifier( 2268): nofityServiceState: mRegistry=com.android.internal.telephony.ITelephonyRegistry$Stub$Proxy@ebae47e ss=3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false sender=Handler (com.android.internal.telephony.GsmCdmaPhone) {934c801} phondId=0 subId=-2
+02-03 16:34:09.762 D/RILJ    ( 2268): [3669]< RIL_REQUEST_QUERY_TTY_MODE {0} [SUB0]
+02-03 16:34:09.768 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:09.769 D/RILJ    ( 2268): [3659]< OPERATOR {null, null, null, null, null, null} [SUB0]
+02-03 16:34:09.769 D/TelephonyManager( 1497): getSimState: default sim:-1, sim state for slotIdx=0 is 5, return state as unknown
+02-03 16:34:09.771 D/SST     ( 2268): notifyDataRegStateRilRadioTechnologyChanged: drs=3 rat=0
+02-03 16:34:09.771 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+02-03 16:34:09.771 D/DCT     ( 2268): [0]get all active apn types
+02-03 16:34:09.771 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:09.772 E/Phone   ( 2268): getStoredVoiceMessageCount: invalid subId -2
+02-03 16:34:09.772 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] updateVoiceMail countVoiceMessages = 0 subId -2
+02-03 16:34:09.772 E/Phone   ( 2268): setVoiceMessageCount in sharedPreference: invalid subId -2
+02-03 16:34:09.772 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:09.775 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:09.775 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:09.776 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:09.792 E/RILQ    (  417): (0/417): RIL[0][qmi_cb] qcril_uim_qmi_conv_open_logical_channel_resp: response error: 0x50
+02-03 16:34:09.796 D/DCT     ( 2268): [0]setupDataOnConnectableApns: nwTypeChanged hipri:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] emergency:[state=IDLE,enabled=false] 
+02-03 16:34:09.805 D/RILJ    ( 2268): [3660]< DATA_REGISTRATION_STATE {0, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:09.831 D/RILJ    ( 2268): [3661]< VOICE_REGISTRATION_STATE {2, null, null, 0, null, null, null, 0, null, null, null, null, null, 0, null} [SUB0]
+02-03 16:34:09.832 D/RILJ    ( 2268): [3662]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:09.832 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:09.902 D/RILJ    ( 2268): [3651]< SET_SUPP_SVC_NOTIFICATION  [SUB0]
+02-03 16:34:09.916 E/RILQ    (  417): (0/417): RIL[0][event] qcril_gstk_qmi_get_recovery_proactive_cache: Error GET_CACHED_PROACTIVE_CMD_REQ, qmi_err_code: 0x0, result: 0x1, error: 0x47
+02-03 16:34:09.928 E/RILQ    (  417): (0/417): RIL[0][event] qcril_gstk_qmi_get_recovery_proactive_cache: Error GET_CACHED_PROACTIVE_CMD_REQ, qmi_err_code: 0x0, result: 0x1, error: 0x47
+02-03 16:34:09.938 D/RILJ    ( 2268): [3670]< QUERY_FACILITY_LOCK {0} [SUB0]
+02-03 16:34:09.938 D/UiccCardApplication( 2268): Query facility FDN : FDN service available: true enabled: false
+02-03 16:34:09.946 I/RILQ    (  417): (0/417):RIL[0][event] qcril_common_update_current_imsi: cur imsi 724045013177656, is gwl 1
+02-03 16:34:09.949 D/RILJ    ( 2268): [3673]< GET_IMSI  [SUB0]
+02-03 16:34:09.949 D/SIMRecords( 2268): [SIMRecords] IMSI: mMncLength=-1
+02-03 16:34:09.949 D/SIMRecords( 2268): [SIMRecords] IMSI: 724045[hT0zMuDmobTHQ0k_8jY6wr0sdhs]
+02-03 16:34:09.949 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 16 requested: true
+02-03 16:34:09.950 D/IccCardProxy( 2268): broadcastIccStateChangedIntent intent ACTION_SIM_STATE_CHANGED value=IMSI reason=null for mPhoneId=0
+02-03 16:34:09.955 D/SubscriptionInfoUpdater( 2268): [Receiver]+
+02-03 16:34:09.955 D/SubscriptionInfoUpdater( 2268): Action: android.intent.action.SIM_STATE_CHANGED
+02-03 16:34:09.955 D/SubscriptionInfoUpdater( 2268): slotId: 0
+02-03 16:34:09.955 D/SubscriptionInfoUpdater( 2268): simStatus: IMSI
+02-03 16:34:09.955 D/SubscriptionInfoUpdater( 2268): Ignoring simStatus: IMSI
+02-03 16:34:09.955 D/SubscriptionInfoUpdater( 2268): [Receiver]-
+02-03 16:34:09.956 D/RilRequest( 2268): [3672]< RIL_REQUEST_SIM_OPEN_CHANNEL error: com.android.internal.telephony.CommandException: NO_SUCH_ELEMENT ret=
+02-03 16:34:09.957 D/UiccCard( 2268): Error in SIM access with exceptioncom.android.internal.telephony.CommandException: NO_SUCH_ELEMENT
+02-03 16:34:09.957 D/UiccPkcs15( 2268): Creating UiccPkcs15
+02-03 16:34:09.957 D/RILJ    ( 2268): [3692]> RIL_REQUEST_SIM_OPEN_CHANNEL [SUB0]
+02-03 16:34:09.959 D/RILJ    ( 2268): [3674]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:09.962 I/RILQ    (  417): (0/417):RIL[0][event] qcril_qmi_nas_dms_op_state_update_handler: reported op mode LPM
+02-03 16:34:09.962 I/RILQ    (  417): (0/417):RIL[0][event] qcril_qmi_nas_dms_op_state_update_handler: expected op mode LPM
+02-03 16:34:09.964 D/RILJ    ( 2268): [3693]> iccIO: SIM_IO 0xb0 0x2fe2  path: 3F00,0,0,10 aid:  [SUB0]
+02-03 16:34:09.973 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:09.976 D/RILJ    ( 2268): [3675]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:09.977 D/RILJ    ( 2268): [3654]< RADIO_POWER  [SUB0]
+02-03 16:34:09.977 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED RADIO_OFF [SUB0]
+02-03 16:34:09.979 D/RILJ    ( 2268): [3694]> iccIO: SIM_IO 0xb2 0x6f40  path: 3F007F10,1,4,28 aid:  [SUB0]
+02-03 16:34:09.979 I/RILQ    (  417): (0/417):RIL[0][event] qcril_qmi_nas_reset_data_snapshot_cache_and_timer: Resetting snapshot timer
+02-03 16:34:09.979 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:09.983 E/use-Rlog/RLOG-RIL-MOTEXT(  417): qcrilUpdAPMState, called , state =1
+02-03 16:34:09.983 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:09.983 D/RILJ    ( 2268): [3695]> OPERATOR [SUB0]
+02-03 16:34:09.985 D/RILJ    ( 2268): [3696]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:09.985 D/RILJ    ( 2268): [3697]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:09.986 D/RILJ    ( 2268): [3698]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:09.990 D/RilRequest( 2268): [3676]< SIM_IO error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=IccIoResponse sw1:0x94 sw2:0x4
+02-03 16:34:09.990 D/RILJ    ( 2268): [3695]< OPERATOR {null, null, null, null, null, null} [SUB0]
+02-03 16:34:09.990 D/RILJ    ( 2268): [3699]> iccIO: SIM_IO 0xc0 0x6f17  path: 3F007F20,0,0,15 aid:  [SUB0]
+02-03 16:34:09.991 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 16 requested: true
+02-03 16:34:09.993 D/RILJ    ( 2268): [3677]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:09.994 D/RILJ    ( 2268): [3700]> iccIO: SIM_IO 0xb0 0x6fad  path: 3F007F20,0,0,4 aid:  [SUB0]
+02-03 16:34:09.996 D/RilRequest( 2268): [3678]< SIM_IO error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=IccIoResponse sw1:0x94 sw2:0x4
+02-03 16:34:09.996 D/SIMRecords( 2268): [SIMRecords] EF_MWIS : null
+02-03 16:34:09.996 D/SIMRecords( 2268): [SIMRecords] EVENT_GET_MWIS_DONE exception = com.android.internal.telephony.CommandException: GENERIC_FAILURE
+02-03 16:34:09.996 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 15 requested: true
+02-03 16:34:09.997 D/RILJ    ( 2268): [3679]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:09.998 D/RILJ    ( 2268): [3701]> iccIO: SIM_IO 0xb0 0x6f11  path: 3F007F20,0,0,4 aid:  [SUB0]
+02-03 16:34:10.000 D/RilRequest( 2268): [3680]< SIM_IO error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=IccIoResponse sw1:0x94 sw2:0x4
+02-03 16:34:10.000 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 14 requested: true
+02-03 16:34:10.033 D/RILJ    ( 2268): [3698]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:10.033 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:10.033 D/RILJ    ( 2268): [3696]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:10.034 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=2 dataRadioTechnology=0
+02-03 16:34:10.092 D/RILJ    ( 2268): [3697]< VOICE_REGISTRATION_STATE {2, null, null, 0, null, null, null, 0, null, null, null, null, null, 0, null} [SUB0]
+02-03 16:34:10.095 D/SST     ( 2268): set service state as POWER_OFF
+02-03 16:34:10.095 D/SST     ( 2268): Poll ServiceState done:  oldSS=[3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=1 mNewMaxDataCalls=20 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:34:10.106 D/RILJ    ( 2268): [3681]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.106 D/RILJ    ( 2268): [3702]> iccIO: SIM_IO 0xb0 0x6f13  path: 3F007F20,0,0,4 aid:  [SUB0]
+02-03 16:34:10.117 D/RILJ    ( 2268): [3682]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.117 D/RILJ    ( 2268): [3703]> iccIO: SIM_IO 0xb0 0x6f46  path: 3F007F20,0,0,17 aid:  [SUB0]
+02-03 16:34:10.132 E/RILQ    (  417): (0/417): RIL[0][qmi_cb] qcril_uim_qmi_conv_open_logical_channel_resp: response error: 0x50
+02-03 16:34:10.133 D/RilRequest( 2268): [3683]< SIM_IO error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=IccIoResponse sw1:0x94 sw2:0x4
+02-03 16:34:10.133 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 13 requested: true
+02-03 16:34:10.142 D/RilRequest( 2268): [3684]< SIM_IO error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=IccIoResponse sw1:0x94 sw2:0x4
+02-03 16:34:10.143 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 12 requested: true
+02-03 16:34:10.159 D/RILJ    ( 2268): [3685]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.160 D/RILJ    ( 2268): [3704]> iccIO: SIM_IO 0xb0 0x6f38  path: 3F007F20,0,0,12 aid:  [SUB0]
+02-03 16:34:10.160 I/RILQ    (  417): (0/417):RIL[0][event] qcril_qmi_nas_dms_op_state_update_handler: reported op mode ONLINE
+02-03 16:34:10.160 I/RILQ    (  417): (0/417):RIL[0][event] qcril_qmi_nas_dms_op_state_update_handler: expected op mode ONLINE
+02-03 16:34:10.160 E/use-Rlog/RLOG-RIL-MOTEXT(  417): qcrilUpdAPMState, called , state =0
+02-03 16:34:10.168 D/RILJ    ( 2268): [3658]< RADIO_POWER  [SUB0]
+02-03 16:34:10.169 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED RADIO_ON [SUB0]
+02-03 16:34:10.170 D/SST     ( 2268): mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_ON, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+02-03 16:34:10.170 D/RILJ    ( 2268): [3705]> OPERATOR [SUB0]
+02-03 16:34:10.171 D/RILJ    ( 2268): [3706]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:10.171 D/RILJ    ( 2268): [3707]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:10.172 D/RILJ    ( 2268): [3708]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:10.174 D/RILJ    ( 2268): [3709]> GET_CURRENT_CALLS [SUB0]
+02-03 16:34:10.175 D/RILJ    ( 2268): [3710]> RIL_REQUEST_IMS_REGISTRATION_STATE [SUB0]
+02-03 16:34:10.175 D/RILJ    ( 2268): [3711]> RIL_REQUEST_CDMA_GET_SUBSCRIPTION_SOURCE [SUB0]
+02-03 16:34:10.176 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] Event EVENT_RADIO_ON Received
+02-03 16:34:10.176 D/RILJ    ( 2268): [3712]> RIL_REQUEST_VOICE_RADIO_TECH [SUB0]
+02-03 16:34:10.178 D/RILJ    ( 2268): [3705]< OPERATOR {null, null, null, null, null, null} [SUB0]
+02-03 16:34:10.196 D/RILJ    ( 2268): [3686]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.197 D/RILJ    ( 2268): [3713]> iccIO: SIM_IO 0xb0 0x6f16  path: 3F007F20,0,0,3 aid:  [SUB0]
+02-03 16:34:10.203 D/RILJ    ( 2268): [3687]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.203 D/RILJ    ( 2268): [3714]> iccIO: SIM_IO 0xb0 0x6f15  path: 3F007F20,0,0,24 aid:  [SUB0]
+02-03 16:34:10.212 D/RILJ    ( 2268): [3706]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:10.213 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=2 dataRadioTechnology=0
+02-03 16:34:10.216 D/RILJ    ( 2268): [3708]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:10.216 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:10.217 E/use-Rlog/RLOG-RIL-MOTEXT(  417): qcrilUpdVoiceCallCount, called , VcCount =0
+02-03 16:34:10.217 I/RILQ    (  417): (0/417):RIL[0][main] qcril_qmi_get_call_list_to_send: RILVI: calls rep: reported/skipped 0/0 calls
+02-03 16:34:10.218 D/RILJ    ( 2268): [3688]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.218 D/RILJ    ( 2268): [3715]> iccIO: SIM_IO 0xb0 0x6f3e  path: 3F007F20,0,0,9 aid:  [SUB0]
+02-03 16:34:10.220 D/RILJ    ( 2268): [3709]< GET_CURRENT_CALLS {} [SUB0]
+02-03 16:34:10.223 D/GsmCdmaCallTracker( 2268): Event EVENT_POLL_CALLS_RESULT Received
+02-03 16:34:10.223 D/GsmCdmaCallTracker( 2268): [GsmCdmaCallTracker] update phone state, old=IDLE new=IDLE
+02-03 16:34:10.232 D/RILJ    ( 2268): [3689]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.233 D/RILJ    ( 2268): [3716]> iccIO: SIM_IO 0xb0 0x6f3f  path: 3F007F20,0,0,9 aid:  [SUB0]
+02-03 16:34:10.237 D/RILJ    ( 2268): [3690]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.237 D/SIMRecords( 2268): [SIMRecords] EVENT_GET_SMS_RECORD_SIZE_DONE Size 176 total 8800 record 50
+02-03 16:34:10.253 D/RilRequest( 2268): [3692]< RIL_REQUEST_SIM_OPEN_CHANNEL error: com.android.internal.telephony.CommandException: NO_SUCH_ELEMENT ret=
+02-03 16:34:10.254 D/UiccCard( 2268): Error in SIM access with exceptioncom.android.internal.telephony.CommandException: NO_SUCH_ELEMENT
+02-03 16:34:10.254 D/UiccPkcs15( 2268): handleMessage: 201
+02-03 16:34:10.254 D/UiccPkcs15( 2268): error: com.android.internal.telephony.CommandException: NO_SUCH_ELEMENT
+02-03 16:34:10.255 D/UiccPkcs15( 2268): handleMessage: 1
+02-03 16:34:10.255 D/UiccPkcs15( 2268): select pkcs15 failed: com.android.internal.telephony.CommandException: NO_SUCH_ELEMENT
+02-03 16:34:10.262 E/RILQ    (  417): (0/417): RIL[0][cmd-112(776)] qcril_qmi_client_send_msg_sync_ex: error 2 / 0 / 1 / 52, context msg hex 4a, service 2 
+02-03 16:34:10.262 E/RILQ    (  417): (0/417): RIL[0][cmd-112(776)] qcril_sms_request_ims_registration_state: Failed to get the response of IMS NW registration state from qmi.
+02-03 16:34:10.265 D/RilRequest( 2268): [3710]< RIL_REQUEST_IMS_REGISTRATION_STATE error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=
+02-03 16:34:10.265 E/RIL_ImsSms( 2268): IMS State query failed with exp com.android.internal.telephony.CommandException: GENERIC_FAILURE
+02-03 16:34:10.268 D/RILJ    ( 2268): [3707]< VOICE_REGISTRATION_STATE {2, null, null, 0, null, null, null, 0, null, null, null, null, null, 0, null} [SUB0]
+02-03 16:34:10.269 D/SST     ( 2268): Poll ServiceState done:  oldSS=[3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=20 mNewMaxDataCalls=20 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:34:10.271 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=null
+02-03 16:34:10.271 D/SST     ( 2268): updateSpnDisplay: radio is on but out of service, set plmn='No service'
+02-03 16:34:10.271 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=null
+02-03 16:34:10.272 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.alpha value:  propVal=
+02-03 16:34:10.273 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.numeric value:  propVal=
+02-03 16:34:10.274 D/RILJ    ( 2268): [3693]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.275 D/SST     ( 2268): operatorNumeric is null
+02-03 16:34:10.275 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.iso-country value:  propVal=
+02-03 16:34:10.276 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.isroaming value: false propVal=false
+02-03 16:34:10.277 D/SST     ( 2268): Broadcasting ServiceState : 1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false
+02-03 16:34:10.278 D/DefaultPhoneNotifier( 2268): nofityServiceState: mRegistry=com.android.internal.telephony.ITelephonyRegistry$Stub$Proxy@ebae47e ss=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false sender=Handler (com.android.internal.telephony.GsmCdmaPhone) {934c801} phondId=0 subId=-2
+02-03 16:34:10.280 D/SubscriptionController( 2268): [getSlotId]- subId invalid
+02-03 16:34:10.280 D/TelephonyManager( 1497): getSimState: default sim:-1, sim state for slotIdx=0 is 5, return state as unknown
+02-03 16:34:10.282 D/SST     ( 2268): notifyDataRegStateRilRadioTechnologyChanged: drs=1 rat=0
+02-03 16:34:10.282 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+02-03 16:34:10.283 D/DCT     ( 2268): [0]get all active apn types
+02-03 16:34:10.284 D/DCT     ( 2268): [0]setupDataOnConnectableApns: nwTypeChanged hipri:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] emergency:[state=IDLE,enabled=false] 
+02-03 16:34:10.284 D/SIMRecords( 2268): [SIMRecords] iccid: 89550450000131776562
+02-03 16:34:10.284 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 11 requested: true
+02-03 16:34:10.295 D/RILJ    ( 2268): [3694]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.299 D/RILJ    ( 2268): [3712]< RIL_REQUEST_VOICE_RADIO_TECH {3} [SUB0]
+02-03 16:34:10.302 D/RilRequest( 2268): [3711]< RIL_REQUEST_CDMA_GET_SUBSCRIPTION_SOURCE error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=
+02-03 16:34:10.318 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] EVENT_REQUEST_VOICE_RADIO_TECH_DONE: newVoiceTech=3
+02-03 16:34:10.318 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] phoneObjectUpdater: newVoiceRadioTech=3
+02-03 16:34:10.318 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] phoneObjectUpdater: No change ignore, newVoiceRadioTech=3 mActivePhone=GSM
+02-03 16:34:10.319 D/CdmaSSM ( 2268): CDMA_SUBSCRIPTION_SOURCE event = 2
+02-03 16:34:10.319 W/CdmaSSM ( 2268): Unable to get CDMA Subscription Source, Exception: com.android.internal.telephony.CommandException: GENERIC_FAILURE, result: null
+02-03 16:34:10.319 D/SIMRecords( 2268): [SIMRecords] MSISDN: 
+02-03 16:34:10.319 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 10 requested: true
+02-03 16:34:10.380 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:10.381 D/RILJ    ( 2268): [3717]> OPERATOR [SUB0]
+02-03 16:34:10.381 D/RILJ    ( 2268): [3718]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:10.382 D/RILJ    ( 2268): [3719]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:10.383 D/RILJ    ( 2268): [3720]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:10.384 D/RILJ    ( 2268): [3717]< OPERATOR {null, null, null, null, null, null} [SUB0]
+02-03 16:34:10.411 D/RILJ    ( 2268): [3718]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:10.412 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=2 dataRadioTechnology=0
+02-03 16:34:10.437 D/RILJ    ( 2268): [3720]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:10.437 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:10.440 D/RILJ    ( 2268): [3719]< VOICE_REGISTRATION_STATE {2, null, null, 0, null, null, null, 0, null, null, null, null, null, 0, null} [SUB0]
+02-03 16:34:10.441 D/SST     ( 2268): Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=20 mNewMaxDataCalls=20 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:34:10.472 I/RILQ    (  417): (0/417):RIL[0][event] qcril_arb_set_dsd_sys_status: old_pref_data 1 - new_data_pref 1
+02-03 16:34:10.472 I/RILQ    (  417): (0/417):RIL[0][event] qcril_arb_set_dsd_sys_status: preferred dsd_sys_status nw=0x0, rat_value=0x0, so_mask=0x0000000000000800
+02-03 16:34:10.483 D/RILJ    ( 2268): [3699]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.483 D/RILJ    ( 2268): [3721]> iccIO: SIM_IO 0xb2 0x6f17  path: 3F007F20,1,4,28 aid:  [SUB0]
+02-03 16:34:10.496 D/RILJ    ( 2268): [3700]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.497 D/SIMRecords( 2268): [SIMRecords] EF_AD: 00000002
+02-03 16:34:10.497 D/SIMRecords( 2268): [SIMRecords] setting4 mMncLength=2
+02-03 16:34:10.497 D/SIMRecords( 2268): [SIMRecords] mccmncCode=724045
+02-03 16:34:10.497 D/SIMRecords( 2268): [SIMRecords] update mccmnc=72404
+02-03 16:34:10.501 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:10.508 D/RILJ    ( 2268): [3701]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.509 D/RILJ    ( 2268): [3702]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.511 D/RILJ    ( 2268): [3703]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.513 D/RILJ    ( 2268): [3704]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.517 D/RILJ    ( 2268): [3713]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.518 D/RILJ    ( 2268): [3714]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.522 D/RILJ    ( 2268): [3715]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.524 D/RILJ    ( 2268): [3716]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.524 E/RILQ    (  417): (0/417): RIL[0][event] get_ecc_property_name: ecc list name : ril.ecclist.
+02-03 16:34:10.527 D/RILJ    ( 2268): [3721]< SIM_IO IccIoResponse sw1:0x90 sw2:0x0 [SUB0]
+02-03 16:34:10.532 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 9 requested: true
+02-03 16:34:10.535 D/DCT     ( 2268): [0]fetchDunApn: net.tethering.noprovisioning=true ret: null
+02-03 16:34:10.535 D/DCT     ( 2268): [0]hasMatchedTetherApnSetting: APN=null
+02-03 16:34:10.538 D/SIMRecords( 2268): [SIMRecords] EF_CPHS_MWI: 5a55ffff
+02-03 16:34:10.538 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 8 requested: true
+02-03 16:34:10.538 D/SIMRecords( 2268): [SIMRecords] EF_CFF_CPHS: 5555ffff
+02-03 16:34:10.538 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 7 requested: true
+02-03 16:34:10.538 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:34:10.538 D/SIMRecords( 2268): [SIMRecords] Load EF_SPN: TIM spnDisplayCondition: 0
+02-03 16:34:10.538 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.alpha value: TIM propVal=TIM
+02-03 16:34:10.538 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 6 requested: true
+02-03 16:34:10.544 D/SIMRecords( 2268): [SIMRecords] SST: UsimServiceTable[96]={ PHONEBOOK, FDN, FDN_EXTENSION, SDN, SDN_EXTENSION, BDN, BDN_EXTENSION, OUTGOING_CALL_INFO, ADVICE_OF_CHARGE, CAP_CONFIG_PARAMS_2, GROUP_ID_LEVEL_1, GROUP_ID_LEVEL_2, SPN, USER_PLMN_SELECT, MSISDN, IMAGE, LOCALISED_SERVICE_AREAS, EMLPP, EMLPP_AUTO_ANSWER, RFU, GSM_ACCESS, DATA_DL_VIA_SMS_PP, DATA_DL_VIA_SMS_CB, CALL_CONTROL_BY_USIM, MO_SMS_CONTROL_BY_USIM, RUN_AT_COMMAND, IGNORED_1, ENABLED_SERVICES_TABLE, APN_CONTROL_LIST, DEPERSONALISATION_CONTROL_KEYS, CFI_STATUS, IGNORED_2, SERVICE_PROVIDER_DISPLAY_INFO, MMS_NOTIFICATION, MMS_NOTIFICATION_EXTENSION, GPRS_CALL_CONTROL_BY_USIM, VGCS_GROUP_ID_LIST, VBS_GROUP_ID_LIST, OMA_BCAST_PROFILE, GBA_LOCAL_KEY_ESTABLISHMENT }
+02-03 16:34:10.545 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 5 requested: true
+02-03 16:34:10.547 D/SIMRecords( 2268): [SIMRecords] iCPHS: 023300
+02-03 16:34:10.548 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 4 requested: true
+02-03 16:34:10.548 D/SIMRecords( 2268): [SIMRecords] EF_CSP: 01f802f803d804f005fe0600070008b309fcc0fdd500ffff
+02-03 16:34:10.548 D/SIMRecords( 2268): [SIMRecords] [CSP] found ValueAddedServicesGroup, value -3
+02-03 16:34:10.548 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 3 requested: true
+02-03 16:34:10.548 D/SIMRecords( 2268): [SIMRecords] GID1: ffffffffffffffffff
+02-03 16:34:10.548 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 2 requested: true
+02-03 16:34:10.548 D/SIMRecords( 2268): [SIMRecords] GID2: ffffffffffffffffff
+02-03 16:34:10.548 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 1 requested: true
+02-03 16:34:10.549 D/SIMRecords( 2268): [SIMRecords] VM: ADN Record 'Caixa Postal' '[kSziGni4kleahNvnQd70_e_ZS_8] null null' EF[MAILBOX]
+02-03 16:34:10.549 D/SIMRecords( 2268): [SIMRecords] onRecordLoaded 0 requested: true
+02-03 16:34:10.549 D/SIMRecords( 2268): [SIMRecords] record load complete
+02-03 16:34:10.549 D/SIMRecords( 2268): [SIMRecords] Not using EF LI/EF PL
+02-03 16:34:10.549 D/SIMRecords( 2268): [SIMRecords] EF_CFF: callForwardingEnabled=0
+02-03 16:34:10.549 D/SIMRecords( 2268): [SIMRecords] onAllRecordsLoaded set 'gsm.sim.operator.numeric' to operator='72404'
+02-03 16:34:10.549 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.numeric value: 72404 propVal=72404
+02-03 16:34:10.550 D/SubscriptionController( 2268): [setMccMnc]+ mcc/mnc:724/4 subId:-2
+02-03 16:34:10.552 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:10.556 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.558 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.558 D/SIMRecords( 2268): [SIMRecords] update icc_operator_numeric = 72404 subId = -2
+02-03 16:34:10.558 D/SIMRecords( 2268): [SIMRecords] onAllRecordsLoaded set mcc imsi
+02-03 16:34:10.559 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.iso-country value: br propVal=br
+02-03 16:34:10.561 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:10.561 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:10.563 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.566 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.566 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:10.595 D/CAT     ( 2268): CatService: handleMessage[20]
+02-03 16:34:10.595 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] updateCurrentCarrierInProvider: mSubId = -2 currentDds = 1 operatorNumeric = 72404
+02-03 16:34:10.595 D/IccCardProxy( 2268): operator=72404 mPhoneId=0
+02-03 16:34:10.595 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.numeric value: 72404 propVal=72404
+02-03 16:34:10.596 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.iso-country value: br propVal=br
+02-03 16:34:10.596 D/IccCardProxy( 2268): Sending intent ACTION_INTERNAL_SIM_STATE_CHANGED for mPhoneId : 0
+02-03 16:34:10.597 D/SST     ( 2268): EVENT_SIM_RECORDS_LOADED: what=16
+02-03 16:34:10.597 D/SST     ( 2268): getOtasp: otasp not needed for GSM
+02-03 16:34:10.597 D/SST     ( 2268): updateOtaspState: call notifyOtaspChanged old otaspMode=0 new otaspMode=3
+02-03 16:34:10.598 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:34:10.598 D/SST     ( 2268): updateSpnDisplay: radio is on but out of service, set plmn='No service'
+02-03 16:34:10.598 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:34:10.599 D/SST     ( 2268): updateSpnDisplay: changed sending intent rule=3 showPlmn='true' plmn='No service' showSpn='true' spn='TIM' dataSpn='TIM' subId='-2'
+02-03 16:34:10.600 D/SubscriptionController( 2268): [setPlmnSpn] No valid subscription to store info
+02-03 16:34:10.601 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:10.603 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.606 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.608 D/SubscriptionController( 2268): [getPhoneId]- no sims, returning default phoneId=2147483647
+02-03 16:34:10.613 D/SubscriptionInfoUpdater( 2268): [Receiver]+
+02-03 16:34:10.613 D/SubscriptionInfoUpdater( 2268): Action: android.intent.action.internal_sim_state_changed
+02-03 16:34:10.613 D/SubscriptionInfoUpdater( 2268): slotId: 0
+02-03 16:34:10.613 D/SubscriptionInfoUpdater( 2268): simStatus: LOADED
+02-03 16:34:10.613 D/SubscriptionInfoUpdater( 2268): [Receiver]-
+02-03 16:34:10.613 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:10.613 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:10.614 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.614 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.626 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.628 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.630 D/SubscriptionInfoUpdater( 2268): handleSimStateLoadedInternal: slotId: 0
+02-03 16:34:10.630 D/SubscriptionInfoUpdater( 2268): All IccIds query complete
+02-03 16:34:10.630 D/SubscriptionInfoUpdater( 2268): updateSubscriptionInfoByIccId:+ Start
+02-03 16:34:10.631 D/SubscriptionController( 2268): [clearSubInfo]- no simInfo size=0
+02-03 16:34:10.631 D/SubscriptionInfoUpdater( 2268): insertedSimCount = 1
+02-03 16:34:10.631 D/SubscriptionController( 2268): [getSubInfoUsingSlotIdWithCheck]+ slotId:0
+02-03 16:34:10.635 D/SubscriptionController( 2268): [getSubInfoUsingSlotId]- null info return
+02-03 16:34:10.635 D/SubscriptionInfoUpdater( 2268): updateSubscriptionInfoByIccId: No SIM in slot 0 last time
+02-03 16:34:10.635 D/SubscriptionInfoUpdater( 2268): updateSubscriptionInfoByIccId: oldIccId[0] = , sIccId[0] = 89550450000131776562
+02-03 16:34:10.635 D/SubscriptionController( 2268): [addSubInfoRecord]+ iccId:89550450000131776562 slotId:0
+02-03 16:34:10.639 D/SubscriptionController( 2268): [getActiveSubInfoList] Sub Controller not ready
+02-03 16:34:10.652 D/SubscriptionController( 2268): [addSubInfoRecord] Record already exists
+02-03 16:34:10.656 D/SubscriptionController( 2268): [addSubInfoRecord] sSlotIdxToSubId.size=1 slotId=0 subId=1 defaultSubId=1 simCount=1
+02-03 16:34:10.656 D/SubscriptionController( 2268): [setDefaultFallbackSubId] subId=1
+02-03 16:34:10.656 D/SubscriptionController( 2268): [setDefaultFallbackSubId] set mDefaultFallbackSubId=1
+02-03 16:34:10.659 D/SubscriptionController( 2268): [setDefaultFallbackSubId] broadcast default subId changed phoneId=0 subId=1
+02-03 16:34:10.661 D/SubscriptionController( 2268): [addSubInfoRecord] one sim set defaults to subId=1
+02-03 16:34:10.662 D/SubscriptionController( 2268): [setDefaultDataSubId] num phones=1, subId=1 dds flex map = dds
+02-03 16:34:10.662 D/SubscriptionController( 2268): [setDefaultDataSubId] phoneId=0 subId=1 RAF=786430
+02-03 16:34:10.663 D/RILJ    ( 2268): [3722]> RIL_REQUEST_GET_CELL_INFO_LIST [SUB0]
+02-03 16:34:10.663 D/ProxyController( 2268): setRadioCapability: Already in requested configuration, nothing to do.
+02-03 16:34:10.663 D/SubscriptionController( 2268): [updateAllDataConnectionTrackers] sPhones.length=1
+02-03 16:34:10.663 D/SubscriptionController( 2268): [updateAllDataConnectionTrackers] phoneId=0
+02-03 16:34:10.664 D/DCT     ( 2268): [0]update sub = 1
+02-03 16:34:10.664 D/DCT     ( 2268): [0]update(): Active DDS, register for all events now!
+02-03 16:34:10.664 D/DCT     ( 2268): [0]New records found.
+02-03 16:34:10.664 D/SST     ( 2268): mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_ON, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+02-03 16:34:10.664 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] updateCurrentCarrierInProvider: mSubId = 1 currentDds = 1 operatorNumeric = 72404
+02-03 16:34:10.674 D/RilRequest( 2268): [3722]< RIL_REQUEST_GET_CELL_INFO_LIST error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=
+02-03 16:34:10.684 D/SubscriptionController( 2268): [broadcastDefaultDataSubIdChanged] subId=1
+02-03 16:34:10.686 D/SubscriptionController( 2268): [setDefaultSmsSubId] subId=1
+02-03 16:34:10.686 D/SubscriptionController( 2268): [broadcastDefaultSmsSubIdChanged] subId=1
+02-03 16:34:10.689 D/SubscriptionController( 2268): [setDefaultVoiceSubId] subId=1
+02-03 16:34:10.690 D/SubscriptionController( 2268): [broadcastDefaultVoiceSubIdChanged] subId=1
+02-03 16:34:10.691 D/SubscriptionController( 2268): [addSubInfoRecord] hashmap(0,1)
+02-03 16:34:10.705 D/SubscriptionController( 2268): [addSubInfoRecord] sim name = TIM
+02-03 16:34:10.705 D/DCT     ( 2268): [0]update sub = 1
+02-03 16:34:10.705 D/DCT     ( 2268): [0]update(): Active DDS, register for all events now!
+02-03 16:34:10.706 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] updateCurrentCarrierInProvider: mSubId = 1 currentDds = 1 operatorNumeric = 72404
+02-03 16:34:10.725 D/SubscriptionController( 2268): [addSubInfoRecord]- info size=1
+02-03 16:34:10.726 D/PhoneFactory( 2268): setSMSPromptOption to false
+02-03 16:34:10.726 D/SubscriptionInfoUpdater( 2268): newSim = true
+02-03 16:34:10.726 D/SubscriptionInfoUpdater( 2268): updateSubscriptionInfoByIccId: sInsertSimState[0] = -2
+02-03 16:34:10.733 D/SubscriptionInfoUpdater( 2268): updateSubscriptionInfoByIccId: nSubCount = 1
+02-03 16:34:10.734 D/SubscriptionController( 2268): [setDefaultDataSubId] num phones=1, subId=1 dds flex map = dds
+02-03 16:34:10.734 D/SubscriptionController( 2268): [setDefaultDataSubId] phoneId=0 subId=1 RAF=786430
+02-03 16:34:10.734 D/ProxyController( 2268): setRadioCapability: Already in requested configuration, nothing to do.
+02-03 16:34:10.734 D/SubscriptionController( 2268): [updateAllDataConnectionTrackers] sPhones.length=1
+02-03 16:34:10.734 D/SubscriptionController( 2268): [updateAllDataConnectionTrackers] phoneId=0
+02-03 16:34:10.736 D/DCT     ( 2268): [0]update sub = 1
+02-03 16:34:10.736 D/DCT     ( 2268): [0]update(): Active DDS, register for all events now!
+02-03 16:34:10.737 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] updateCurrentCarrierInProvider: mSubId = 1 currentDds = 1 operatorNumeric = 72404
+02-03 16:34:10.753 D/SubscriptionController( 2268): [broadcastDefaultDataSubIdChanged] subId=1
+02-03 16:34:10.758 D/SubscriptionController( 2268): [setDefaultVoiceSubId] subId=1
+02-03 16:34:10.758 D/SubscriptionController( 2268): [broadcastDefaultVoiceSubIdChanged] subId=1
+02-03 16:34:10.760 D/SubscriptionController( 2268): [setDefaultSmsSubId] subId=1
+02-03 16:34:10.761 D/SubscriptionController( 2268): [broadcastDefaultSmsSubIdChanged] subId=1
+02-03 16:34:10.763 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:10.764 D/SubscriptionMonitor( 2268): Phone[0] subId changed -2->1, 1 registrants
+02-03 16:34:10.765 D/SubscriptionMonitor( 2268): mDefaultDataSubId = 1, 1 registrants
+02-03 16:34:10.775 D/SubscriptionInfoUpdater( 2268): updateSubscriptionInfoByIccId:- SsubscriptionInfo update complete
+02-03 16:34:10.779 D/SubscriptionController( 2268): [setMccMnc]+ mcc/mnc:724/4 subId:1
+02-03 16:34:10.793 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:10.806 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@4c7c053 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:10.806 D/SubscriptionInfoUpdater( 2268): sim name = TIM
+02-03 16:34:10.806 D/SubscriptionController( 2268): [setDisplayName]+  displayName:TIM subId:1 nameSource:-1
+02-03 16:34:10.806 D/SubscriptionController( 2268): validateSubId subId: 1
+02-03 16:34:10.807 D/SubscriptionController( 2268): [setDisplayName]- mDisplayName:TIM set
+02-03 16:34:10.818 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:10.827 D/SubscriptionInfoUpdater( 2268): Broadcasting intent ACTION_SIM_STATE_CHANGED LOADED reason null for mCardIndex: 0
+02-03 16:34:10.852 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@b196245 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:10.869 D/DCT     ( 2268): [0]onRecordsLoadedOrSubIdChanged: createAllApnList
+02-03 16:34:10.869 D/DCT     ( 2268): [0]createAllApnList: selection=numeric = '72404'
+02-03 16:34:10.874 D/DCT     ( 2268): [0]createApnList: X result=[[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM WAP FAST, 3376, 72404, wap.tim.br, 200.244.116.65, http://wap.tim.com.br, , , 8080, -1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM MMS, 3377, 72404, mms.tim.br, , http://mms.tim.br, 200.179.66.242, 8080, , 1, mms, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM BR CONNECT FAST, 3378, 72404, tim.br, , null, , , , -1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false]
+02-03 16:34:10.884 D/DCT     ( 2268): [0]getPreferredApn: mRequestedApnType=default cursor=android.content.ContentResolver$CursorWrapperInner@8c64ac0 cursor.count=0
+02-03 16:34:10.885 D/DCT     ( 2268): [0]getPreferredApn: X not found
+02-03 16:34:10.885 D/DCT     ( 2268): [0]createAllApnList: mPreferredApn=null
+02-03 16:34:10.885 D/DCT     ( 2268): [0]createAllApnList: X mAllApnSettings=[[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM WAP FAST, 3376, 72404, wap.tim.br, 200.244.116.65, http://wap.tim.com.br, , , 8080, -1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM MMS, 3377, 72404, mms.tim.br, , http://mms.tim.br, 200.179.66.242, 8080, , 1, mms, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM BR CONNECT FAST, 3378, 72404, tim.br, , null, , , , -1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false]
+02-03 16:34:10.885 D/DCT     ( 2268): [0]setDataProfilesAsNeeded
+02-03 16:34:10.885 D/DCT     ( 2268): [0]setInitialApn: E mPreferredApn=null
+02-03 16:34:10.885 D/DCT     ( 2268): [0]setInitialApn: firstApnSetting=[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false
+02-03 16:34:10.885 D/DCT     ( 2268): [0]setInitialApn: defaultApnSetting=[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false
+02-03 16:34:10.885 D/DCT     ( 2268): [0]setInitialAttachApn: using defaultApnSetting
+02-03 16:34:10.885 D/DCT     ( 2268): [0]setInitialAttachApn: X selected Apn=[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false
+02-03 16:34:10.885 D/RILJ    ( 2268): Set RIL_REQUEST_SET_INITIAL_ATTACH_APN [SUB0]
+02-03 16:34:10.885 D/RILJ    ( 2268): [3723]> RIL_REQUEST_SET_INITIAL_ATTACH_APN, apn:timbrasil.br, protocol:IP, authType:1, username:tim, password:tim [SUB0]
+02-03 16:34:10.886 D/DCT     ( 2268): [0]onRecordsLoadedOrSubIdChanged: notifying data availability
+02-03 16:34:10.886 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.887 D/DCT     ( 2268): [0]isDataAllowed: No - Not attached
+02-03 16:34:10.887 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.896 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.900 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.903 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.905 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.909 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.911 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.913 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:10.915 D/DCT     ( 2268): [0]setupDataOnConnectableApns: simLoaded hipri:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] emergency:[state=IDLE,enabled=false] 
+02-03 16:34:10.920 D/SST     ( 2268): EVENT_GET_CELL_INFO_LIST: error ret null, e=com.android.internal.telephony.CommandException: GENERIC_FAILURE
+02-03 16:34:10.920 D/SST     ( 2268): SST.getAllCellInfo(): X size=0 list=null
+02-03 16:34:10.922 D/SST     ( 2268): SST.getAllCellInfo(): return last, back to back calls
+02-03 16:34:10.922 D/SST     ( 2268): SST.getAllCellInfo(): X size=0 list=null
+02-03 16:34:10.925 D/RILJ    ( 2268): [3723]< RIL_REQUEST_SET_INITIAL_ATTACH_APN  [SUB0]
+02-03 16:34:10.925 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:10.926 D/Phone   ( 2268): Get video call forwarding info from preferences
+02-03 16:34:10.939 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@b65114a mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:10.939 D/PhoneFactory( 2268): calculatePreferredNetworkType: phoneSubId = 1 networkType = 9
+02-03 16:34:10.939 D/Phone   ( 2268): setPreferredNetworkType: networkType = 9 modemRaf = 786430 rafFromType = 642574 filteredType = 9
+02-03 16:34:10.939 D/RILJ    ( 2268): [3724]> REQUEST_SET_PREFERRED_NETWORK_TYPE : 9 [SUB0]
+02-03 16:34:10.940 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+02-03 16:34:10.941 D/RILJ    ( 2268): [3724]< REQUEST_SET_PREFERRED_NETWORK_TYPE  [SUB0]
+02-03 16:34:10.941 D/SubscriptionController( 2268): [setCarrierText]+ text:No service — TIM subId:1
+02-03 16:34:10.954 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:10.959 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:34:10.959 D/SST     ( 2268): updateSpnDisplay: radio is on but out of service, set plmn='No service'
+02-03 16:34:10.959 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:34:10.960 D/SST     ( 2268): updateSpnDisplay: changed sending intent rule=3 showPlmn='true' plmn='No service' showSpn='true' spn='TIM' dataSpn='TIM' subId='1'
+02-03 16:34:10.962 D/SubscriptionController( 2268): [setCarrierText]+ text:No service — TIM subId:1
+02-03 16:34:10.974 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:10.975 D/SIMRecords( 2268): [SIMRecords]  VoiceMessageCount from SIM CPHS = -1
+02-03 16:34:10.975 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] updateVoiceMail countVoiceMessages = -1 subId 1
+02-03 16:34:10.975 D/Phone   ( 2268): setVoiceMessageCount: Storing Voice Mail Count = -1 for mVmCountKey = vm_count_key1 in preferences.
+02-03 16:34:10.977 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:10.984 D/DCT     ( 2268): [0]onRecordsLoadedOrSubIdChanged: createAllApnList
+02-03 16:34:10.985 D/DCT     ( 2268): [0]createAllApnList: selection=numeric = '72404'
+02-03 16:34:10.995 D/DCT     ( 2268): [0]createApnList: X result=[[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM WAP FAST, 3376, 72404, wap.tim.br, 200.244.116.65, http://wap.tim.com.br, , , 8080, -1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM MMS, 3377, 72404, mms.tim.br, , http://mms.tim.br, 200.179.66.242, 8080, , 1, mms, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM BR CONNECT FAST, 3378, 72404, tim.br, , null, , , , -1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false]
+02-03 16:34:11.000 D/DCT     ( 2268): [0]getPreferredApn: mRequestedApnType=default cursor=android.content.ContentResolver$CursorWrapperInner@4994f1c cursor.count=0
+02-03 16:34:11.000 D/DCT     ( 2268): [0]getPreferredApn: X not found
+02-03 16:34:11.000 D/DCT     ( 2268): [0]createAllApnList: mPreferredApn=null
+02-03 16:34:11.001 D/DCT     ( 2268): [0]createAllApnList: X mAllApnSettings=[[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM WAP FAST, 3376, 72404, wap.tim.br, 200.244.116.65, http://wap.tim.com.br, , , 8080, -1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM MMS, 3377, 72404, mms.tim.br, , http://mms.tim.br, 200.179.66.242, 8080, , 1, mms, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false, [ApnSettingV3] TIM BR CONNECT FAST, 3378, 72404, tim.br, , null, , , , -1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false]
+02-03 16:34:11.001 D/DCT     ( 2268): [0]setDataProfilesAsNeeded
+02-03 16:34:11.001 D/DCT     ( 2268): [0]setInitialApn: E mPreferredApn=null
+02-03 16:34:11.001 D/DCT     ( 2268): [0]setInitialApn: firstApnSetting=[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false
+02-03 16:34:11.001 D/DCT     ( 2268): [0]setInitialApn: defaultApnSetting=[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false
+02-03 16:34:11.001 D/DCT     ( 2268): [0]setInitialAttachApn: using defaultApnSetting
+02-03 16:34:11.001 D/DCT     ( 2268): [0]setInitialAttachApn: X selected Apn=[ApnSettingV3] TIM Connect FAST, 3375, 72404, timbrasil.br, , http://www.google.com.br, , , , 1, default | supl, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false
+02-03 16:34:11.001 D/RILJ    ( 2268): Set RIL_REQUEST_SET_INITIAL_ATTACH_APN [SUB0]
+02-03 16:34:11.001 D/RILJ    ( 2268): [3725]> RIL_REQUEST_SET_INITIAL_ATTACH_APN, apn:timbrasil.br, protocol:IP, authType:1, username:tim, password:tim [SUB0]
+02-03 16:34:11.002 D/DCT     ( 2268): [0]onRecordsLoadedOrSubIdChanged: notifying data availability
+02-03 16:34:11.002 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.003 D/DCT     ( 2268): [0]isDataAllowed: No - Not attached
+02-03 16:34:11.003 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.009 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.011 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.013 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.014 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.018 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.020 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.022 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.024 D/DCT     ( 2268): [0]setupDataOnConnectableApns: simLoaded hipri:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] emergency:[state=IDLE,enabled=false] 
+02-03 16:34:11.026 D/TelephonyNetworkFactory[0]( 2268): onSubIdChange -2->1
+02-03 16:34:11.026 D/TelephonyNetworkFactory[0]( 2268): onDefaultChange(false,true)
+02-03 16:34:11.026 D/PhoneSwitcher( 2268): evaluating due to subChanged phone[0] -2->1
+02-03 16:34:11.027 D/PhoneSwitcher( 2268): activate 0
+02-03 16:34:11.027 D/RILJ    ( 2268): [3726]> RIL_REQUEST_ALLOW_DATA allowed: true [SUB0]
+02-03 16:34:11.032 D/RILJ    ( 2268): [3725]< RIL_REQUEST_SET_INITIAL_ATTACH_APN  [SUB0]
+02-03 16:34:11.042 I/RILQ    (  417): (0/417):RIL[0][main] qcril_qmi_nas_request_allow_data: Already PS attached!
+02-03 16:34:11.042 I/RILQ    (  417): (0/417):RIL[0][main] qcril_qmi_nas_request_allow_data: PS ATTACH/DETACH resp 0
+02-03 16:34:11.042 D/RILJ    ( 2268): [3726]< RIL_REQUEST_ALLOW_DATA  [SUB0]
+02-03 16:34:11.047 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@f1e0287 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.074 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.075 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.087 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@a2f72d9 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.113 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.113 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.135 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@a683976 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.148 D/SubscriptionInfoUpdater( 2268): [Receiver]+
+02-03 16:34:11.148 D/SubscriptionInfoUpdater( 2268): Action: android.intent.action.SIM_STATE_CHANGED
+02-03 16:34:11.148 D/SubscriptionInfoUpdater( 2268): slotId: 0
+02-03 16:34:11.148 D/SubscriptionInfoUpdater( 2268): simStatus: LOADED
+02-03 16:34:11.148 D/SubscriptionInfoUpdater( 2268): Ignoring simStatus: LOADED
+02-03 16:34:11.148 D/SubscriptionInfoUpdater( 2268): [Receiver]-
+02-03 16:34:11.178 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.178 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.203 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@4e7e45a mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.231 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.231 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.258 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@b668c03 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.278 D/TelephonyNetworkFactory[0]( 2268): onActivePhoneSwitch(true, true)
+02-03 16:34:11.291 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@9bbe55f mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.340 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@f787ef1 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.351 D/DCT     ( 2268): [0]onEnableApn: apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} call applyNewState
+02-03 16:34:11.351 D/DCT     ( 2268): [0]applyNewState(default, true(false), true(true))
+02-03 16:34:11.351 D/DCT     ( 2268): [0]trySetupData for type:default due to dataEnabled, mIsPsRestricted=false
+02-03 16:34:11.353 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.353 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.353 D/DCT     ( 2268): [0]isDataAllowed: No - Not attached
+02-03 16:34:11.353 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.355 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.357 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.372 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.374 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.380 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.381 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.384 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:11.387 D/DCT     ( 2268): [0]isEmergency: result=false
+02-03 16:34:11.387 D/DCT     ( 2268): [0]trySetupData failed. apnContext = [type=default, mState=IDLE, mDataEnabled=true, mDependencyMet=true] data not allowed: isDataAllowed: No - Not attached. isDataEnabled(true) = false. isInternalDataEnabled = true, userDataEnabled = false, isPolicyDataEnabled = true, isCarrierDataEnabled = true
+02-03 16:34:11.387 D/GsmCdmaPhone( 2268): mBroadcastReceiver: action android.telephony.action.CARRIER_CONFIG_CHANGED
+02-03 16:34:11.406 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:11.415 E/RILQ    (  417): (0/417): RIL[0][event] qcril_qmi_nas_coex_control_process_rf_band_info: Null Pointer
+02-03 16:34:11.415 V/RILJ    ( 2268): [UNSL]< UNSOL_OEM_HOOK_RAW 00100004100000000100000005000000500000000a2a0000 [SUB0]
+02-03 16:34:11.428 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:11.428 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:11.431 I/RILQ    (  417): (0/417):RIL[0][event] qcril_arb_set_dsd_sys_status: old_pref_data 1 - new_data_pref 1
+02-03 16:34:11.431 I/RILQ    (  417): (0/417):RIL[0][event] qcril_arb_set_dsd_sys_status: preferred dsd_sys_status nw=0x0, rat_value=0x0, so_mask=0x0000000000000000
+02-03 16:34:11.431 I/RILQ    (  417): (0/417):RIL[0][event] qcril_arb_set_dsd_sys_status: preferred 1 - dsd_sys_status nw=0x0, rat_value=0x0, so_mask=0x0000000000000000
+02-03 16:34:11.431 I/RILQ    (  417): (0/417):RIL[0][event] qcril_arb_set_dsd_sys_status: is_wwan_available 0
+02-03 16:34:11.432 D/RILJ    ( 2268): [3727]> RIL_REQUEST_VOICE_RADIO_TECH [SUB0]
+02-03 16:34:11.436 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:11.437 D/RILJ    ( 2268): [3727]< RIL_REQUEST_VOICE_RADIO_TECH {3} [SUB0]
+02-03 16:34:11.440 D/ImsManager( 2268): updateVolteFeatureValue: available = false, enabled = true, nonTTY = true
+02-03 16:34:11.441 E/ImsManager( 2268): updateImsServiceConfig: 
+02-03 16:34:11.441 E/ImsManager( 2268): com.android.ims.ImsException: Service is unavailable, code = 106
+02-03 16:34:11.441 E/ImsManager( 2268): 	at com.android.ims.ImsManager.checkAndThrowExceptionIfServiceUnavailable(ImsManager.java:1353)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at com.android.ims.ImsManager.getConfigInterface(ImsManager.java:1232)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at com.android.ims.ImsManager.updateVolteFeatureValue(ImsManager.java:814)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at com.android.ims.ImsManager.updateImsServiceConfig(ImsManager.java:774)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at com.android.internal.telephony.GsmCdmaPhone.handleMessage(GsmCdmaPhone.java:2122)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at android.os.Looper.loop(Looper.java:154)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at android.app.ActivityThread.main(ActivityThread.java:6176)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at java.lang.reflect.Method.invoke(Native Method)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:888)
+02-03 16:34:11.441 E/ImsManager( 2268): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:778)
+02-03 16:34:11.443 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] broadcastEmergencyCallStateChanges = false
+02-03 16:34:11.443 E/GsmCdmaPhone( 2268): [GsmCdmaPhone] Invalid cdma_roaming_mode settings: -1
+02-03 16:34:11.443 D/EriManager( 2268): loadEriFileFromXml: check for alternate file
+02-03 16:34:11.444 D/EriManager( 2268): loadEriFileFromXml: no alternate file
+02-03 16:34:11.446 D/EriManager( 2268): eriFile = eri.xml
+02-03 16:34:11.450 D/EriManager( 2268): loadEriFileFromXml: eri parsing successful, file loaded. ver = 1357, # of entries = 176
+02-03 16:34:11.450 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] ERI read, notify registrants
+02-03 16:34:11.462 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service — TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@7471b29 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.466 D/RILJ    ( 2268): [3728]> OPERATOR [SUB0]
+02-03 16:34:11.466 D/RILJ    ( 2268): [3729]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:11.467 D/RILJ    ( 2268): [3730]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:11.467 D/RILJ    ( 2268): [3731]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:11.472 D/RILJ    ( 2268): [3732]> OPERATOR [SUB0]
+02-03 16:34:11.474 D/RILJ    ( 2268): [3733]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:11.475 D/RILJ    ( 2268): [3734]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:11.476 D/RILJ    ( 2268): [3735]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:11.476 D/RILJ    ( 2268): [3736]> OPERATOR [SUB0]
+02-03 16:34:11.477 D/RILJ    ( 2268): [3737]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:11.478 D/RILJ    ( 2268): [3738]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:11.479 D/RILJ    ( 2268): [3739]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:11.481 D/RILJ    ( 2268): [3740]> OPERATOR [SUB0]
+02-03 16:34:11.482 D/RILJ    ( 2268): [3729]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:11.485 D/RILJ    ( 2268): [3741]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:11.485 D/RILJ    ( 2268): [3733]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:11.486 D/RILJ    ( 2268): [3742]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:11.486 D/RILJ    ( 2268): [3737]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:11.487 D/RILJ    ( 2268): [3743]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:11.488 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] EVENT_REQUEST_VOICE_RADIO_TECH_DONE: newVoiceTech=3
+02-03 16:34:11.488 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] phoneObjectUpdater: newVoiceRadioTech=3
+02-03 16:34:11.488 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] phoneObjectUpdater: No change ignore, newVoiceRadioTech=3 mActivePhone=GSM
+02-03 16:34:11.498 E/use-Rlog/RLOG-RIL-MOTEXT(  417): mothook_oem_ex: header type 0, requestCode 0x0
+02-03 16:34:11.501 D/RILJ    ( 2268): [3730]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:34:11.501 D/RILJ    ( 2268): [3734]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:34:11.502 D/RILJ    ( 2268): [3738]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:34:11.502 D/RILJ    ( 2268): [3742]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:34:11.502 D/RILJ    ( 2268): [3731]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:11.502 D/RILJ    ( 2268): [3735]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:11.502 D/RILJ    ( 2268): [3739]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:11.502 D/RILJ    ( 2268): [3743]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:11.502 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:11.502 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:11.503 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:11.503 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:11.503 D/RILJ    ( 2268): [3728]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:34:11.503 D/RILJ    ( 2268): [3732]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:34:11.504 D/RILJ    ( 2268): [3736]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:34:11.504 D/RILJ    ( 2268): [3740]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:34:11.513 D/RILJ    ( 2268): [3741]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:11.514 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=2 dataRadioTechnology=0
+02-03 16:34:11.514 D/SST     ( 2268): Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=20 mNewMaxDataCalls=20 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:34:11.515 D/SST     ( 2268): RAT switched Unknown -> UMTS at cell 34889337
+02-03 16:34:11.515 D/SST     ( 2268): pollStateDone: registering current mNitzUpdatedTime=false changing to false
+02-03 16:34:11.515 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:34:11.515 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:34:11.516 D/SST     ( 2268): updateSpnDisplay: changed sending intent rule=1 showPlmn='false' plmn='TIM' showSpn='true' spn='TIM' dataSpn='TIM' subId='1'
+02-03 16:34:11.517 D/SubscriptionController( 2268): [setCarrierText]+ text:TIM subId:1
+02-03 16:34:11.532 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:34:11.535 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.alpha value: TIM propVal=TIM
+02-03 16:34:11.536 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.numeric value: 72404 propVal=72404
+02-03 16:34:11.536 D/SST     ( 2268): update mccmnc=72404 fromServiceState=true
+02-03 16:34:11.544 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.iso-country value: br propVal=br
+02-03 16:34:11.551 D/SST     ( 2268): pollStateDone: there are 4 unique offsets for iso-cc='br testOneUniqueOffsetPath=false', do nothing
+02-03 16:34:11.552 D/SST     ( 2268): shouldFixTimeZoneNow: retVal=true iccCardExist=true operatorNumeric=72404 mcc=724 prevOperatorNumeric= prevMcc=725 needToFixTimeZone=false ltod=02-03 16:34:11.552
+02-03 16:34:11.552 D/SST     ( 2268): fixTimeZone zoneName='America/Sao_Paulo' mZoneOffset=0 mZoneDst=false iso-cc='br' iso-cc-idx=-2
+02-03 16:34:11.552 D/SST     ( 2268): fixTimeZone: using default TimeZone
+02-03 16:34:11.552 D/SST     ( 2268): fixTimeZone: zone != null zone.getID=America/Sao_Paulo
+02-03 16:34:11.552 D/SST     ( 2268): setAndBroadcastNetworkSetTimeZone: setTimeZone=America/Sao_Paulo
+02-03 16:34:11.553 D/SST     ( 2268): setAndBroadcastNetworkSetTimeZone: call alarm.setTimeZone and broadcast zoneId=America/Sao_Paulo
+02-03 16:34:11.553 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.isroaming value: false propVal=false
+02-03 16:34:11.554 D/SST     ( 2268): Broadcasting ServiceState : 0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false
+02-03 16:34:11.554 D/DefaultPhoneNotifier( 2268): nofityServiceState: mRegistry=com.android.internal.telephony.ITelephonyRegistry$Stub$Proxy@ebae47e ss=0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false sender=Handler (com.android.internal.telephony.GsmCdmaPhone) {934c801} phondId=0 subId=1
+02-03 16:34:11.562 D/SST     ( 2268): getCellLocation(): X good mCellLoc=[50353,34889337,108]
+02-03 16:34:11.562 D/TelephonyRegistry( 1497): notifyCellLocationForSubscriber: subId=1 cellLocation=Bundle[mParcelledData.dataSize=64]
+02-03 16:34:11.569 D/SST     ( 2268): SST.getAllCellInfo(): return last, back to back calls
+02-03 16:34:11.569 D/SST     ( 2268): SST.getAllCellInfo(): X size=0 list=null
+02-03 16:34:11.569 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] Event EVENT_REGISTERED_TO_NETWORK Received
+02-03 16:34:11.569 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.569 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:34:11.589 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@e2e674 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.622 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@2d2af5e mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.644 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@fa92d55 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.684 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@41c49d1 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:11.721 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@46d4a4 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:12.317 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:12.318 D/RILJ    ( 2268): [3744]> OPERATOR [SUB0]
+02-03 16:34:12.320 D/RILJ    ( 2268): [3745]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:12.322 D/RILJ    ( 2268): [3746]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:12.326 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:12.326 D/RILJ    ( 2268): [3747]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:12.339 E/use-Rlog/RLOG-RIL-MOTEXT(  417): mothook_oem_ex: header type 0, requestCode 0x0
+02-03 16:34:12.343 D/RILJ    ( 2268): [3744]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:34:12.344 D/RILJ    ( 2268): [3746]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:34:12.349 D/RILJ    ( 2268): [3747]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:12.351 D/RILJ    ( 2268): [3745]< DATA_REGISTRATION_STATE {3, null, null, null, 7, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:12.408 D/RILJ    ( 2268): [3748]> OPERATOR [SUB0]
+02-03 16:34:12.411 D/RILJ    ( 2268): [3749]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:12.413 D/RILJ    ( 2268): [3750]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:12.414 D/RILJ    ( 2268): [3751]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:12.415 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:12.426 D/RILJ    ( 2268): [3751]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:12.426 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:12.437 D/RILJ    ( 2268): [3750]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:34:12.438 D/RILJ    ( 2268): [3749]< DATA_REGISTRATION_STATE {3, null, null, null, 7, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:12.440 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=3 dataRadioTechnology=0
+02-03 16:34:12.475 E/use-Rlog/RLOG-RIL-MOTEXT(  417): mothook_oem_ex: header type 0, requestCode 0x0
+02-03 16:34:12.476 D/RILJ    ( 2268): [3748]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:34:12.476 E/RILQ    (  417): (0/417): RIL[0][event] qcril_qmi_util_decode_operator_name: CHECK FAILED
+02-03 16:34:12.485 D/SST     ( 2268): Poll ServiceState done:  oldSS=[0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=20 mNewMaxDataCalls=20 oldReasonDataDenied=-1 mNewReasonDataDenied=7
+02-03 16:34:12.498 D/RILJ    ( 2268): [UNSL]< UNSOL_NITZ_TIME_RECEIVED 17/02/03,18:34:14-08,01 [SUB0]
+02-03 16:34:12.498 D/SST     ( 2268): NITZ: 17/02/03,18:34:14-08,01,70406 start=70406 delay=0
+02-03 16:34:12.499 D/SST     ( 2268): NITZ: tzOffset=-7200000 dst=1 zone=America/Sao_Paulo iso=br mGotCountryCode=true mNeedFixZoneAfterNitz=true
+02-03 16:34:12.499 D/SST     ( 2268): setAndBroadcastNetworkSetTimeZone: setTimeZone=America/Sao_Paulo
+02-03 16:34:12.501 D/SST     ( 2268): setAndBroadcastNetworkSetTimeZone: call alarm.setTimeZone and broadcast zoneId=America/Sao_Paulo
+02-03 16:34:12.502 D/SST     ( 2268): NITZ: Setting time of day to Fri Feb 03 16:34:14 GMT-02:00 2017 NITZ receive delay(ms): 4 gained(ms): 1502 from 17/02/03,18:34:14-08,01
+02-03 16:34:12.502 D/SST     ( 2268): setAndBroadcastNetworkSetTime: time=1486146854004ms
+02-03 16:34:14.004 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:14.006 I/SST     ( 2268): NITZ: after Setting time of day
+02-03 16:34:14.007 D/SST     ( 2268): NITZ: end=70477 dur=8
+02-03 16:34:14.014 E/use-Rlog/RLOG-RIL-MOTEXT(  417): mothook_oem_ex: header type 0, requestCode 0x0
+02-03 16:34:14.016 D/RILJ    ( 2268): [3752]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:34:14.028 D/RILJ    ( 2268): [3753]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:14.028 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=2 dataRadioTechnology=0
+02-03 16:34:14.028 D/RILJ    ( 2268): [3755]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:14.028 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:14.030 D/RILJ    ( 2268): [3754]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:34:14.031 D/SST     ( 2268): Poll ServiceState done:  oldSS=[0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=20 mNewMaxDataCalls=20 oldReasonDataDenied=7 mNewReasonDataDenied=-1
+02-03 16:34:14.052 I/SST     ( 2268): NITZ: after Setting time of day
+02-03 16:34:14.053 D/SST     ( 2268): NITZ: end=70460 dur=54
+02-03 16:34:14.053 D/RILJ    ( 2268): [3752]> OPERATOR [SUB0]
+02-03 16:34:14.054 D/RILJ    ( 2268): [3753]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:14.060 D/RILJ    ( 2268): [3754]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:14.061 D/RILJ    ( 2268): [3755]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:14.062 D/RILJ    ( 2268): [UNSL]< UNSOL_NITZ_TIME_RECEIVED 17/02/03,18:34:14-08,01 [SUB0]
+02-03 16:34:14.062 D/SST     ( 2268): NITZ: 17/02/03,18:34:14-08,01,70469 start=70469 delay=0
+02-03 16:34:14.063 D/SST     ( 2268): NITZ: tzOffset=-7200000 dst=1 zone=America/Sao_Paulo iso=br mGotCountryCode=true mNeedFixZoneAfterNitz=true
+02-03 16:34:14.063 D/SST     ( 2268): setAndBroadcastNetworkSetTimeZone: setTimeZone=America/Sao_Paulo
+02-03 16:34:14.064 D/SST     ( 2268): setAndBroadcastNetworkSetTimeZone: call alarm.setTimeZone and broadcast zoneId=America/Sao_Paulo
+02-03 16:34:14.065 D/SST     ( 2268): NITZ: Setting time of day to Fri Feb 03 16:34:14 GMT-02:00 2017 NITZ receive delay(ms): 2 gained(ms): -62 from 17/02/03,18:34:14-08,01
+02-03 16:34:14.065 D/SST     ( 2268): setAndBroadcastNetworkSetTime: time=1486146854002ms
+02-03 16:34:14.193 D/WAP PUSH( 2268): Received broadcast android.intent.action.USER_UNLOCKED
+02-03 16:34:14.193 D/WAP PUSH( 2268): Received broadcast android.intent.action.USER_UNLOCKED
+02-03 16:34:14.194 D/SmsBroadcastUndelivered( 2268): Received broadcast android.intent.action.USER_UNLOCKED
+02-03 16:34:14.194 D/SubscriptionInfoUpdater( 2268): [Receiver]+
+02-03 16:34:14.194 D/SubscriptionInfoUpdater( 2268): Action: android.intent.action.USER_UNLOCKED
+02-03 16:34:14.194 D/SubscriptionInfoUpdater( 2268): Broadcasting intent ACTION_SIM_STATE_CHANGED for mCardIndex: 0
+02-03 16:34:14.195 D/SubscriptionInfoUpdater( 2268): [Receiver]-
+02-03 16:34:14.197 D/SmsBroadcastUndelivered( 2268): scanning raw table for undelivered messages
+02-03 16:34:14.216 D/SubscriptionInfoUpdater( 2268): [Receiver]+
+02-03 16:34:14.216 D/SubscriptionInfoUpdater( 2268): Action: android.intent.action.SIM_STATE_CHANGED
+02-03 16:34:14.216 D/SubscriptionInfoUpdater( 2268): slotId: 0
+02-03 16:34:14.216 D/SubscriptionInfoUpdater( 2268): simStatus: LOADED
+02-03 16:34:14.216 D/SubscriptionInfoUpdater( 2268): Ignoring simStatus: LOADED
+02-03 16:34:14.216 D/SubscriptionInfoUpdater( 2268): [Receiver]-
+02-03 16:34:14.394 D/SmsBroadcastUndelivered( 2268): finished scanning raw table in 197 ms
+02-03 16:34:15.306 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:34:15.307 D/RILJ    ( 2268): [3756]> OPERATOR [SUB0]
+02-03 16:34:15.312 D/RILJ    ( 2268): [3757]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:34:15.315 D/RILJ    ( 2268): [3758]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:34:15.317 D/RILJ    ( 2268): [3759]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:34:15.348 E/use-Rlog/RLOG-RIL-MOTEXT(  417): mothook_oem_ex: header type 0, requestCode 0x0
+02-03 16:34:15.352 D/RILJ    ( 2268): [3756]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:34:15.377 D/RILJ    ( 2268): [3758]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:34:15.383 D/RILJ    ( 2268): [3757]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:34:15.384 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=2 dataRadioTechnology=0
+02-03 16:34:15.387 D/RILJ    ( 2268): [3759]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:34:15.388 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:34:15.394 D/SST     ( 2268): Poll ServiceState done:  oldSS=[0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=20 mNewMaxDataCalls=20 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:34:16.342 D/RILJ    ( 2268): [UNSL]< UNSOL_STK_PROACTIVE_COMMAND [SUB0]
+02-03 16:34:16.342 D/CAT     ( 2268): CatService: handleMessage[2]
+02-03 16:34:16.342 D/CAT     ( 2268): CatService: ril message arrived,slotid:0
+02-03 16:34:16.345 D/CAT     ( 2268): CommandParamsFactory: process SelectItem
+02-03 16:34:16.350 D/CAT     ( 2268): CatService: handleMessage[10]
+02-03 16:34:16.350 D/CAT     ( 2268): CatService: SET_UP_MENU
+02-03 16:34:16.351 D/CAT     ( 2268): CatService: encodeOptionalTags() Unsupported Cmd details=CmdDetails: compRequired=true commandNumber=1 typeOfCommand=37 commandQualifier=0
+02-03 16:34:16.351 D/RILJ    ( 2268): [3760]> REQUEST_STK_SEND_TERMINAL_RESPONSE [SUB0]
+02-03 16:34:16.352 D/CAT     ( 2268): CatService: Sending CmdMsg: com.android.internal.telephony.cat.CatCmdMessage@237ac0e on slotid:0
+02-03 16:34:16.372 D/RILJ    ( 2268): [3760]< REQUEST_STK_SEND_TERMINAL_RESPONSE  [SUB0]
+02-03 16:34:16.378 E/RILQ    (  417): (0/417): RIL[0][event] qcril_gstk_qmi_copy_and_save_proactive_cmd: Invalid ril_unsol_resp parameters, cannot save
+02-03 16:34:16.379 D/RILJ    ( 2268): [UNSL]< UNSOL_STK_SESSION_END [SUB0]
+02-03 16:34:16.379 D/CAT     ( 2268): CatService: handleMessage[1]
+02-03 16:34:16.379 D/CAT     ( 2268): CatService: ril message arrived,slotid:0
+02-03 16:34:16.379 D/CAT     ( 2268): CatService: handleMessage[10]
+02-03 16:34:16.379 D/CAT     ( 2268): CatService: SESSION END on 0
+02-03 16:34:16.394 D/CAT     ( 2268): StkCmdReceiver: handleAction, op: 4args: Bundle[{SLOT_ID=0, op=4}], slot id: 0
+02-03 16:34:16.417 D/CAT     ( 2268): com.android.stk.StkAppService: onCreate()+
+02-03 16:34:16.417 D/CAT     ( 2268): com.android.stk.StkAppService: simCount: 1
+02-03 16:34:16.432 D/CAT     ( 2268): com.android.stk.StkAppService: slotId: 0
+02-03 16:34:16.436 D/CAT     ( 2268): com.android.stk.StkAppService: onStart sim id: 0, op: 4, *****
+02-03 16:34:16.537 D/CAT     ( 2268): com.android.stk.StkAppService: handleMessage opcode[4], sim id[0]
+02-03 16:34:16.537 D/CAT     ( 2268): StkAppService$StkContext: getPendingActivityInstance act : 0, null
+02-03 16:34:16.537 D/CAT     ( 2268): StkAppService$StkContext: getPendingDialogInstance act : 0, null
+02-03 16:34:16.537 D/CAT     ( 2268): com.android.stk.StkAppService: cleanUpInstanceStackBySlot slotId: 0
+02-03 16:34:16.537 D/CAT     ( 2268): com.android.stk.StkAppService: current cmd is null.
+02-03 16:34:16.537 D/CAT     ( 2268): com.android.stk.StkAppService: [handleSessionEnd] - mCurrentCmd changed to mMainCmd!.
+02-03 16:34:16.537 D/CAT     ( 2268): com.android.stk.StkAppService: slotId: 0, mMenuState: 0
+02-03 16:34:16.537 D/CAT     ( 2268): com.android.stk.StkAppService: [handleSessionEnd][mMainCmd is null!]
+02-03 16:34:16.537 D/CAT     ( 2268): com.android.stk.StkAppService: [handleSessionEnd][mMenuState]false
+02-03 16:34:17.191 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
+02-03 16:34:19.137 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
+02-03 16:34:20.531 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
+02-03 16:34:20.561 D/GsmCdmaPhone( 2268): mBroadcastReceiver: action android.telephony.action.CARRIER_CONFIG_CHANGED
+02-03 16:34:20.564 D/RILJ    ( 2268): [3761]> RIL_REQUEST_VOICE_RADIO_TECH [SUB0]
+02-03 16:34:20.568 D/RILJ    ( 2268): [3761]< RIL_REQUEST_VOICE_RADIO_TECH {3} [SUB0]
+02-03 16:34:20.568 D/ImsManager( 2268): updateVolteFeatureValue: available = false, enabled = true, nonTTY = true
+02-03 16:34:20.569 E/ImsManager( 2268): updateImsServiceConfig: 
+02-03 16:34:20.569 E/ImsManager( 2268): com.android.ims.ImsException: Service is unavailable, code = 106
+02-03 16:34:20.569 E/ImsManager( 2268): 	at com.android.ims.ImsManager.checkAndThrowExceptionIfServiceUnavailable(ImsManager.java:1353)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at com.android.ims.ImsManager.getConfigInterface(ImsManager.java:1232)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at com.android.ims.ImsManager.updateVolteFeatureValue(ImsManager.java:814)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at com.android.ims.ImsManager.updateImsServiceConfig(ImsManager.java:774)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at com.android.internal.telephony.GsmCdmaPhone.handleMessage(GsmCdmaPhone.java:2122)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at android.os.Looper.loop(Looper.java:154)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at android.app.ActivityThread.main(ActivityThread.java:6176)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at java.lang.reflect.Method.invoke(Native Method)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:888)
+02-03 16:34:20.569 E/ImsManager( 2268): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:778)
+02-03 16:34:20.570 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] broadcastEmergencyCallStateChanges = false
+02-03 16:34:20.570 E/GsmCdmaPhone( 2268): [GsmCdmaPhone] Invalid cdma_roaming_mode settings: -1
+02-03 16:34:20.570 D/EriManager( 2268): loadEriFileFromXml: check for alternate file
+02-03 16:34:20.571 D/EriManager( 2268): loadEriFileFromXml: no alternate file
+02-03 16:34:20.572 D/EriManager( 2268): eriFile = eri.xml
+02-03 16:34:20.577 D/EriManager( 2268): loadEriFileFromXml: eri parsing successful, file loaded. ver = 1357, # of entries = 176
+02-03 16:34:20.577 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] ERI read, notify registrants
+02-03 16:34:20.585 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@f1de440 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:20.585 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] EVENT_REQUEST_VOICE_RADIO_TECH_DONE: newVoiceTech=3
+02-03 16:34:20.585 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] phoneObjectUpdater: newVoiceRadioTech=3
+02-03 16:34:20.585 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] phoneObjectUpdater: No change ignore, newVoiceRadioTech=3 mActivePhone=GSM
+02-03 16:34:22.251 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
+02-03 16:34:22.299 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@51d046c mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:22.328 D/PhoneFactory( 2268): SMS Prompt option:false
+02-03 16:34:22.328 D/RIL_UiccSmsController( 2268): isSmsSimPickActivityNeeded: false, sms prompt disabled.
+02-03 16:34:22.332 D/SipService( 2268): SipService: started!
+02-03 16:34:22.334 D/SipService( 2268): start:
+02-03 16:34:22.357 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@728f80f mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:22.363 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@587062b mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:22.382 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@29e2734 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:22.390 D/PhoneFactory( 2268): SMS Prompt option:false
+02-03 16:34:22.390 D/RIL_UiccSmsController( 2268): isSmsSimPickActivityNeeded: false, sms prompt disabled.
+02-03 16:34:22.405 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@b9082a0 mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:22.417 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@f928a2a mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:22.418 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@df9d01b mcc 724 mnc 4 userNwMode=9}
+02-03 16:34:22.422 D/PhoneFactory( 2268): SMS Prompt option:false
+02-03 16:34:22.422 D/RIL_UiccSmsController( 2268): isSmsSimPickActivityNeeded: false, sms prompt disabled.
+02-03 16:34:22.443 D/SubscriptionController( 2268): [getActiveSubInfoForSubscriber]- subId=2 subList=[{id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@d98af91 mcc 724 mnc 4 userNwMode=9}] subInfo=null
+02-03 16:34:22.452 D/SubscriptionController( 2268): [getActiveSubInfoForSubscriber]- subId=2 subList=[{id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=TIM nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@cdb52f7 mcc 724 mnc 4 userNwMode=9}] subInfo=null
+02-03 16:34:22.482 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
+02-03 16:34:22.607 D/CAT     ( 2268): com.android.stk.BootCompletedReceiver: [ACTION_BOOT_COMPLETED]
+02-03 16:34:22.607 D/CAT     ( 2268): com.android.stk.StkAppService: onStart sim id: 0, op: 5, *****
+02-03 16:34:22.607 D/CAT     ( 2268): com.android.stk.StkAppService: handleMessage opcode[5], sim id[0]
+02-03 16:34:22.607 D/CAT     ( 2268): com.android.stk.StkAppService:  OP_BOOT_COMPLETED
+02-03 16:34:22.608 D/CAT     ( 2268): StkAppInstaller: [setAppState]+
+02-03 16:34:22.608 D/CAT     ( 2268): StkAppInstaller: Change app state[false]
+02-03 16:34:22.608 D/CAT     ( 2268): StkAppInstaller: [setAppState]-
+02-03 16:34:24.917 D/DCT     ( 2268): [0]fetchDunApn: net.tethering.noprovisioning=true ret: null
+02-03 16:34:24.917 D/DCT     ( 2268): [0]hasMatchedTetherApnSetting: APN=null
+02-03 16:34:24.928 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:25.037 D/DCT     ( 2268): [0]Wifi state changed
+02-03 16:34:25.037 D/DCT     ( 2268): [0]WIFI_STATE_CHANGED_ACTION: enabled=false mIsWifiConnected=false
+02-03 16:34:25.172 D/DCT     ( 2268): [0]Wifi state changed
+02-03 16:34:25.172 D/DCT     ( 2268): [0]WIFI_STATE_CHANGED_ACTION: enabled=true mIsWifiConnected=false
+02-03 16:34:25.294 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:30.345 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:31.209 D/RILJ    ( 2268): [3762]> SIGNAL_STRENGTH [SUB0]
+02-03 16:34:31.213 D/RILJ    ( 2268): [3762]< SIGNAL_STRENGTH SignalStrength: 14 0 -1 -1 -1 -1 -1 99 2147483647 2147483647 2147483647 2147483647 2147483647 gsm|lte [SUB0]
+02-03 16:34:32.264 D/CAT     ( 2268): StkCmdReceiver: handleAction, op: 1args: Bundle[{SLOT_ID=0, cmd message=com.android.internal.telephony.cat.CatCmdMessage@2e82793, op=1}], slot id: 0
+02-03 16:34:32.266 D/CAT     ( 2268): com.android.stk.StkAppService: onStart sim id: 0, op: 1, *****
+02-03 16:34:32.267 D/CAT     ( 2268): com.android.stk.StkAppService: handleMessage opcode[1], sim id[0]
+02-03 16:34:32.267 D/CAT     ( 2268): com.android.stk.StkAppService: cmdName[SET_UP_MENU]
+02-03 16:34:32.267 D/CAT     ( 2268): com.android.stk.StkAppService: [OP_CMD]
+02-03 16:34:32.267 D/CAT     ( 2268): com.android.stk.StkAppService: [handleCmd]SET_UP_MENU
+02-03 16:34:32.267 D/CAT     ( 2268): com.android.stk.StkAppService: SET_UP_MENU [false]
+02-03 16:34:32.267 D/CAT     ( 2268): com.android.stk.StkAppService: install App
+02-03 16:34:32.267 D/CAT     ( 2268): StkAppInstaller: [setAppState]+
+02-03 16:34:32.268 D/CAT     ( 2268): StkAppInstaller: Change app state[true]
+02-03 16:34:32.268 D/CAT     ( 2268): StkAppInstaller: [setAppState]-
+02-03 16:34:35.413 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:35.513 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:35.566 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:35.698 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:35.743 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:35.757 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:35.762 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:41.455 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:41.482 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=true
+02-03 16:34:41.496 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=true
+02-03 16:34:41.571 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:41.605 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:41.726 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:42.426 D/TelephonyNetworkFactory[0]( 2268): onReleaseNetworkFor NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+02-03 16:34:42.427 D/DCT     ( 2268): [0]onEnableApn: apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=true mDependencyMet=true} call applyNewState
+02-03 16:34:42.427 D/DCT     ( 2268): [0]applyNewState(default, false(true), true(true))
+02-03 16:34:42.431 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = dataDisabled isDisconnected = true
+02-03 16:34:42.431 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:34:42.431 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=dataDisabled apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataDisabled mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:34:43.987 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:43.990 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.000 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.004 D/TelephonyNetworkFactory[0]( 2268): onNeedNetworkFor NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+02-03 16:34:44.005 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:44.005 D/DCT     ( 2268): [0]onEnableApn: apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataDisabled mDataEnabled=false mDependencyMet=true} call applyNewState
+02-03 16:34:44.005 D/DCT     ( 2268): [0]applyNewState(default, true(false), true(true))
+02-03 16:34:44.006 D/DCT     ( 2268): [0]trySetupData for type:default due to dataEnabled, mIsPsRestricted=false
+02-03 16:34:44.009 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.009 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.009 D/DCT     ( 2268): [0]isDataAllowed: No - Not attached
+02-03 16:34:44.010 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.013 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.020 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.023 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.032 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.041 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.043 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.052 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:34:44.054 D/DCT     ( 2268): [0]isEmergency: result=false
+02-03 16:34:44.054 D/DCT     ( 2268): [0]trySetupData failed. apnContext = [type=default, mState=IDLE, mDataEnabled=true, mDependencyMet=true] data not allowed: isDataAllowed: No - Not attached. isDataEnabled(true) = false. isInternalDataEnabled = true, userDataEnabled = false, isPolicyDataEnabled = true, isCarrierDataEnabled = true
+02-03 16:34:44.059 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.059 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.061 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.062 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.071 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.074 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.081 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:44.137 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:45.944 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:34:45.970 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=true
+02-03 16:34:45.980 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=true
+02-03 16:34:46.033 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:46.042 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:51.190 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:34:53.004 D/RILJ    ( 2268): [3763]> RIL_REQUEST_GET_ACTIVITY_INFO [SUB0]
+02-03 16:34:53.006 D/RILJ    ( 2268): [3763]< RIL_REQUEST_GET_ACTIVITY_INFO ModemActivityInfo{ mTimestamp=0 mSleepTimeMs=0 mIdleTimeMs=0 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0 mEnergyUsed=0} [SUB0]
+02-03 16:35:13.010 D/SST     ( 2268): getCellLocation(): X good mCellLoc=[50353,34889337,108]
+02-03 16:35:37.415 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:35:43.885 D/DCT     ( 2268): [0]screen on
+02-03 16:35:43.885 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:35:44.178 D/DCT     ( 2268): [0]screen off
+02-03 16:35:44.179 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:35:45.508 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:35:46.387 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
+02-03 16:35:48.772 D/DCT     ( 2268): [0]screen on
+02-03 16:35:48.772 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:35:48.823 D/DCT     ( 2268): [0]screen off
+02-03 16:35:48.823 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:35:51.060 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
+02-03 16:35:52.977 D/DCT     ( 2268): [0]screen on
+02-03 16:35:52.977 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:35:53.612 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:35:54.923 D/SST     ( 2268): mDeviceShuttingDown=false, mDesiredPowerState=false, getRadioState=RADIO_ON, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+02-03 16:35:54.935 D/DCT     ( 2268): [0]cleanUpAllConnections
+02-03 16:35:54.936 D/SST     ( 2268): Data disconnected, turn off radio right away.
+02-03 16:35:54.936 D/RILJ    ( 2268): [3764]> RADIO_POWER off [SUB0]
+02-03 16:35:54.937 D/DCT     ( 2268): [0]cleanUpAllConnections: tearDown=true reason=radioTurnedOff
+02-03 16:35:54.938 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.938 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.938 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=true mDependencyMet=true} dcac=null
+02-03 16:35:54.938 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.938 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.938 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:54.938 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.938 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.938 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=cbs mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:54.938 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.938 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.938 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=fota mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:54.938 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.939 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.939 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:54.939 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.939 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.940 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=emergency mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:54.940 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.940 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.940 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:54.940 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.940 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.940 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:54.940 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:54.940 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:54.940 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=true reason=radioTurnedOff apnContext={mApnType=ims mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:54.940 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:35:54.944 D/DCT     ( 2268): [0]cleanUpConnection: mDisconnectPendingCount = 0
+02-03 16:35:54.944 D/DCT     ( 2268): [0]notifyDataDisconnectComplete
+02-03 16:35:54.950 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:35:54.952 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:35:54.965 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:35:55.105 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:35:55.181 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
+02-03 16:35:55.225 D/DCT     ( 2268): [0]NETWORK_STATE_CHANGED_ACTION: mIsWifiConnected=false
+02-03 16:35:55.227 D/DCT     ( 2268): [0]Wifi state changed
+02-03 16:35:55.227 D/DCT     ( 2268): [0]WIFI_STATE_CHANGED_ACTION: enabled=false mIsWifiConnected=false
+02-03 16:35:55.404 D/DCT     ( 2268): [0]Wifi state changed
+02-03 16:35:55.405 D/DCT     ( 2268): [0]WIFI_STATE_CHANGED_ACTION: enabled=false mIsWifiConnected=false
+02-03 16:35:55.868 D/DCT     ( 2268): [0]fetchDunApn: net.tethering.noprovisioning=true ret: null
+02-03 16:35:55.869 D/DCT     ( 2268): [0]hasMatchedTetherApnSetting: APN=null
+02-03 16:35:55.929 D/DCT     ( 2268): [0]setPolicyDataEnabled: true
+02-03 16:35:57.530 I/RILQ    (  417): (0/417):RIL[0][event] qcril_qmi_nas_dms_op_state_update_handler: reported op mode LPM
+02-03 16:35:57.530 I/RILQ    (  417): (0/417):RIL[0][event] qcril_qmi_nas_dms_op_state_update_handler: expected op mode LPM
+02-03 16:35:57.530 I/RILQ    (  417): (0/417):RIL[0][event] qcril_qmi_nas_reset_data_snapshot_cache_and_timer: Resetting snapshot timer
+02-03 16:35:57.533 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:35:57.534 D/RILJ    ( 2268): [3765]> OPERATOR [SUB0]
+02-03 16:35:57.535 D/RILJ    ( 2268): [3766]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:35:57.536 D/RILJ    ( 2268): [3767]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:35:57.537 D/RILJ    ( 2268): [3764]< RADIO_POWER  [SUB0]
+02-03 16:35:57.537 D/RILJ    ( 2268): [3768]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:35:57.538 D/SST     ( 2268): EVENT_RADIO_POWER_OFF_DONE
+02-03 16:35:57.540 E/use-Rlog/RLOG-RIL-MOTEXT(  417): qcrilUpdAPMState, called , state =1
+02-03 16:35:57.556 E/use-Rlog/RLOG-RIL-MOTEXT(  417): mothook_oem_ex: header type 0, requestCode 0x0
+02-03 16:35:57.564 D/RILJ    ( 2268): [3765]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:35:57.565 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED RADIO_OFF [SUB0]
+02-03 16:35:57.565 D/SST     ( 2268): mDeviceShuttingDown=false, mDesiredPowerState=false, getRadioState=RADIO_OFF, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+02-03 16:35:57.566 D/RILJ    ( 2268): [3769]> OPERATOR [SUB0]
+02-03 16:35:57.567 D/RILJ    ( 2268): [3770]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:35:57.569 D/RILJ    ( 2268): [3771]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:35:57.571 D/RILJ    ( 2268): [3772]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:35:57.572 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] Event EVENT_RADIO_OFF_OR_NOT_AVAILABLE Received
+02-03 16:35:57.573 D/DCT     ( 2268): [0]onRadioOffOrNotAvailable: is off and clean up all connections
+02-03 16:35:57.573 D/DCT     ( 2268): [0]cleanUpAllConnections: tearDown=false reason=radioTurnedOff
+02-03 16:35:57.573 D/RILJ    ( 2268): [3766]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:35:57.574 D/RILJ    ( 2268): [3770]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:35:57.574 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=default ret=DISCONNECTED
+02-03 16:35:57.576 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.582 D/RILJ    ( 2268): [3767]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:35:57.583 D/RILJ    ( 2268): [3771]< VOICE_REGISTRATION_STATE {1, c4b1, 02145e79, 3, null, null, null, 0, null, null, null, null, null, 0, 6c} [SUB0]
+02-03 16:35:57.585 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.586 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.586 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=true mDependencyMet=true} dcac=null
+02-03 16:35:57.588 D/RILJ    ( 2268): [3768]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:35:57.588 D/RILJ    ( 2268): [3772]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:35:57.590 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=mms ret=DISCONNECTED
+02-03 16:35:57.592 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.596 E/use-Rlog/RLOG-RIL-MOTEXT(  417): mothook_oem_ex: header type 0, requestCode 0x0
+02-03 16:35:57.598 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.598 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.598 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:57.598 D/RILJ    ( 2268): [3769]< OPERATOR {TIM, TIM, 72404, , , } [SUB0]
+02-03 16:35:57.598 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=cbs ret=DISCONNECTED
+02-03 16:35:57.600 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.607 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.607 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.607 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=cbs mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:57.607 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=fota ret=DISCONNECTED
+02-03 16:35:57.608 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.612 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.612 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.612 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=fota mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:57.612 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=supl ret=DISCONNECTED
+02-03 16:35:57.613 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.618 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.618 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.619 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:57.619 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=emergency ret=DISCONNECTED
+02-03 16:35:57.621 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.621 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.621 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=emergency mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:57.622 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=dun ret=DISCONNECTED
+02-03 16:35:57.622 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.627 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.627 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.627 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:57.627 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=hipri ret=DISCONNECTED
+02-03 16:35:57.627 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.631 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.631 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.631 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:57.631 D/GsmCdmaPhone( 2268): [GsmCdmaPhone] getDataConnectionState apnType=ims ret=DISCONNECTED
+02-03 16:35:57.632 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.638 D/DCT     ( 2268): [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+02-03 16:35:57.638 D/DCT     ( 2268): [0]isOnlySingleDcAllowed(0): false
+02-03 16:35:57.638 D/DCT     ( 2268): [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=ims mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+02-03 16:35:57.638 D/DCT     ( 2268): [0]stopNetStatPoll
+02-03 16:35:57.639 D/DCT     ( 2268): [0]cleanUpConnection: mDisconnectPendingCount = 0
+02-03 16:35:57.640 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.640 D/DCT     ( 2268): [0]isDataAllowed: No - desiredPowerState= false - Not attached
+02-03 16:35:57.641 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.696 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.697 D/RILJ    ( 2268): [UNSL]< UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED [SUB0]
+02-03 16:35:57.699 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.704 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.707 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.715 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.732 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.736 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.739 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=2 dataRadioTechnology=0
+02-03 16:35:57.740 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:35:57.740 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:35:57.741 D/SST     ( 2268): set service state as POWER_OFF
+02-03 16:35:57.742 D/SST     ( 2268): Poll ServiceState done:  oldSS=[0 1 voice home data home TIM TIM 72404 TIM TIM 72404  UMTS Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=20 mNewMaxDataCalls=20 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:35:57.742 D/SST     ( 2268): RAT switched UMTS -> Unknown at cell 34889337
+02-03 16:35:57.743 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:35:57.743 D/SST     ( 2268): updateSpnDisplay: radio is off w/ showPlmn=true plmn=No service
+02-03 16:35:57.743 D/SIMRecords( 2268): [SIMRecords] getServiceProviderName: no brandOverride, providerName=TIM
+02-03 16:35:57.744 D/SST     ( 2268): updateSpnDisplay: changed sending intent rule=3 showPlmn='true' plmn='No service' showSpn='false' spn='null' dataSpn='TIM' subId='1'
+02-03 16:35:57.746 D/SubscriptionController( 2268): [setCarrierText]+ text:No service subId:1
+02-03 16:35:57.754 D/SubscriptionController( 2268): notifySubscriptionInfoChanged:
+02-03 16:35:57.757 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.alpha value:  propVal=
+02-03 16:35:57.758 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.numeric value:  propVal=
+02-03 16:35:57.759 D/SST     ( 2268): update mccmnc=null fromServiceState=true
+02-03 16:35:57.759 D/SST     ( 2268): operatorNumeric is null
+02-03 16:35:57.759 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.iso-country value:  propVal=
+02-03 16:35:57.760 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.operator.isroaming value: false propVal=false
+02-03 16:35:57.761 D/SST     ( 2268): Broadcasting ServiceState : 3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false
+02-03 16:35:57.761 D/DefaultPhoneNotifier( 2268): nofityServiceState: mRegistry=com.android.internal.telephony.ITelephonyRegistry$Stub$Proxy@ebae47e ss=3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false sender=Handler (com.android.internal.telephony.GsmCdmaPhone) {934c801} phondId=0 subId=1
+02-03 16:35:57.765 D/SST     ( 2268): notifyDataRegStateRilRadioTechnologyChanged: drs=3 rat=0
+02-03 16:35:57.765 D/TelephonyManager( 2268): setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+02-03 16:35:57.766 D/DCT     ( 2268): [0]get all active apn types
+02-03 16:35:57.777 D/RILJ    ( 2268): [3773]> OPERATOR [SUB0]
+02-03 16:35:57.778 D/RILJ    ( 2268): [3774]> DATA_REGISTRATION_STATE [SUB0]
+02-03 16:35:57.780 D/RILJ    ( 2268): [3773]< OPERATOR {null, null, null, null, null, null} [SUB0]
+02-03 16:35:57.780 D/RILJ    ( 2268): [3775]> VOICE_REGISTRATION_STATE [SUB0]
+02-03 16:35:57.783 D/RILJ    ( 2268): [3776]> QUERY_NETWORK_SELECTION_MODE [SUB0]
+02-03 16:35:57.791 D/SST     ( 2268): SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:35:57.791 D/DCT     ( 2268): [0]SubscriptionListener.onSubscriptionInfoChanged
+02-03 16:35:57.792 D/RILJ    ( 2268): [3774]< DATA_REGISTRATION_STATE {2, null, null, null, 0, 20, null, null, null, null, null} [SUB0]
+02-03 16:35:57.808 D/RILJ    ( 2268): [3775]< VOICE_REGISTRATION_STATE {2, null, null, 0, null, null, null, 0, null, null, null, null, null, 0, null} [SUB0]
+02-03 16:35:57.810 D/RILJ    ( 2268): [3776]< QUERY_NETWORK_SELECTION_MODE {0} [SUB0]
+02-03 16:35:57.853 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@42c7b06 mcc 724 mnc 4 userNwMode=9}
+02-03 16:35:57.915 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@9acbc19 mcc 724 mnc 4 userNwMode=9}
+02-03 16:35:57.947 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@7c818c mcc 724 mnc 4 userNwMode=9}
+02-03 16:35:57.976 D/DCT     ( 2268): [0]setupDataOnConnectableApns: nwTypeChanged hipri:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] default:[state=IDLE,enabled=true] emergency:[state=IDLE,enabled=false] 
+02-03 16:35:57.976 D/DCT     ( 2268): [0]isConnectable() call trySetupData
+02-03 16:35:57.976 D/DCT     ( 2268): [0]trySetupData for type:default due to nwTypeChanged, mIsPsRestricted=false
+02-03 16:35:57.977 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.978 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.979 D/DCT     ( 2268): [0]isDataAllowed: No - desiredPowerState= false - Not attached
+02-03 16:35:57.980 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.988 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.993 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:57.997 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:58.001 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:58.007 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:58.012 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:58.017 D/CdmaSSM ( 2268): subscriptionSource from settings: 0
+02-03 16:35:58.021 D/DCT     ( 2268): [0]isEmergency: result=false
+02-03 16:35:58.021 D/DCT     ( 2268): [0]trySetupData failed. apnContext = [type=default, mState=IDLE, mDataEnabled=true, mDependencyMet=true] data not allowed: isDataAllowed: No - desiredPowerState= false - Not attached. isDataEnabled(true) = false. isInternalDataEnabled = true, userDataEnabled = false, isPolicyDataEnabled = true, isCarrierDataEnabled = true
+02-03 16:35:58.022 D/SST     ( 2268): handlPollStateResultMessage: GsmSST setDataRegState=1 regState=2 dataRadioTechnology=0
+02-03 16:35:58.022 D/SST     ( 2268): EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+02-03 16:35:58.023 D/SST     ( 2268): set service state as POWER_OFF
+02-03 16:35:58.024 D/SST     ( 2268): Poll ServiceState done:  oldSS=[3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[3 3 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=20 mNewMaxDataCalls=20 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+02-03 16:35:58.024 D/SST     ( 2268): SST.getAllCellInfo(): return last, same thread can't block
+02-03 16:35:58.024 D/SST     ( 2268): SST.getAllCellInfo(): X size=0 list=null
+02-03 16:35:58.024 D/SST     ( 2268): getCellLocation(): X empty mCellLoc and CellInfo mCellLoc=[-1,-1,-1]
+02-03 16:35:58.024 D/TelephonyRegistry( 1497): notifyCellLocationForSubscriber: subId=1 cellLocation=Bundle[mParcelledData.dataSize=64]
+02-03 16:35:58.033 D/RILJ    ( 2268): [3777]> RIL_REQUEST_GET_CELL_INFO_LIST [SUB0]
+02-03 16:35:58.051 D/RilRequest( 2268): [3777]< RIL_REQUEST_GET_CELL_INFO_LIST error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret=
+02-03 16:35:58.062 D/SubscriptionController( 2268): [getActiveSubscriptionInfo]+ subId=1 subInfo={id=1, iccId=89550450000131776562 simSlotIndex=0 displayName=TIM carrierName=No service nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@cd0d551 mcc 724 mnc 4 userNwMode=9}
+02-03 16:35:58.102 D/SST     ( 2268): EVENT_GET_CELL_INFO_LIST: error ret null, e=com.android.internal.telephony.CommandException: GENERIC_FAILURE
+02-03 16:35:58.102 D/SST     ( 2268): SST.getAllCellInfo(): X size=0 list=null
+02-03 16:35:59.647 D/SubscriptionController( 2268): [getPhoneId] asked for default subId=1
