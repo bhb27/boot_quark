@@ -1,0 +1,123 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: tMlIJoEnSXCnFpqa7StAAaAoHlE=
+
+Name: common/init.magisk.rc
+SHA1-Digest: mIGdi4BhEwtrAH1KPF+sdMZPShg=
+
+Name: common/magiskhide/enable
+SHA1-Digest: szxYNXGdmjdQjDW6rrg9YWHmvVI=
+
+Name: arm/bootimgtools
+SHA1-Digest: tihetzSXaDVSIQ8RwX3NaP3dsoQ=
+
+Name: arm/su
+SHA1-Digest: pHDj9hNrR1dBeqNlrXDtwZhlN94=
+
+Name: x64/su
+SHA1-Digest: cG9CmrmJUEj7Bn2vPiWZeH1u2UI=
+
+Name: arm64/busybox
+SHA1-Digest: JiQHHctv+oP3vk+mPqsj8crzl54=
+
+Name: arm64/magiskhide
+SHA1-Digest: qrAuJyO43P5qKXsr9CjoSYoQmBk=
+
+Name: common/file_contexts_image
+SHA1-Digest: 3CMh9/rAwg+csTwthHJENOyhpmE=
+
+Name: chromeos/futility
+SHA1-Digest: Evd5+Hi0p6Pk1PV8KSghtak9Cdc=
+
+Name: arm/busybox
+SHA1-Digest: nfZWxv/6lveKIwU4mBG98GcqLto=
+
+Name: x86/sepolicy-inject
+SHA1-Digest: HPz9aLNH2VGZ6jupPf3freugSDE=
+
+Name: arm64/bootimgtools
+SHA1-Digest: /FUHVyUJxcjlaPtoPgeAaScvlls=
+
+Name: x86/bootimgtools
+SHA1-Digest: scPibX4j9obR1ACwOpEdLfaMXUg=
+
+Name: common/magiskhide/rm
+SHA1-Digest: o3JU/wwKBir/QGnHw4QbDH9fNb4=
+
+Name: x64/resetprop
+SHA1-Digest: gZNo5An+GcaIMroIBSm0pU6nMBM=
+
+Name: common/magic_mask.sh
+SHA1-Digest: kGSp9esSX7LW2ntiAcch4n0EqEQ=
+
+Name: x64/sepolicy-inject
+SHA1-Digest: uZotsD5WeSoUFAENOPZeiCUu3Qs=
+
+Name: arm64/su
+SHA1-Digest: ofe7C9PauJx4Xzvm5Zfdu6vBFi4=
+
+Name: x64/busybox
+SHA1-Digest: oK5m89Ael9T7+XHzJaxnGCzSYCo=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: uv5nmH1zrItTFGnmvaNU1b5dGxY=
+
+Name: x64/bootimgtools
+SHA1-Digest: L4t6kKmdiDgiVpXMo5Tdc7aRQCY=
+
+Name: common/custom_ramdisk_patch.sh
+SHA1-Digest: te653qhRxSnrBl7MZwvO8dtl2PY=
+
+Name: x86/su
+SHA1-Digest: CDFiVuP+KTYCC39KKvDYGiAOGZ4=
+
+Name: x86/magiskhide
+SHA1-Digest: UbSU+taG/ZsoCUeiNEVWnNC1gN4=
+
+Name: arm/magiskhide
+SHA1-Digest: XjMtmMeCHMrnVUwdr9LvvJjZ5Qw=
+
+Name: chromeos/kernel.keyblock
+SHA1-Digest: zeiSVt//JG/gc0RW0507ZEaYVxU=
+
+Name: common/magiskhide/list
+SHA1-Digest: 7hlsbYKJmrPOP81NHG/aGfnYklQ=
+
+Name: x64/magiskhide
+SHA1-Digest: bQpOl/iJmVBadguoleh5qS26Tik=
+
+Name: chromeos/kernel_data_key.vbprivk
+SHA1-Digest: oLkG4w/5HLb7fes+kXTkmmnIhY4=
+
+Name: arm/resetprop
+SHA1-Digest: H/djvWb9x7e5xZMXr5KkTu1UDHI=
+
+Name: arm64/sepolicy-inject
+SHA1-Digest: BuBKg29maScUzGX+puQvsM3I+tI=
+
+Name: arm/sepolicy-inject
+SHA1-Digest: LiqMkd1QzIs5I+3yLmQ6DuZFKoA=
+
+Name: common/magiskhide/disable
+SHA1-Digest: mD73MGo0NDBsibb81jKscylaQ6Q=
+
+Name: x86/resetprop
+SHA1-Digest: lsTocgjbMyy3Vqh6bnBLIJJKD9E=
+
+Name: x86/busybox
+SHA1-Digest: twB1NLgPmv+SP7C3qHzkaBoiPKk=
+
+Name: common/magiskhide/add
+SHA1-Digest: V24uLhvqck3PzXy7BaQ97pbMHDY=
+
+Name: arm64/resetprop
+SHA1-Digest: U0KZnnNTYhH7KQZWbDOpNe6nyr4=
+
+Name: common/magisksu.sh
+SHA1-Digest: sa0owZSGOsC7YUwtW/CGzGMsY34=
+
+Name: common/magisk.apk
+SHA1-Digest: RbnDe8cfoO8YmUfGJRsSNcllHqw=
+
