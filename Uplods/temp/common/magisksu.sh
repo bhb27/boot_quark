@@ -1,7 +1,8 @@
 #!/system/bin/sh
 
 MODDIR=${0%/*}
-LOGFILE=/cache/magisk.log
+CACHE=/vendor/cache
+LOGFILE=$CACHE/magisk.log
 
 log_print() {
   echo "MagiskSU: $1"

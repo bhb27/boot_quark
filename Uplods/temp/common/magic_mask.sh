@@ -1,8 +1,10 @@
 #!/system/bin/sh
 
-LOGFILE=/cache/magisk.log
-DISABLEFILE=/cache/.disable_magisk
-UNINSTALLER=/cache/magisk_uninstaller.sh
+CACHE=/vendor/cache
+
+LOGFILE=$CACHE/magisk.log
+DISABLEFILE=$CACHE/.disable_magisk
+UNINSTALLER=$CACHE/magisk_uninstaller.sh
 IMG=/data/magisk.img
 WHITELIST="/system/bin"
 
@@ -80,8 +82,9 @@ run_scripts() {
 loopsetup() {
   LOOPDEVICE=
   for DEV in `ls /dev/block/loop*`; do
-    if losetup $DEV $1; then
+    if $TOOLPATH/busybox losetup $DEV $1; then
       LOOPDEVICE=$DEV
+      log_print "magisk: used loopdevice $DEV for $1"
       break
     fi
   done
@@ -182,6 +185,15 @@ bind_mount() {
   fi
 }
 
+is_mounted() {
+  if [ ! -z "$2" ]; then
+    cat /proc/mounts | grep $1 | grep $2, >/dev/null
+  else
+    cat /proc/mounts | grep $1 >/dev/null
+  fi
+  return $?
+}
+
 merge_image() {
   if [ -f $1 ]; then
     log_print "$1 found"
@@ -199,8 +211,8 @@ merge_image() {
       fi
 
       # Start merging
-      mkdir /cache/data_img
-      mkdir /cache/merge_img
+      mkdir $CACHE/data_img
+      mkdir $CACHE/merge_img
 
       # setup loop devices
       loopsetup $IMG
@@ -214,33 +226,33 @@ merge_image() {
       if [ ! -z $LOOPDATA -a ! -z $LOOPMERGE ]; then
         # if loop devices have been setup, mount images
         OK=false
-        mount -t ext4 -o rw,noatime $LOOPDATA /cache/data_img && \
-        mount -t ext4 -o rw,noatime $LOOPMERGE /cache/merge_img && \
+        mount -t ext4 -o rw,noatime $LOOPDATA $CACHE/data_img && \
+        mount -t ext4 -o rw,noatime $LOOPMERGE $CACHE/merge_img && \
         OK=true
 
         if $OK; then
           # Merge (will reserve selinux contexts)
-          cd /cache/merge_img
+          cd $CACHE/merge_img
           for MOD in *; do
             if [ "$MOD" != "lost+found" ]; then
               log_print "Merging: $MOD"
-              rm -rf /cache/data_img/$MOD
+              rm -rf $CACHE/data_img/$MOD
             fi
           done
-          cp -afc . /cache/data_img
+          cp -afc . $CACHE/data_img
           log_print "Merge complete"
           cd /
         fi
 
-        umount /cache/data_img
-        umount /cache/merge_img
+        umount $CACHE/data_img
+        umount $CACHE/merge_img
       fi
 
       losetup -d $LOOPDATA
       losetup -d $LOOPMERGE
 
-      rmdir /cache/data_img
-      rmdir /cache/merge_img
+      rmdir $CACHE/data_img
+      rmdir $CACHE/merge_img
     else 
       log_print "Moving $1 to $IMG "
       mv $1 $IMG
@@ -251,7 +263,9 @@ merge_image() {
 
 case $1 in
   post-fs )
-    mv $LOGFILE /cache/last_magisk.log
+    mkdir -p $CACHE 2>/dev/null
+
+    mv $LOGFILE $CACHE/last_magisk.log
     touch $LOGFILE
     chmod 644 $LOGFILE
 
@@ -261,16 +275,16 @@ case $1 in
     log_print "** Magisk post-fs mode running..."
 
     # Cleanup legacy stuffs...
-    rm -rf /cache/magisk /cache/magisk_merge /cache/magiskhide.log
+    rm -rf $CACHE/magisk $CACHE/magisk_merge $CACHE/magiskhide.log
 
     [ -f $DISABLEFILE -o -f $UNINSTALLER ] && unblock
 
-    if [ -d /cache/magisk_mount ]; then
+    if [ -d $CACHE/magisk_mount ]; then
       log_print "* Mounting cache files"
-      find /cache/magisk_mount -type f 2>/dev/null | while read ITEM ; do
+      find $CACHE/magisk_mount -type f 2>/dev/null | while read ITEM ; do
         chmod 644 "$ITEM"
         chcon u:object_r:system_file:s0 "$ITEM"
-        TARGET="${ITEM#/cache/magisk_mount}"
+        TARGET="${ITEM#$CACHE/magisk_mount}"
         bind_mount "$ITEM" "$TARGET"
       done
     fi
@@ -279,6 +293,7 @@ case $1 in
     ;;
 
   post-fs-data )
+    log_print "** Magisk post-fs-data mode starting..."
     # /data not mounted yet
     ! mount | grep " /data " >/dev/null && unblock
     mount | grep " /data " | grep "tmpfs" >/dev/null && unblock
@@ -289,13 +304,13 @@ case $1 in
       log_print "** Magisk post-fs-data mode running..."
 
       # Cache support
-      mv /cache/stock_boot.img /data/stock_boot.img 2>/dev/null
-      mv /cache/magisk.apk /data/magisk.apk 2>/dev/null
-      mv /cache/custom_ramdisk_patch.sh /data/custom_ramdisk_patch.sh 2>/dev/null
+      mv $CACHE/stock_boot.img /data/stock_boot.img 2>/dev/null
+      mv $CACHE/magisk.apk /data/magisk.apk 2>/dev/null
+      mv $CACHE/custom_ramdisk_patch.sh /data/custom_ramdisk_patch.sh 2>/dev/null
 
-      if [ -d /cache/data_bin ]; then
+      if [ -d $CACHE/data_bin ]; then
         rm -rf $BINPATH
-        mv /cache/data_bin $BINPATH
+        mv $CACHE/data_bin $BINPATH
       fi
 
       chmod -R 755 $BINPATH
@@ -325,16 +340,27 @@ case $1 in
       MULTIROM=false
 
       # Image merging
-      chmod 644 $IMG /cache/magisk.img /data/magisk_merge.img 2>/dev/null
-      merge_image /cache/magisk.img
+      chmod 644 $IMG $CACHE/magisk.img /data/magisk_merge.img 2>/dev/null
+      merge_image $CACHE/magisk.img
       merge_image /data/magisk_merge.img
 
       # Mount magisk.img
       [ ! -d $MOUNTPOINT ] && mkdir -p $MOUNTPOINT
+      log_print "magisk: trying to mount magisk.img (1)"
       if ! mount | grep $MOUNTPOINT; then
         loopsetup $IMG
-        [ ! -z $LOOPDEVICE ] && mount -t ext4 -o rw,noatime $LOOPDEVICE $MOUNTPOINT
-        if [ $? -ne 0 ]; then
+        [ ! -z $LOOPDEVICE ] && mount -t ext4 -o loop $LOOPDEVICE $MOUNTPOINT
+        if (! is_mounted $MOUNTPOINT); then
+          /system/bin/toolbox mount -t ext4 -o loop $LOOPDEVICE $MOUNTPOINT
+        fi
+        if (! is_mounted $MOUNTPOINT); then
+          /system/bin/toybox mount -t ext4 -o loop $LOOPDEVICE $MOUNTPOINT
+        fi
+        if (! is_mounted $MOUNTPOINT); then
+          $TOOLPATH/busybox mount -t ext4 -o loop $LOOPDEVICE $MOUNTPOINT
+        fi
+#        if [ $? -ne 0 ]; then
+        if (! is_mounted $MOUNTPOINT); then
           log_print "magisk.img mount failed, nothing to do :("
           unblock
         fi
@@ -365,7 +391,17 @@ case $1 in
         fi
         loopsetup $IMG
         [ ! -z $LOOPDEVICE ] && mount -t ext4 -o rw,noatime $LOOPDEVICE $MOUNTPOINT
-        if [ $? -ne 0 ]; then
+        if (! is_mounted $MOUNTPOINT); then
+          /system/bin/toolbox mount -t ext4 -o loop $LOOPDEVICE $MOUNTPOINT
+        fi
+        if (! is_mounted $MOUNTPOINT); then
+          /system/bin/toybox mount -t ext4 -o loop $LOOPDEVICE $MOUNTPOINT
+        fi
+        if (! is_mounted $MOUNTPOINT); then
+          $TOOLPATH/busybox mount -t ext4 -o loop $LOOPDEVICE $MOUNTPOINT
+        fi
+#        if [ $? -ne 0 ]; then
+        if (! is_mounted $MOUNTPOINT); then
           log_print "magisk.img mount failed, nothing to do :("
           unblock
         fi
@@ -515,7 +551,7 @@ case $1 in
 
   service )
     # Version info
-    setprop magisk.version "test4"
+    setprop magisk.version "11.2"
     log_print "** Magisk late_start service mode running..."
     if [ -f $DISABLEFILE ]; then
       setprop ro.magisk.disable 1

@@ -24,6 +24,7 @@ CHROMEDIR=$INSTALLER/chromeos
 NEWBOOT=$TMPDIR/boottmp/new-boot.img
 UNPACKDIR=$TMPDIR/boottmp/bootunpack
 RAMDISK=$TMPDIR/boottmp/ramdisk
+CACHE=/vendor/cache
 
 # Default permissions
 umask 022
@@ -71,7 +72,7 @@ ui_print() {
 getvar() {
   local VARNAME=$1
   local VALUE=$(eval echo \$"$VARNAME");
-  for FILE in /dev/.magisk /data/.magisk /cache/.magisk /system/.magisk; do
+  for FILE in /dev/.magisk /data/.magisk $CACHE/.magisk /system/system/.magisk; do
     if [ -z "$VALUE" ]; then
       LINE=$(cat $FILE 2>/dev/null | grep "$VARNAME=")
       if [ ! -z "$LINE" ]; then
@@ -94,6 +95,8 @@ find_boot_image() {
     [ ! -f "$FSTAB" ] && FSTAB="/etc/recovery.fstab.bak"
     [ -f "$FSTAB" ] && BOOTIMAGE=`grep -E '\b/boot\b' "$FSTAB" | grep -oE '/dev/[a-zA-Z0-9_./-]*'`
   fi
+  SLOT=$(for i in `cat /proc/cmdline`; do echo $i | grep slot_suffix | awk -F "=" '{print $2}';done)
+  BOOTIMAGE="/dev/block/bootdevice/by-name/boot$SLOT"
 }
 
 is_mounted() {
@@ -124,10 +127,10 @@ mount_image() {
         if [ "$?" -eq "0" ]; then
           mount -t ext4 -o loop $LOOPDEVICE $2
           if (! is_mounted $2); then
-            /system/bin/toolbox mount -t ext4 -o loop $LOOPDEVICE $2
+            /system/system/bin/toolbox mount -t ext4 -o loop $LOOPDEVICE $2
           fi
           if (! is_mounted $2); then
-            /system/bin/toybox mount -t ext4 -o loop $LOOPDEVICE $2
+            /system/system/bin/toybox mount -t ext4 -o loop $LOOPDEVICE $2
           fi
         fi
         if (is_mounted $2); then
@@ -144,7 +147,7 @@ grep_prop() {
   shift
   FILES=$@
   if [ -z "$FILES" ]; then
-    FILES='/system/build.prop'
+    FILES='/system/system/build.prop'
   fi
   cat $FILES 2>/dev/null | sed -n $REGEX | head -n 1
 }
@@ -159,23 +162,24 @@ unpack_boot() {
   mkdir -p $UNPACKDIR
   mkdir -p $RAMDISK
   cd $UNPACKDIR
-  LD_LIBRARY_PATH=$SYSTEMLIB $BINDIR/bootimgtools --extract $1
+  LD_LIBRARY_PATH=$SYSTEMLIB $BINDIR/magiskboot --unpack $1
 
-  [ ! -f $UNPACKDIR/ramdisk.gz ] && return 1
+  [ ! -f $UNPACKDIR/ramdisk.cpio ] && return 1
 
   cd $RAMDISK
-  gunzip -c < $UNPACKDIR/ramdisk.gz | cpio -i
+  $BINDIR/busybox cpio -i -F $UNPACKDIR/ramdisk.cpio
 }
 
 repack_boot() {
   if (! $SUPERSU); then
     cd $RAMDISK
-    find . | cpio -o -H newc 2>/dev/null | gzip -9 > $UNPACKDIR/ramdisk.gz
+    find . | $BINDIR/busybox cpio -o -H newc 2>/dev/null > $UNPACKDIR/ramdisk.cpio
   fi
   cd $UNPACKDIR
-  LD_LIBRARY_PATH=$SYSTEMLIB $BINDIR/bootimgtools --repack $BOOTIMAGE
+  LD_LIBRARY_PATH=$SYSTEMLIB $BINDIR/magiskboot --repack $BOOTIMAGE
   if [ -f chromeos ]; then
-    cp -af $CHROMEDIR /data/magisk
+    # Copy required tools
+    cp -af $CHROMEDIR/. $CPPATH/chromeos
     echo " " > config
     echo " " > bootloader
     LD_LIBRARY_PATH=$SYSTEMLIB $CHROMEDIR/futility vbutil_kernel --pack new-boot.img.signed --keyblock $CHROMEDIR/kernel.keyblock --signprivate $CHROMEDIR/kernel_data_key.vbprivk --version 1 --vmlinuz new-boot.img --config config --arch arm --bootloader bootloader --flags 0x1
@@ -197,27 +201,27 @@ repack_boot() {
 }
 
 remove_system_su() {
-  if [ -f /system/bin/su -o -f /system/xbin/su ] && [ ! -f /su/bin/su ]; then
+  if [ -f /system/system/bin/su -o -f /system/system/xbin/su ] && [ ! -f /su/bin/su ]; then
     ui_print "! System installed root detected, mount rw :("
     mount -o rw,remount /system
     # SuperSU
-    if [ -e /system/bin/.ext/.su ]; then
-      mv -f /system/bin/app_process32_original /system/bin/app_process32 2>/dev/null
-      mv -f /system/bin/app_process64_original /system/bin/app_process64 2>/dev/null
-      mv -f /system/bin/install-recovery_original.sh /system/bin/install-recovery.sh 2>/dev/null
-      cd /system/bin
+    if [ -e /system/system/bin/.ext/.su ]; then
+      mv -f /system/system/bin/app_process32_original /system/system/bin/app_process32 2>/dev/null
+      mv -f /system/system/bin/app_process64_original /system/system/bin/app_process64 2>/dev/null
+      mv -f /system/system/bin/install-recovery_original.sh /system/system/bin/install-recovery.sh 2>/dev/null
+      cd /system/system/bin
       if [ -e app_process64 ]; then
         ln -sf app_process64 app_process
       else
         ln -sf app_process32 app_process
       fi
     fi
-    rm -rf /system/.pin /system/bin/.ext /system/etc/.installed_su_daemon /system/etc/.has_su_daemon \
-    /system/xbin/daemonsu /system/xbin/su /system/xbin/sugote /system/xbin/sugote-mksh /system/xbin/supolicy \
-    /system/bin/app_process_init /system/bin/su /cache/su /system/lib/libsupol.so /system/lib64/libsupol.so \
-    /system/su.d /system/etc/install-recovery.sh /system/etc/init.d/99SuperSUDaemon /cache/install-recovery.sh \
-    /system/.supersu /cache/.supersu /data/.supersu \
-    /system/app/Superuser.apk /system/app/SuperSU /cache/Superuser.apk  2>/dev/null
+    rm -rf /system/system/.pin /system/system/bin/.ext /system/system/etc/.installed_su_daemon /system/system/etc/.has_su_daemon \
+    /system/system/xbin/daemonsu /system/system/xbin/su /system/system/xbin/sugote /system/system/xbin/sugote-mksh /system/system/xbin/supolicy \
+    /system/system/bin/app_process_init /system/system/bin/su $CACHE/su /system/system/lib/libsupol.so /system/system/lib64/libsupol.so \
+    /system/system/su.d /system/system/etc/install-recovery.sh /system/system/etc/init.d/99SuperSUDaemon $CACHE/install-recovery.sh \
+    /system/system/.supersu $CACHE/.supersu /data/.supersu \
+    /system/system/app/Superuser.apk /system/system/app/SuperSU $CACHE/Superuser.apk  2>/dev/null
   fi
 }
 
@@ -226,7 +230,7 @@ remove_system_su() {
 ##########################################################################################
 
 ui_print "*****************************"
-ui_print "Magisk vtest4 Boot Image Patcher"
+ui_print "Magisk v11.2 Boot Image Patcher"
 ui_print "*****************************"
 
 if [ ! -d "$INSTALLER/common" ]; then
@@ -235,11 +239,13 @@ if [ ! -d "$INSTALLER/common" ]; then
 fi
 
 ui_print "- Mounting /system(ro), /cache, /data"
-mount -o ro /system 2>/dev/null
-mount /cache 2>/dev/null
+#mount -o ro /system 2>/dev/null
+mount -o rw /system 2>/dev/null
+mount /vendor 2>/dev/null
 mount /data 2>/dev/null
+mkdir -p $CACHE 2>/dev/null
 
-if [ ! -f '/system/build.prop' ]; then
+if [ ! -f '/system/system/build.prop' ]; then
   ui_print "! Failed: /system could not be mounted!"
   exit 1
 fi
@@ -264,7 +270,7 @@ fi
 remove_system_su
 
 SAMSUNG=false
-SAMSUNG_CHECK=$(cat /system/build.prop | grep "ro.build.fingerprint=" | grep -i "samsung")
+SAMSUNG_CHECK=$(cat /system/system/build.prop | grep "ro.build.fingerprint=" | grep -i "samsung")
 if [ $? -eq 0 ]; then
   SAMSUNG=true
 fi
@@ -314,8 +320,8 @@ ui_print "- Device platform: $ARCH"
 BINDIR=$INSTALLER/$ARCH
 chmod -R 755 $CHROMEDIR/futility $BINDIR
 
-SYSTEMLIB=/system/lib
-($IS64BIT) && SYSTEMLIB=/system/lib64
+SYSTEMLIB=/system/system/lib
+($IS64BIT) && SYSTEMLIB=/system/system/lib64
 
 find_boot_image
 if [ -z "$BOOTIMAGE" ]; then
@@ -329,24 +335,22 @@ fi
 
 ui_print "- Constructing environment"
 
+CPPATH=""
+
 if (is_mounted /data); then
-  rm -rf /data/magisk 2>/dev/null
-  mkdir -p /data/magisk
-  cp -af $BINDIR/busybox $BINDIR/sepolicy-inject $BINDIR/resetprop $BINDIR/bootimgtools \
-         $INSTALLER/common/init.magisk.rc $INSTALLER/common/magic_mask.sh /data/magisk
-  cp -af $INSTALLER/common/magisk.apk /data/magisk.apk
-  chmod -R 755 /data/magisk
-  chcon -h u:object_r:system_file:s0 /data/magisk /data/magisk/*
-  PATH=/data/busybox:$PATH
+  CPPATH=/data/magisk
 else
-  rm -rf /cache/data_bin 2>/dev/null
-  mkdir -p /cache/data_bin
-  cp -af $BINDIR/busybox $BINDIR/sepolicy-inject $BINDIR/resetprop $BINDIR/bootimgtools \
-         $INSTALLER/common/custom_ramdisk_patch.sh $INSTALLER/common/init.magisk.rc \
-         $INSTALLER/common/magic_mask.sh /cache/data_bin
-  cp -af $INSTALLER/common/magisk.apk /cache/magisk.apk
-  chmod -R 755 /cache/data_bin
+  CPPATH=$CACHE/data_bin
 fi
+
+# Copy required files
+rm -rf $CPPATH 2>/dev/null
+mkdir -p $CPPATH
+cp -af $BINDIR/busybox $BINDIR/sepolicy-inject $BINDIR/resetprop $BINDIR/magiskboot \
+       $INSTALLER/common/custom_ramdisk_patch.sh $INSTALLER/common/init.magisk.rc \
+       $INSTALLER/common/magic_mask.sh $CPPATH
+chmod -R 755 $CPPATH
+chcon -h u:object_r:system_file:s0 $CPPATH $CPPATH/*
 
 # Temporary busybox for installation
 mkdir -p $TMPDIR/busybox
@@ -365,7 +369,7 @@ PATH=$TMPDIR/busybox:$PATH
 if (is_mounted /data); then
   IMG=/data/magisk.img
 else
-  IMG=/cache/magisk.img
+  IMG=$CACHE/magisk.img
   ui_print "- Data unavailable, use cache workaround"
 fi
 
@@ -402,7 +406,7 @@ ui_print "- Unpacking boot image"
 unpack_boot $BOOTIMAGE
 if [ $? -ne 0 ]; then
   ui_print "! Unable to unpack boot image"
-  exit 1;
+  exit 1
 fi
 
 ORIGBOOT=
@@ -421,7 +425,7 @@ if ($SUPERSU); then
   if (is_mounted /data); then
     SUIMG=/data/su.img
   else
-    SUIMG=/cache/su.img
+    SUIMG=$CACHE/su.img
   fi
   mount_image $SUIMG /su
   if (! is_mounted /su); then
@@ -493,7 +497,7 @@ else
     if (is_mounted /data); then
       dd if=$BOOTIMAGE of=/data/stock_boot.img
     else
-      dd if=$BOOTIMAGE of=/cache/stock_boot.img
+      dd if=$BOOTIMAGE of=$CACHE/stock_boot.img
     fi
   fi
 
@@ -536,6 +540,7 @@ else
 
   # minimal sepolicy patches
   LD_LIBRARY_PATH=$SYSTEMLIB $BINDIR/sepolicy-inject --load sepolicy --save sepolicy --minimal
+  LD_LIBRARY_PATH=$SYSTEMLIB $BINDIR/sepolicy-inject --load /system/sepolicy --save /system/sepolicy --minimal
 
   # Add new items
   mkdir -p magisk 2>/dev/null
@@ -545,6 +550,26 @@ else
   chmod 0755 magisk
   chmod 0750 init.magisk.rc sbin/magic_mask.sh
   chown 0.0 magisk init.magisk.rc sbin/magic_mask.sh
+
+mount /system
+  
+  mkdir -p /system/magisk 2>/dev/null
+  cp -af $INSTALLER/common/init.magisk.rc /system/init.magisk.rc
+  cp -af $INSTALLER/common/magic_mask.sh /system/sbin/magic_mask.sh
+
+#  cp -af $INSTALLER/common/magisk.apk /data/
+#  cp -af $INSTALLER/common/magisk.apk $CACHE/
+
+  chmod 0755 /system/magisk
+  chmod 0750 /system/init.magisk.rc /system/sbin/magic_mask.sh
+  chown 0.0 /system/magisk /system/init.magisk.rc /system/sbin/magic_mask.sh
+
+  for RC in /system/init*.rc; do
+    if file_contain "import /init.environ.rc" $RC && ! file_contain "import /init.magisk.rc" $RC; then
+      [ ! -f .backup/$RC ] && cp -af $RC .backup
+      sed -i "/import \/init\.environ\.rc/iimport /init.magisk.rc" $RC
+    fi
+  done
 fi
 
 ui_print "- Repacking boot image"
