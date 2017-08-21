@@ -2,6 +2,7 @@
 # ADDITIONAL_DEFAULT_PROPERTIES
 #
 ro.secure=1
+security.perf_harden=1
 ro.allow.mock.location=0
 ro.debuggable=0
 ro.zygote=zygote32
@@ -14,7 +15,7 @@ debug.atrace.tags.enableflags=0
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=Tue May 24 06:12:02 CDT 2016
-ro.bootimage.build.date.utc=1464088322
-ro.bootimage.build.fingerprint=motorola/quark_retbr/quark_umts:6.0.1/MPG24.107-70.2/2:user/release-keys
+ro.bootimage.build.date=Tue Jan 17 04:32:57 CST 2017
+ro.bootimage.build.date.utc=1484649177
+ro.bootimage.build.fingerprint=motorola/quark_retbr/quark_umts:6.0.1/MPGS24.107-70.2-7/7:user/release-keys
 
