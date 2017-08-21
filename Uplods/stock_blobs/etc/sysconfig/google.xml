@@ -25,6 +25,9 @@
     <!-- Play Store likewise must have network access to support other applications. -->
     <allow-in-power-save-except-idle package="com.android.vending" />
 
+    <!-- If the volta app is pre-installed (for monitoring power use), let it do checkins. -->
+    <allow-in-power-save package="com.google.android.volta" />
+
     <!-- These Google applications all handle URLs to their websites by default -->
     <app-link package="com.android.vending" />
     <app-link package="com.google.android.apps.plus" />
@@ -34,5 +37,14 @@
     <app-link package="com.google.android.apps.docs.editors.sheets" />
     <app-link package="com.google.android.apps.docs.editors.slides" />
     <app-link package="com.google.android.apps.docs.editors.docs" />
+
+    <!-- Whitelist of what components are permitted as backup data transports.  The
+         'service' attribute here is a flattened ComponentName string. -->
+    <backup-transport-whitelisted-service
+        service="android/com.android.internal.backup.LocalTransportService" />
+    <backup-transport-whitelisted-service
+        service="com.google.android.gms/.backup.BackupTransportService" />
+    <backup-transport-whitelisted-service
+        service="com.google.android.gms/.backup.component.D2dTransportService" />
 
 </config>
